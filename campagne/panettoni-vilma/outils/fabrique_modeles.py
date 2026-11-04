@@ -11,6 +11,7 @@ OUT = Path(__file__).resolve().parent.parent / "modeles"
 # rouge profond, vert sapin, sur fond blanc. (Les noms des variables datent de la première charte.)
 CREME, BORDEAUX, OR, TEXTE, GRIS = "#f7f4f1", "#b3140f", "#127a3a", "#1f1b18", "#5f5a55"
 CORAIL = "#d94448"
+SAPIN, DORE = "#2f4a2c", "#e0b85a"  # vert des pages de fond du catalogue, or des rubans
 # Images : hébergées dans la galerie Brevo (voir IMAGES.md) ; sinon, copie publique du dépôt GitHub.
 IMG = {
     "bandeau": "https://raw.githubusercontent.com/monodf-beep/Universitat-Sabauda-des-sciences-gastronomiques/claude/jolly-dirac-zip2dz/campagne/panettoni-vilma/visuels/bandeau-mail.jpg",
@@ -42,12 +43,12 @@ def p(t):
     return f'<p style="{P}">{t}</p>'
 
 
-def page(titre, corps, pre=""):
+def page(titre, corps, pre="", fond=CREME):
     return f"""<!DOCTYPE html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{titre}</title>
 <style>@media only screen and (max-width:620px){{.pad{{padding:22px 18px 24px 18px!important}}}}</style>
-</head><body style="margin:0;padding:0;background-color:{CREME};">
+</head><body style="margin:0;padding:0;background-color:{fond};">
 <div style="display:none;max-height:0;overflow:hidden;">{pre}</div>
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:{CREME};"><tr><td align="center" style="padding:28px 12px 36px 12px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:{fond};"><tr><td align="center" style="padding:28px 12px 36px 12px;">
 <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;background-color:#ffffff;border:1px solid #e8e2da;">
 {corps}
 </table></td></tr></table></body></html>
@@ -85,9 +86,9 @@ def bandeau():
             f'cellpadding="0" cellspacing="0" border="0"><tr>{cases}</tr></table></td></tr>')
 
 
-def fleche(texte, lien):
+def fleche(texte, lien, couleur=BORDEAUX):
     return (f'<div style="margin:6px 0 0 0;"><a href="{lien}" style="font-family:{S};font-size:15px;'
-            f'font-weight:bold;color:{BORDEAUX};text-decoration:none;">&rarr;&nbsp;{texte}</a></div>')
+            f'font-weight:bold;color:{couleur};text-decoration:none;">&rarr;&nbsp;{texte}</a></div>')
 
 
 def atouts():
@@ -114,13 +115,13 @@ def lien_savoie_piemont():
 
 def encadre():
     return (f'<tr><td style="padding:10px 36px 6px 36px;"><table role="presentation" width="100%" '
-            f'cellpadding="0" cellspacing="0" border="0" style="border:1px solid {OR};"><tr>'
-            f'<td style="padding:16px 20px;font-family:{S};font-size:15px;line-height:1.6;color:{TEXTE};">'
+            f'cellpadding="0" cellspacing="0" border="0" style="background-color:{SAPIN};border-radius:4px;"><tr>'
+            f'<td style="padding:18px 22px;font-family:{S};font-size:15px;line-height:1.6;color:#ffffff;">'
             f"<strong>Intéressé ?</strong> Répondez à ce mail : nous vous envoyons les tarifs revendeurs et des "
             f"échantillons, et nous vous mettons en relation avec Vilma e Elio, qui prend la commande et livre. "
             f"Pour Noël, écrivez-nous avant le {DATE_LIMITE}."
-            f'<div style="margin:10px 0 0 0;">{fleche("Demander les tarifs", MAILTO)}'
-            f'{fleche("Voir le catalogue (PDF)", CATALOGUE)}</div></td></tr></table></td></tr>')
+            f'<div style="margin:10px 0 0 0;">{fleche("Demander les tarifs", MAILTO, DORE)}'
+            f'{fleche("Voir le catalogue (PDF)", CATALOGUE, DORE)}</div></td></tr></table></td></tr>')
 
 
 def pied_formel():
@@ -174,7 +175,7 @@ m1 = page("PANETTONI · 1 présentation", entete() + bandeau()
           + p("Nous vous prions d'agréer, Madame, Monsieur, nos salutations distinguées.")
           + f'<p style="margin:0;font-family:{F};font-size:16px;color:{BORDEAUX};">Universitât Sabauda des '
             f"sciences gastronomiques</p></td></tr>" + pied_formel(),
-          pre="Les panettoni de Vilma e Elio : de la Savoie au Piémont, une même histoire")
+          pre="Les panettoni de Vilma e Elio : de la Savoie au Piémont, une même histoire", fond=SAPIN)
 
 m2 = page("PANETTONI · 2 relance Franck",
           f'<tr><td class="pad" style="padding:28px 36px 30px 36px;">'
@@ -188,7 +189,7 @@ m2 = page("PANETTONI · 2 relance Franck",
               "vous, dites-le-moi aussi : j'arrête les relances.")
           + p("Bonne journée,<br>Franck") + signature_et_pied_court() + "</td></tr>")
 
-m3 = page("PANETTONI · 3 date limite", entete()
+m3 = page("PANETTONI · 3 date limite", bandeau()
           + f'<tr><td class="pad" style="padding:26px 36px 24px 36px;">'
           + p("Madame, Monsieur,")
           + p(f"Pour avoir les panettoni de Vilma e Elio en boutique avant les fêtes, il faut nous écrire "
@@ -205,7 +206,7 @@ m3 = page("PANETTONI · 3 date limite", entete()
           + p("Nous vous prions d'agréer, Madame, Monsieur, nos salutations distinguées.")
           + f'<p style="margin:0;font-family:{F};font-size:16px;color:{BORDEAUX};">Universitât Sabauda des '
             f"sciences gastronomiques</p></td></tr>" + pied_formel(),
-          pre="Pour une livraison avant Noël")
+          pre="Pour une livraison avant Noël", fond=SAPIN)
 
 m4 = page("PANETTONI · 4 dernier mail Franck",
           f'<tr><td class="pad" style="padding:28px 36px 30px 36px;">'

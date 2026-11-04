@@ -2,32 +2,27 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,800&family=Great+Vibes&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 <style>
 body { margin:0; }
-.b { width:1200px; height:440px; position:relative; overflow:hidden; background:#fff; font-family:Lato, Arial, sans-serif; }
-.vague { position:absolute; right:-30px; bottom:-40px; width:300px; height:150px; }
-.texte { position:absolute; left:70px; top:44px; width:640px; }
-.sur { color:#127a3a; font-weight:700; letter-spacing:4px; text-transform:uppercase; font-size:20px; }
+.b { width:1200px; height:440px; position:relative; overflow:hidden; background:#495d43 url(fond-vert.jpg) center/cover; font-family:Lato, Arial, sans-serif; }
+.guirlande { position:absolute; right:0; top:0; height:440px; width:auto; -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 45%); mask-image:linear-gradient(90deg,transparent 0,#000 45%); }
+.texte { position:absolute; left:70px; top:44px; width:600px; }
+.sur { color:#ffffff; font-weight:700; letter-spacing:4px; text-transform:uppercase; font-size:20px; }
+.sur span { color:#f0d9a0; }
 h1 { margin:18px 0 0; line-height:.95; }
-h1 .gras { font-family:Fraunces, Georgia, serif; font-weight:800; font-size:88px; color:#d94448; letter-spacing:1px; }
-h1 .script { display:block; font-family:'Great Vibes', cursive; font-weight:400; font-size:104px; color:#d94448; margin:-6px 0 0 150px; }
-.sous { margin-top:22px; font-size:21px; white-space:nowrap; color:#3a3a3a; }
-.sous b { color:#b3140f; }
-.photos { position:absolute; right:70px; top:40px; align-items:flex-start; display:flex; gap:0; }
-.photos img { width:290px; height:auto; filter: drop-shadow(0 10px 14px rgba(0,0,0,.18)); }
-.photos img + img { margin-left:-70px; margin-top:120px; width:250px; }
-.etoile { position:absolute; font-size:40px; color:#c9a24a; }
+h1 .gras { font-family:Fraunces, Georgia, serif; font-weight:800; font-size:88px; color:#ffffff; letter-spacing:1px; }
+h1 .script { display:block; font-family:'Great Vibes', cursive; font-weight:400; font-size:104px; color:#ff5a55; margin:-6px 0 0 150px; }
+.sous { margin-top:22px; font-size:21px; white-space:nowrap; color:#f3efe6; }
+.sous b { color:#ffffff; background:#c8201b; padding:1px 8px; border-radius:3px; }
+.photos { position:absolute; right:150px; top:58px; display:flex; }
+.photos img { width:235px; height:auto; filter: drop-shadow(0 12px 16px rgba(0,0,0,.45)); }
+.photos img + img { margin-left:-60px; margin-top:110px; width:205px; }
 </style></head><body>
 <div class="b">
-  <svg class="vague" viewBox="0 0 430 230" preserveAspectRatio="none">
-    <path d="M60 230 C 140 150, 120 80, 260 40 C 340 20, 400 10, 430 0 L430 230 Z" fill="#127a3a"/>
-    <path d="M110 230 C 180 160, 170 100, 290 70 C 360 52, 410 44, 430 40 L430 230 Z" fill="#fff"/>
-    <path d="M130 230 C 200 170, 190 115, 300 90 C 365 75, 410 70, 430 68 L430 230 Z" fill="#b3140f"/>
-  </svg>
+  <img class="guirlande" src="guirlande.jpg" alt="">
+  <svg style="position:absolute;left:560px;top:24px;width:46px;height:46px;opacity:1" viewBox="-50 -50 100 100"><path d="M0-50 C3-8 8-3 50 0 C8 3 3 8 0 50 C-3 8 -8 3 -50 0 C-8-3 -3-8 0-50Z" fill="#e8423f"/><path d="M0-26 C2-3 3-2 26 0 C3 2 2 3 0 26 C-2 3 -3 2 -26 0 C-3-2 -2-3 0-26Z" fill="#e8423f" transform="rotate(45)" opacity=".7"/></svg><svg style="position:absolute;left:612px;top:70px;width:22px;height:22px;opacity:0.9" viewBox="-50 -50 100 100"><path d="M0-50 C3-8 8-3 50 0 C8 3 3 8 0 50 C-3 8 -8 3 -50 0 C-8-3 -3-8 0-50Z" fill="#ffffff"/><path d="M0-26 C2-3 3-2 26 0 C3 2 2 3 0 26 C-2 3 -3 2 -26 0 C-3-2 -2-3 0-26Z" fill="#ffffff" transform="rotate(45)" opacity=".7"/></svg><svg style="position:absolute;left:40px;top:350px;width:34px;height:34px;opacity:1" viewBox="-50 -50 100 100"><path d="M0-50 C3-8 8-3 50 0 C8 3 3 8 0 50 C-3 8 -8 3 -50 0 C-8-3 -3-8 0-50Z" fill="#3fae5a"/><path d="M0-26 C2-3 3-2 26 0 C3 2 2 3 0 26 C-2 3 -3 2 -26 0 C-3-2 -2-3 0-26Z" fill="#3fae5a" transform="rotate(45)" opacity=".7"/></svg><svg style="position:absolute;left:690px;top:350px;width:40px;height:40px;opacity:1" viewBox="-50 -50 100 100"><path d="M0-50 C3-8 8-3 50 0 C8 3 3 8 0 50 C-3 8 -8 3 -50 0 C-8-3 -3-8 0-50Z" fill="#e0b85a"/><path d="M0-26 C2-3 3-2 26 0 C3 2 2 3 0 26 C-2 3 -3 2 -26 0 C-3-2 -2-3 0-26Z" fill="#e0b85a" transform="rotate(45)" opacity=".7"/></svg><svg style="position:absolute;left:500px;top:380px;width:18px;height:18px;opacity:0.8" viewBox="-50 -50 100 100"><path d="M0-50 C3-8 8-3 50 0 C8 3 3 8 0 50 C-3 8 -8 3 -50 0 C-8-3 -3-8 0-50Z" fill="#ffffff"/><path d="M0-26 C2-3 3-2 26 0 C3 2 2 3 0 26 C-2 3 -3 2 -26 0 C-3-2 -2-3 0-26Z" fill="#ffffff" transform="rotate(45)" opacity=".7"/></svg><svg style="position:absolute;left:18px;top:20px;width:20px;height:20px;opacity:0.9" viewBox="-50 -50 100 100"><path d="M0-50 C3-8 8-3 50 0 C8 3 3 8 0 50 C-3 8 -8 3 -50 0 C-8-3 -3-8 0-50Z" fill="#e0b85a"/><path d="M0-26 C2-3 3-2 26 0 C3 2 2 3 0 26 C-2 3 -3 2 -26 0 C-3-2 -2-3 0-26Z" fill="#e0b85a" transform="rotate(45)" opacity=".7"/></svg><svg style="position:absolute;left:760px;top:40px;width:26px;height:26px;opacity:1" viewBox="-50 -50 100 100"><path d="M0-50 C3-8 8-3 50 0 C8 3 3 8 0 50 C-3 8 -8 3 -50 0 C-8-3 -3-8 0-50Z" fill="#3fae5a"/><path d="M0-26 C2-3 3-2 26 0 C3 2 2 3 0 26 C-2 3 -3 2 -26 0 C-3-2 -2-3 0-26Z" fill="#3fae5a" transform="rotate(45)" opacity=".7"/></svg>
   <div class="texte">
     <div class="sur">Vilma &amp; Elio<br><span style="white-space:nowrap;font-size:16px;letter-spacing:2.5px">Grand-Villars (Villar-Perosa, Piémont)</span></div>
     <h1><span class="gras">PANETTONI</span><span class="script">d'autore</span></h1>
     <div class="sous">Artisanaux et piémontais · <b>Cubolì à l'abricot</b> · nouveau : sans lactose</div>
   </div>
   <div class="photos"><img src="../produits/cuboli.png" alt=""><img src="../produits/persi-pien.png" alt=""></div>
-  <div class="etoile" style="left:610px;top:22px">✦</div>
-  <div class="etoile" style="left:720px;top:330px;color:#d94448;font-size:30px">✦</div>
 </div></body></html>

@@ -214,8 +214,8 @@ m4 = page("PANETTONI · 4 dernier mail Franck",
           + p("C'est mon dernier mail au sujet des panettoni de Vilma e Elio : aujourd'hui est le dernier "
               "jour conseillé pour une livraison avant les fêtes.")
           + p("Si l'idée vous plaît pour plus tard, répondez-moi simplement « plus tard » et je reviendrai "
-              "vers vous le moment venu. Faute de réponse, je vous appellerai peut-être une minute ; "
-              "répondez « non merci » et je ne le ferai pas.")
+              "vers vous le moment venu. Si ce n'est pas pour vous, répondez « non merci » : je ne vous "
+              "écrirai plus.")
           + p("Belle fin d'année,<br>Franck") + signature_et_pied_court() + "</td></tr>")
 
 OUT.mkdir(exist_ok=True)

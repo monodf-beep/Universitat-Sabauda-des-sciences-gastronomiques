@@ -12,7 +12,7 @@ Méthode reprise de la campagne *Diccionèro de fata* de l'Institut de la Langue
 
 | Pièce | Fichier | État |
 |---|---|---|
-| Textes des 4 mails, pieds, script d'appel, réponse « mise en relation » | `mails.md` | rédigés ; cases à lever |
+| Textes des 4 mails, pieds, réponse « mise en relation » | `mails.md` | rédigés ; cases à lever |
 | Modèles HTML des mails (couleurs du catalogue Vilma) | `modeles/*.html`, fabriqués par `outils/fabrique_modeles.py` | dans Brevo #58 à #61, **inactifs** |
 | Montage dans Brevo (compte Cultura Sabauda) | `sequence-brevo.md` | attributs, dossier #15, liste #16 et modèles créés ; scénario à monter à la main |
 | Fiche revendeur, 1 page A4 | `fiche-revendeur/fiche-revendeur.pdf` (source : `fiche-revendeur/source/`) | gamme remplie d'après le catalogue 2025 ; prix et conditions à fournir par Corinne |

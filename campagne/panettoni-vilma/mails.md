@@ -59,7 +59,7 @@
 
 **Règles** (reprises de la campagne du dictionnaire) :
 - chaque mail dit **d'où vient l'adresse** et permet de **refuser** (« non merci » + lien de désinscription) ;
-- **quatre mails au plus** par commerce, puis éventuellement un appel ; **un « non » est définitif** ;
+- **quatre mails au plus** par commerce, pas d'appel ; **un « non » est définitif** ;
 - **on arrête dès qu'un commerce répond**, même pour dire « plus tard » : la réponse se reporte le jour même
   dans Brevo (`STATUT_CAMPAGNE`), sinon la relance part quand même ;
 - on ne promet rien au nom de Vilma (prix, délais, échantillons) sans l'accord de Corinne.
@@ -100,7 +100,7 @@ Se désinscrire : {{ unsubscribe }}
 | ven. 6 nov. | 1, présentation (formel) | Universitât Sabauda | 7 jours |
 | ven. 13 nov. | 2, relance courte | Franck Monod | 6 jours |
 | jeu. 19 nov. | 3, date limite (formel) | Universitât Sabauda | 7 jours |
-| jeu. 26 nov. | 4, dernier mail court | Franck Monod | puis appel si rien |
+| jeu. 26 nov. | 4, dernier mail court | Franck Monod | fin de la séquence |
 
 Les dates sont écrites dans les mails 2, 3 et 4 : si le lancement glisse, les corriger avant d'activer.
 
@@ -209,8 +209,8 @@ C'est mon dernier mail au sujet des panettoni de Vilma e Elio : aujourd'hui est 
 conseillé pour une livraison avant les fêtes.
 
 Si l'idée vous plaît pour plus tard (Pâques avec la colomba, ou Noël prochain), répondez-moi
-simplement « plus tard » et je reviendrai vers vous le moment venu. Faute de réponse, je vous
-appellerai peut-être une minute ; répondez « non merci » et je ne le ferai pas.
+simplement « plus tard » et je reviendrai vers vous le moment venu. Si ce n'est pas pour vous,
+répondez « non merci » : je ne vous écrirai plus.
 
 Belle fin d'année,
 Franck
@@ -219,19 +219,10 @@ Franck
 
 ---
 
-## Après le mail 4 : appel (commerces sans réponse)
+## Commerces sans e-mail
 
-Dit à la personne qui décide, pas au standard :
-
-> Bonjour, je suis Franck Monod, de l'Universitât Sabauda des sciences gastronomiques, une association
-> de Savoie. Je vous ai écrit au sujet des panettoni artisanaux d'une maison piémontaise, Vilma e Elio.
-> Je voulais simplement savoir si mon message vous était bien parvenu. Est-ce que ce serait intéressant
-> pour vous, pour cette année ou pour l'an prochain ?
-
-- **Oui** → « Je vous envoie la fiche et les tarifs, et je vous mets en relation avec Corinne, chez
-  Vilma e Elio. À quelle adresse ? » (`STATUT_CAMPAGNE = interesse`).
-- **Plus tard** → noter la période (`plus_tard`).
-- **Non** → « Très bien, je ne vous recontacterai pas. Bonne journée. » (`exclu`, définitif).
+Pas d'appel. Pour les commerces qui ne publient pas d'e-mail, on continue de chercher une adresse
+(site, page de contact, annuaire professionnel public) ; ceux qu'on trouve entrent dans la séquence.
 
 ## Réponse type à un commerce intéressé (mise en relation)
 

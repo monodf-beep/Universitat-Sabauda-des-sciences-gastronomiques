@@ -5,7 +5,7 @@ Entrées : `listes/source/cibles-*.csv` (tableau de prospection, priorités A, B
 Sorties :
 - `listes/a-importer-brevo.csv` : adresses publiées, avec leur source, prêtes pour la liste Brevo #16 ;
 - `listes/a-verifier.csv` : adresses vues mais douteuses (nominatives, source faible) : à la main ;
-- `listes/suivi.csv` : une ligne par enseigne, pour suivre mails, appels et mise en relation.
+- `listes/suivi.csv` : une ligne par enseigne, pour suivre mails et mise en relation.
 """
 import csv
 import re

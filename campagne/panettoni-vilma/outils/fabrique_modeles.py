@@ -32,7 +32,7 @@ S = "Arial,Helvetica,sans-serif"
 P = f"margin:0 0 18px 0;font-family:{S};font-size:16px;line-height:1.65;color:{TEXTE};"
 MAILTO = ("mailto:franck.monod@culturasabauda.eu"
           "?subject=Panettoni%20Vilma%20-%20tarifs%20revendeurs")
-A_COMPLETER = "background:#fff3a3;padding:0 3px;"
+A_COMPLETER = "background:#fff3a3;color:#1f1b18;padding:0 3px;"
 
 DATE_LIMITE = f'<span style="{A_COMPLETER}">[DATE LIMITE]</span>'
 SIEGE = "Maison des associations, 67 rue Saint-François-de-Sales, 73000 Chambéry"

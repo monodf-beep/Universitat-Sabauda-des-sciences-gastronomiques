@@ -122,6 +122,18 @@ footer { color: var(--muted); font-size: .88rem; border-top: 1px solid var(--lin
   .mails { grid-template-columns: minmax(0, 1fr); }
   ul.besoins li { grid-template-columns: minmax(0, 1fr); gap: .2rem; }
 }
+
+@media print {
+  figure .cadre { max-height: none; overflow: visible; }
+  figure, section > h2, .chiffre, ol.etapes li, ul.besoins li, tr { break-inside: avoid; }
+  .wrap { padding-block: 0; }
+  .eyebrow, h2 { break-after: avoid; }
+  section.saut { break-before: page; }
+  .mails { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .8rem; }
+  footer { break-before: avoid; break-inside: avoid; }
+  .wrap { gap: 2.4rem; }
+  section:has(.table), .table, table, .zones { break-inside: avoid; }
+}
 </style>
 
 <div class="wrap">
@@ -148,10 +160,10 @@ footer { color: var(--muted); font-size: .88rem; border-top: 1px solid var(--lin
     <div class="chiffre"><b>165</b><span>negozi seguiti in tutto; quelli senza e-mail saranno chiamati</span></div>
     <div class="chiffre"><b>81</b><span>di questi 95 negozi non hanno panettoni in vendita, per quanto abbiamo visto</span></div>
   </div>
-  <figure><div class="cadre"><img src="{{IMG:lien.jpg}}" alt="Savoia e Piemonte, unite dal traforo del Fréjus (1857-1871): una stessa storia"></div><figcaption>Il visuale della prima e-mail: Savoia e Piemonte, unite dal traforo del Fréjus. A Modane si racconta che gli operai del traforo amassero un pane dolce con l'uvetta, antenato del pane di Modane, cugino del panettone.</figcaption></figure>
+  <figure><div class="cadre"><img src="{{IMG:lien-it.jpg}}" alt="Savoia e Piemonte, unite dal traforo del Fréjus (1857-1871): una stessa storia"></div><figcaption>Il visuale della prima e-mail: Savoia e Piemonte, unite dal traforo del Fréjus. A Modane si racconta che gli operai del traforo amassero un pane dolce con l'uvetta, antenato del pane di Modane, cugino del panettone.</figcaption></figure>
 </section>
 
-<section>
+<section class="saut">
   <div class="eyebrow">Lo scenario</div>
   <h2>Che cosa succede per ogni negozio</h2>
   <div class="legende"><span><i class="pastille asso"></i>Universitât Sabauda, e-mail formali</span><span><i class="pastille franck"></i>Franck Monod, brevi promemoria</span></div>
@@ -165,7 +177,7 @@ footer { color: var(--muted); font-size: .88rem; border-top: 1px solid var(--lin
   <p class="note">Il percorso si ferma appena un negozio risponde. Un rifiuto è definitivo: nessun'altra e-mail né telefonata. Ogni e-mail dice da dove viene l'indirizzo, spiega il ruolo dell'associazione e permette di cancellarsi.</p>
 </section>
 
-<section>
+<section class="saut">
   <div class="eyebrow">Le e-mail</div>
   <h2>E-mail brevi e illustrate, una frase adattata al negozio</h2>
   <p>Le e-mail sono in francese, la lingua dei negozi. Riprendono i colori del catalogo di Vilma &amp; Elio. Una frase cambia secondo il negozio: un'enoteca legge che il panettone è un regalo diverso accanto ai suoi vini, una formaggeria accanto ai suoi formaggi. A chi vende già panettoni, l'e-mail propone di completare l'assortimento con ricette che si trovano poco. Qui sotto, la versione inviata a un'enoteca. Il riquadro giallo, la data limite, è da fissare con voi.</p>
@@ -203,7 +215,7 @@ footer { color: var(--muted); font-size: .88rem; border-top: 1px solid var(--lin
   </div>
 </section>
 
-<section>
+<section class="saut">
   <div class="eyebrow">Quando un negozio risponde</div>
   <div class="deux">
     <div style="display:grid;gap:1.1rem;min-width:0">

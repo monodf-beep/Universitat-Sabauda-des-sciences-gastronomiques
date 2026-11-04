@@ -122,6 +122,18 @@ footer { color: var(--muted); font-size: .88rem; border-top: 1px solid var(--lin
   .mails { grid-template-columns: minmax(0, 1fr); }
   ul.besoins li { grid-template-columns: minmax(0, 1fr); gap: .2rem; }
 }
+
+@media print {
+  figure .cadre { max-height: none; overflow: visible; }
+  figure, section > h2, .chiffre, ol.etapes li, ul.besoins li, tr { break-inside: avoid; }
+  .wrap { padding-block: 0; }
+  .eyebrow, h2 { break-after: avoid; }
+  section.saut { break-before: page; }
+  .mails { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .8rem; }
+  footer { break-before: avoid; break-inside: avoid; }
+  .wrap { gap: 2.4rem; }
+  section:has(.table), .table, table, .zones { break-inside: avoid; }
+}
 </style>
 
 <div class="wrap">
@@ -151,7 +163,7 @@ footer { color: var(--muted); font-size: .88rem; border-top: 1px solid var(--lin
   <figure><div class="cadre"><img src="{{IMG:lien.jpg}}" alt="Savoie et Piémont, reliés par le tunnel du Fréjus (1857-1871) : une même histoire"></div><figcaption>Le visuel du premier e-mail : la Savoie et le Piémont, reliés par le tunnel du Fréjus. À Modane, on raconte que les ouvriers du tunnel aimaient un pain sucré aux raisins, l'ancêtre du pain de Modane, cousin du panettone.</figcaption></figure>
 </section>
 
-<section>
+<section class="saut">
   <div class="eyebrow">Le scénario</div>
   <h2>Ce qui se passe pour chaque commerce</h2>
   <div class="legende"><span><i class="pastille asso"></i>Universitât Sabauda, e-mails formels</span><span><i class="pastille franck"></i>Franck Monod, relances courtes</span></div>
@@ -165,7 +177,7 @@ footer { color: var(--muted); font-size: .88rem; border-top: 1px solid var(--lin
   <p class="note">Le parcours s'arrête dès qu'un commerce répond. Un refus est définitif : plus aucun e-mail ni appel. Chaque e-mail dit d'où vient l'adresse, explique le rôle de l'association et permet de se désinscrire.</p>
 </section>
 
-<section>
+<section class="saut">
   <div class="eyebrow">Les e-mails</div>
   <h2>Des e-mails courts et imagés, une phrase adaptée au commerce</h2>
   <p>Les quatre e-mails reprennent les couleurs du catalogue de Vilma &amp; Elio. Une phrase change selon le commerce : un caviste lit que le panettone est un cadeau qui change, à côté de ses vins ; une fromagerie, à côté de ses fromages. À ceux qui vendent déjà des panettoni, l'e-mail propose de compléter leur rayon avec des recettes que l'on trouve peu. Ci-dessous, la version envoyée à un caviste. La case jaune, la date limite, reste à fixer avec vous.</p>
@@ -203,7 +215,7 @@ footer { color: var(--muted); font-size: .88rem; border-top: 1px solid var(--lin
   </div>
 </section>
 
-<section>
+<section class="saut">
   <div class="eyebrow">Quand un commerce répond</div>
   <div class="deux">
     <div style="display:grid;gap:1.1rem;min-width:0">

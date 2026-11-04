@@ -38,6 +38,7 @@
     amato » : gelée d'abricot déshydratée).
   - Linea Monte Granero : *Monte Granero* (leur pandoro artisanal) ; *Monte Granero al cacao*.
   - Christmas Mistery Box M, L, XL : 50, 75, 100 € (prix public).
+- **Échantillons** : Corinne propose d'envoyer quelques échantillons aux commerces intéressés (04/11/2026).
 - **Réunion du 28/10/2026 chez Vilma e Elio** : l'abricot est sans raisins secs ni fruits confits ; nouveauté 2026,
   une version sans lactose.
 - **Projet** (message de Franck du 04/11/2026) : Franck a fondé l'Universitât Sabauda ; l'association participe au
@@ -135,8 +136,8 @@ des parfums que l'on trouve peu, artisanaux et piémontais.
 produits bio / de votre épicerie (selon TYPE_COMMERCE).
 
 Encadré « Comment ça marche » : Si les panettoni vous intéressent, répondez simplement à ce mail : nous vous
-envoyons les tarifs revendeurs et nous vous mettons en relation directe avec Vilma e Elio, qui prend la
-commande et livre. Pour être livré avant les fêtes, mieux vaut nous écrire avant le [DATE LIMITE].
+envoyons les tarifs revendeurs, Vilma e Elio peut vous faire goûter quelques échantillons, et nous vous
+mettons en relation directe avec eux pour la commande et la livraison. Pour être livré avant les fêtes, mieux vaut nous écrire avant le [DATE LIMITE].
 Bouton : Recevoir les tarifs revendeurs → mailto:franck.monod@culturasabauda.eu
 
 Nous vous prions d'agréer, Madame, Monsieur, nos salutations distinguées.
@@ -158,8 +159,8 @@ que nous vous avons présentés le 10 novembre.
 
 Je sais que le temps manque en cette saison, et qu'un e-mail se perd vite : d'où ce petit rappel.
 
-Si cela vous intéresse, un mot en réponse me suffit : je vous envoie la fiche et les tarifs, et je vous
-mets en relation avec Corinne, chez Vilma e Elio. Si ce n'est pas pour vous, dites-le-moi aussi :
+Si cela vous intéresse, un mot en réponse me suffit : je vous envoie les tarifs revendeurs, Corinne, chez
+Vilma e Elio, peut vous faire goûter quelques échantillons, et je vous mets en relation avec elle. Si ce n'est pas pour vous, dites-le-moi aussi :
 j'arrête les relances.
 
 Bonne journée,
@@ -182,8 +183,9 @@ Pour rappel : panettoni artisanaux de Vilma e Elio, à Pinerolo (Piémont), trai
 travail sur la gastronomie sabaude : onze recettes, dont le Cubolì à l'abricot, sans raisins ni fruits
 confits, et une version sans lactose.
 
-Répondez à ce mail : nous vous envoyons la fiche et les tarifs, et nous vous mettons en relation avec
-Vilma e Elio.
+Leur catalogue : Panettoni d'autore (PDF, en italien) [lien]. Répondez simplement à ce mail : nous vous
+envoyons les tarifs revendeurs, Vilma e Elio peut vous faire goûter quelques échantillons, et nous vous
+mettons en relation avec eux.
 
 Nous vous prions d'agréer, Madame, Monsieur, nos salutations distinguées.
 

@@ -90,8 +90,8 @@ def encadre():
             f'<td style="padding:16px 20px;font-family:{S};font-size:15px;line-height:1.6;color:{TEXTE};">'
             f'<div style="font-family:{F};font-size:17px;color:{BORDEAUX};margin:0 0 8px 0;">Comment ça marche</div>'
             f"Si les panettoni vous intéressent, répondez simplement à ce mail : nous vous envoyons les tarifs "
-            f"revendeurs et nous vous mettons en relation directe avec Vilma e Elio, qui prend la commande "
-            f"et livre. Pour être livré avant les fêtes, mieux vaut nous écrire avant le {DATE_LIMITE}."
+            f"revendeurs, Vilma e Elio peut vous faire goûter quelques échantillons, et nous vous mettons en "
+            f"relation directe avec eux pour la commande et la livraison. Pour être livré avant les fêtes, mieux vaut nous écrire avant le {DATE_LIMITE}."
             f'<div style="margin:16px 0 2px 0;"><a href="{MAILTO}" style="display:inline-block;'
             f'background-color:{BORDEAUX};color:#ffffff;font-family:{S};font-size:15px;font-weight:bold;'
             f'text-decoration:none;padding:11px 20px;border-radius:3px;">Recevoir les tarifs revendeurs</a>'
@@ -168,7 +168,8 @@ m2 = page("PANETTONI · 2 relance Franck",
               "Pinerolo, que nous vous avons présentés le 10 novembre, avec leur catalogue.")
           + p("Je sais que le temps manque en cette saison, et qu'un e-mail se perd vite : d'où ce petit rappel.")
           + p("Si cela vous intéresse, <strong>un mot en réponse me suffit</strong> : je vous envoie les tarifs "
-              "revendeurs, et je vous mets en relation avec Corinne, chez Vilma e Elio. Si ce n'est pas pour "
+              "revendeurs, Corinne, chez Vilma e Elio, peut vous faire goûter quelques échantillons, et je vous "
+              "mets en relation avec elle. Si ce n'est pas pour "
               "vous, dites-le-moi aussi : j'arrête les relances.")
           + p("Bonne journée,<br>Franck") + signature_et_pied_court() + "</td></tr>")
 
@@ -183,7 +184,8 @@ m3 = page("PANETTONI · 3 date limite", entete()
               "ni fruits confits, et une version sans lactose.")
           + p(f'Leur catalogue : <a href="{CATALOGUE}" style="color:{BORDEAUX};font-weight:bold;">Panettoni '
               "d'autore (PDF, en italien)</a>. Répondez simplement à ce mail : nous vous envoyons les tarifs "
-              "revendeurs et nous vous mettons en relation avec Vilma e Elio.")
+              "revendeurs, Vilma e Elio peut vous faire goûter quelques échantillons, et nous vous mettons en "
+              "relation avec eux.")
           + f'<p style="margin:22px 0 22px 0;"><a href="{MAILTO}" style="display:inline-block;'
             f'background-color:{BORDEAUX};color:#ffffff;font-family:{S};font-size:15px;font-weight:bold;'
             f'text-decoration:none;padding:11px 20px;border-radius:3px;">Recevoir les tarifs revendeurs</a></p>'

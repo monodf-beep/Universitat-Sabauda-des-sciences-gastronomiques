@@ -134,7 +134,7 @@ Entre le panettone et la Savoie, il y a une vieille histoire. À Modane, on raco
 du Fréjus, percé de 1857 à 1871, aimaient un pain sucré aux raisins, l'ancêtre du pain de Modane, cousin du
 panettone. Au début des travaux, la Savoie faisait encore partie du royaume de Piémont-Sardaigne.
 
-Vous trouverez leur catalogue en pièce jointe (en italien). Deux mots seulement : leur panettone le plus
+Leur catalogue est ici : voir le catalogue Panettoni d'autore (PDF, en italien) [lien]. Deux mots seulement : leur panettone le plus
 aimé, le Cubolì, est à l'abricot, sans raisins secs ni fruits confits ; et, nouveauté 2026, ils en font une
 version sans lactose.
 
@@ -151,8 +151,8 @@ Bouton : Recevoir les tarifs revendeurs → mailto:franck.monod@culturasabauda.e
 Nous vous prions d'agréer, Madame, Monsieur, nos salutations distinguées.
 Universitât Sabauda des sciences gastronomiques
 ```
-*+ pied de mail. **Pièce jointe : le catalogue** `catalogue/Vilma-Elio-Panettoni-d-autore.pdf` (2,5 Mo, version allégée du
-PDF « Panettoni d'autore 2025 »). La fiche revendeur (`fiche-revendeur/`) part sur réponse, avec les tarifs.*
+*+ pied de mail. **Catalogue en lien**, pas en pièce jointe (voir `LISEZMOI.md`) : `catalogue/Vilma-Elio-Panettoni-d-autore.pdf`.
+La fiche revendeur (`fiche-revendeur/`) part sur réponse, avec les tarifs.*
 
 ## Mail 2 — relance courte de Franck (lun. 16 nov.) · modèle Brevo #59
 

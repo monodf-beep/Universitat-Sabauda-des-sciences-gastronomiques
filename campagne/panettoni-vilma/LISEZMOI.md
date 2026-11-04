@@ -17,7 +17,8 @@ Méthode reprise de la campagne *Diccionèro de fata* de l'Institut de la Langue
 | Montage dans Brevo (compte Cultura Sabauda) | `sequence-brevo.md` | attributs, dossier #15, liste #16 et modèles créés ; scénario à monter à la main |
 | Fiche revendeur, 1 page A4 | `fiche-revendeur/fiche-revendeur.pdf` (source : `fiche-revendeur/source/`) | gamme remplie d'après le catalogue 2025 ; prix et conditions à fournir par Corinne |
 | Visuels | `visuels/bandeau-mail.jpg`, `visuels/produits/*.jpg` (11 recettes) | découpés dans le catalogue « Panettoni d'autore 2025 » ; droits à confirmer avec Corinne |
-| Liste des commerces | `listes/` | adresses e-mail en cours de recherche |
+| Catalogue Vilma & Elio (lien dans les mails 1 et 3) | `catalogue/Vilma-Elio-Panettoni-d-autore.pdf` | version allégée (2,5 Mo) du PDF « Panettoni d'autore 2025 » |
+| Listes (à importer, à vérifier, suivi) | `listes/` — **hors du dépôt** (`.gitignore`) | 95 adresses à importer, 14 à vérifier, 165 enseignes au suivi ; fabriquées par `outils/listes.py`. Le dépôt est public et ces fichiers contiennent des adresses nominatives : ils ne se publient pas. |
 
 ## Ce qui bloque l'envoi (cases jaunes)
 
@@ -29,10 +30,19 @@ Méthode reprise de la campagne *Diccionèro de fata* de l'Institut de la Langue
 5. Prix revendeur 2026, minimum, livraison, DLUO, allergènes : à demander à Corinne pour la fiche.
 6. Domaine culturasabauda.eu à authentifier dans Brevo (DKIM, DMARC), sinon risque d'indésirables.
 
+## Pièce jointe ou lien ?
+
+Le catalogue n'est **pas en pièce jointe** mais en **lien** dans les mails 1 et 3 : Brevo a refusé l'adresse du PDF
+comme pièce jointe (04/11/2026), et un premier mail sans pièce jointe arrive plus souvent en boîte de réception.
+Le lien pointe vers la copie du PDF sur cette branche GitHub (dépôt public) : ne pas supprimer la branche
+pendant la campagne, ou déplacer le PDF (site de l'association, Drive partagé) et changer `CATALOGUE` dans
+`outils/fabrique_modeles.py`.
+
 ## Refaire les fichiers
 
 ```
 python3 outils/fabrique_modeles.py          # modèles HTML des mails
+python3 outils/listes.py                    # listes (hors dépôt)
 node <script pdf> fiche-revendeur/source/fiche-revendeur.html fiche-revendeur/fiche-revendeur.pdf
 ```
 La fiche se refait avec Playwright (« imprimer en PDF », fonds compris) ; ses polices (Fraunces, Great Vibes,

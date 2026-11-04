@@ -20,6 +20,8 @@ IMG = {
     "monte-granero": "https://raw.githubusercontent.com/monodf-beep/Universitat-Sabauda-des-sciences-gastronomiques/claude/jolly-dirac-zip2dz/campagne/panettoni-vilma/visuels/produits/monte-granero.jpg",
 }
 import json, os
+CATALOGUE = ("https://raw.githubusercontent.com/monodf-beep/Universitat-Sabauda-des-sciences-gastronomiques/"
+             "claude/jolly-dirac-zip2dz/campagne/panettoni-vilma/catalogue/Vilma-Elio-Panettoni-d-autore.pdf")
 _galerie = os.path.join(os.path.dirname(__file__), "images-brevo.json")
 if os.path.exists(_galerie):
     IMG.update(json.load(open(_galerie, encoding="utf-8")))
@@ -153,7 +155,8 @@ m1 = page("PANETTONI · 1 présentation", entete() + bandeau()
               "du tunnel du Fréjus, percé de 1857 à 1871, aimaient un pain sucré aux raisins, l'ancêtre du pain de "
               "Modane, cousin du panettone. Au début des travaux, la Savoie faisait encore partie du royaume de "
               "Piémont-Sardaigne.")
-          + p("Vous trouverez leur catalogue <strong>en pièce jointe</strong> (en italien). Deux mots seulement : "
+          + p(f'Leur catalogue est ici : <a href="{CATALOGUE}" style="color:{BORDEAUX};font-weight:bold;">'
+              "voir le catalogue Panettoni d'autore (PDF, en italien)</a>. Deux mots seulement : "
               "leur panettone le plus aimé, le <strong>Cubolì</strong>, est à l'abricot, sans raisins secs ni "
               "fruits confits ; et, nouveauté 2026, ils en font une version <strong>sans lactose</strong>.")
           + p(rayon) + "</td></tr>" + encadre()
@@ -161,13 +164,13 @@ m1 = page("PANETTONI · 1 présentation", entete() + bandeau()
           + p("Nous vous prions d'agréer, Madame, Monsieur, nos salutations distinguées.")
           + f'<p style="margin:0;font-family:{F};font-size:16px;color:{BORDEAUX};">Universitât Sabauda des '
             f"sciences gastronomiques</p></td></tr>" + pied_formel(),
-          pre="Une maison artisanale de Pinerolo, partenaire de notre projet entre Savoie et Piémont · catalogue joint")
+          pre="Une maison artisanale de Pinerolo, partenaire de notre projet entre Savoie et Piémont")
 
 m2 = page("PANETTONI · 2 relance Franck",
           f'<tr><td class="pad" style="padding:28px 36px 30px 36px;">'
           + p("Bonjour,")
           + p("Je me permets de revenir vers vous au sujet des panettoni artisanaux de Vilma e Elio, à "
-              "Pinerolo, que nous vous avons présentés le 10 novembre, catalogue joint.")
+              "Pinerolo, que nous vous avons présentés le 10 novembre, avec leur catalogue.")
           + p("Je sais que le temps manque en cette saison, et qu'un e-mail se perd vite : d'où ce petit rappel.")
           + p("Si cela vous intéresse, <strong>un mot en réponse me suffit</strong> : je vous envoie les tarifs "
               "revendeurs, et je vous mets en relation avec Corinne, chez Vilma e Elio. Si ce n'est pas pour "
@@ -183,7 +186,8 @@ m3 = page("PANETTONI · 3 date limite", entete()
           + p("Pour rappel : panettoni artisanaux de Vilma e Elio, à Pinerolo (Piémont), traiteur partenaire "
               "de notre travail sur la gastronomie sabaude : onze recettes, dont le Cubolì à l'abricot, sans raisins "
               "ni fruits confits, et une version sans lactose.")
-          + p("Le catalogue est de nouveau joint à ce mail. Répondez simplement : nous vous envoyons les tarifs "
+          + p(f'Leur catalogue : <a href="{CATALOGUE}" style="color:{BORDEAUX};font-weight:bold;">Panettoni '
+              "d'autore (PDF, en italien)</a>. Répondez simplement à ce mail : nous vous envoyons les tarifs "
               "revendeurs et nous vous mettons en relation avec Vilma e Elio.")
           + f'<p style="margin:22px 0 22px 0;"><a href="{MAILTO}" style="display:inline-block;'
             f'background-color:{BORDEAUX};color:#ffffff;font-family:{S};font-size:15px;font-weight:bold;'

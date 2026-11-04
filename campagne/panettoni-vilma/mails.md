@@ -20,7 +20,7 @@
 **À compléter** (un mail qui garde une de ces marques ne part pas) :
 
 - `[DATE LIMITE]` : dernier jour pour se manifester et être livré avant les fêtes, à fixer **avec Corinne**
-  (délai de fabrication et de livraison depuis Pinerolo). Proposé : jeudi 26 novembre 2026.
+  (délai de fabrication et de livraison depuis le Piémont). Proposé : jeudi 26 novembre 2026.
 - Photos : reprises du catalogue de Vilma & Elio (`visuels/`), droits à confirmer avec Corinne.
 - Prix revendeur et conditions : le catalogue 2025 dit seulement « tarifs dégressifs » ; les prix 2026 sont à
   demander à Corinne.
@@ -66,8 +66,8 @@
 ### Pied de mail (mails 1 et 3)
 
 ```
-Universitât Sabauda des sciences gastronomiques — association qui fait connaître la gastronomie
-des deux versants des Alpes, entre Savoie et Piémont.
+Universitât Sabauda des sciences gastronomiques, association qui fait connaître la gastronomie
+sabaude, de la Savoie au Piémont.
 franck.monod@culturasabauda.eu · Siège : Maison des associations, 67 rue Saint-François-de-Sales, 73000 Chambéry
 Origine de votre adresse : {{ contact.ORIGINE_CONTACT }}. Si vous ne souhaitez plus recevoir nos
 messages, répondez simplement « non merci ».
@@ -78,7 +78,7 @@ Se désinscrire : {{ unsubscribe }}
 
 ```
 Franck Monod
-Président — Universitât Sabauda des sciences gastronomiques
+Président, Universitât Sabauda des sciences gastronomiques
 Tél. : 00 33 (0)6 31 19 42 49 · franck.monod@culturasabauda.eu
 
 Universitât Sabauda des sciences gastronomiques · Siège : Maison des associations, 67 rue Saint-François-de-Sales, 73000 Chambéry.
@@ -105,56 +105,54 @@ Les dates sont écrites dans les mails 2, 3 et 4 : si le lancement glisse, les c
 
 **Expéditeur** : Universitât Sabauda <franck.monod@culturasabauda.eu> · **Réponse à** : franck.monod@culturasabauda.eu
 **Objet** : Des panettoni artisanaux du Piémont pour votre commerce, avant Noël
-**Pré-en-tête** : Une maison artisanale de Pinerolo, partenaire de notre projet entre Savoie et Piémont · catalogue joint
+**Pré-en-tête** : Les panettoni de Vilma e Elio : de la Savoie au Piémont, une même histoire
 **Modèle Brevo** : #58 · HTML : `modeles/1-presentation.html`
 
 ```
-Bandeau (image, couleurs du catalogue de Vilma) : PANETTONI d'autore · Vilma & Elio · Pinerolo
+[Bandeau image] PANETTONI d'autore · Vilma & Elio · Piémont
 
 Madame, Monsieur,
 
-Franck Monod a fondé l'Universitât Sabauda des sciences gastronomiques, une association qui fait connaître
-la gastronomie des deux versants des Alpes, entre Savoie et Piémont.
+L'Universitât Sabauda des sciences gastronomiques fait connaître la gastronomie sabaude, de la Savoie au
+Piémont. Pour le projet européen SavoiaExperience (Interreg ALCOTRA), nous menons la recherche gastronomique
+et préparons le repas de clôture avec des traiteurs partenaires de Savoie et du Piémont. Parmi eux, Vilma e
+Elio, maison artisanale piémontaise, dont nous aimerions vous faire goûter les panettoni.
 
-Nous participons au projet européen SavoiaExperience (Interreg ALCOTRA), consacré à la
-valorisation culturelle et touristique de l'espace sabaudo, entre Piémont et Savoie. Nous y sommes chargés de
-la recherche gastronomique et du repas de clôture du projet, préparé avec des traiteurs partenaires des deux
-côtés des Alpes, dont Vilma e Elio, maison artisanale de Pinerolo. C'est par eux que nous avons découvert leurs
-panettoni, et nous aimerions vous les faire connaître.
+[Visuel] drapeau de Savoie · tunnel du Fréjus, 1857-1871 · drapeau du Piémont · « une même histoire »
+À Modane, on raconte que les ouvriers du tunnel du Fréjus aimaient un pain sucré aux raisins : l'ancêtre
+du pain de Modane, cousin du panettone.
 
-Entre le panettone et la Savoie, il y a une vieille histoire. À Modane, on raconte que les ouvriers du tunnel
-du Fréjus, percé de 1857 à 1871, aimaient un pain sucré aux raisins, l'ancêtre du pain de Modane, cousin du
-panettone. Au début des travaux, la Savoie faisait encore partie du royaume de Piémont-Sardaigne.
-
-Leur catalogue est ici : voir le catalogue Panettoni d'autore (PDF, en italien) [lien]. Deux mots seulement : leur panettone le plus
-aimé, le Cubolì, est à l'abricot, sans raisins secs ni fruits confits ; et, nouveauté 2026, ils en font une
-version sans lactose.
+[Trois vignettes] Le Cubolì, à l'abricot, sans fruits confits · Sans lactose, la nouveauté 2026 ·
+Échantillons, pour goûter avant de commander
 
 [si PANETTONE_EN_RAYON = oui] Vous proposez déjà des panettoni : ceux-ci peuvent compléter votre rayon avec
 des parfums que l'on trouve peu, artisanaux et piémontais.
 [sinon] Pour les fêtes, c'est un cadeau gourmand qui change, à côté de vos vins / de vos fromages / de vos
 produits bio / de votre épicerie (selon TYPE_COMMERCE).
 
-Encadré « Comment ça marche » : Si les panettoni vous intéressent, répondez simplement à ce mail : nous vous
-envoyons les tarifs revendeurs, Vilma e Elio peut vous faire goûter quelques échantillons, et nous vous
-mettons en relation directe avec eux pour la commande et la livraison. Pour être livré avant les fêtes, mieux vaut nous écrire avant le [DATE LIMITE].
-Bouton : Recevoir les tarifs revendeurs → mailto:franck.monod@culturasabauda.eu
+[Encadré] Intéressé ? Répondez à ce mail : nous vous envoyons les tarifs revendeurs et des échantillons, et
+nous vous mettons en relation avec Vilma e Elio, qui prend la commande et livre. Pour Noël, écrivez-nous
+avant le [DATE LIMITE].
+Boutons : Recevoir les tarifs (réponse par mail) · Voir le catalogue (PDF)
 
 Nous vous prions d'agréer, Madame, Monsieur, nos salutations distinguées.
 Universitât Sabauda des sciences gastronomiques
 ```
-*+ pied de mail. **Catalogue en lien**, pas en pièce jointe (voir `LISEZMOI.md`) : `catalogue/Vilma-Elio-Panettoni-d-autore.pdf`.
-La fiche revendeur (`fiche-revendeur/`) part sur réponse, avec les tarifs.*
+*+ pied de mail. Catalogue en lien, pas en pièce jointe (voir `LISEZMOI.md`).*
+
+**Doctrine** (coffre Obsidian, `01-Commun/Lexique sabaud.md` et `Vocabulaire interdit.md`) : « gastronomie sabaude »,
+« de la Savoie au Piémont », jamais « versant », « de part et d'autre », « deux côtés » ; gentilés (piémontais), pas de
+nationalité ; aucun tiret cadratin dans le texte visible.
 
 ## Mail 2 — relance courte de Franck (lun. 16 nov.) · modèle Brevo #59
 
 **Expéditeur** : Franck Monod <franck.monod@culturasabauda.eu>
-**Objet** : Les panettoni de Pinerolo, en deux mots
+**Objet** : Les panettoni de Vilma e Elio, en deux mots
 
 ```
 Bonjour,
 
-Je me permets de revenir vers vous au sujet des panettoni artisanaux de Vilma e Elio, à Pinerolo,
+Je me permets de revenir vers vous au sujet des panettoni artisanaux de Vilma e Elio, maison artisanale piémontaise,
 que nous vous avons présentés le 10 novembre.
 
 Je sais que le temps manque en cette saison, et qu'un e-mail se perd vite : d'où ce petit rappel.
@@ -179,7 +177,7 @@ Madame, Monsieur,
 Pour avoir les panettoni de Vilma e Elio en boutique avant les fêtes, il faut nous écrire au plus tard
 le [DATE LIMITE] : passé cette date, la livraison avant Noël n'est plus garantie.
 
-Pour rappel : panettoni artisanaux de Vilma e Elio, à Pinerolo (Piémont), traiteur partenaire de notre
+Pour rappel : panettoni artisanaux de Vilma e Elio, maison piémontaise et traiteur partenaire de notre
 travail sur la gastronomie sabaude : onze recettes, dont le Cubolì à l'abricot, sans raisins ni fruits
 confits, et une version sans lactose.
 
@@ -220,7 +218,7 @@ Franck
 Dit à la personne qui décide, pas au standard :
 
 > Bonjour, je suis Franck Monod, de l'Universitât Sabauda des sciences gastronomiques, une association
-> de Savoie. Je vous ai écrit au sujet des panettoni artisanaux d'une maison de Pinerolo, Vilma e Elio.
+> de Savoie. Je vous ai écrit au sujet des panettoni artisanaux d'une maison piémontaise, Vilma e Elio.
 > Je voulais simplement savoir si mon message vous était bien parvenu. Est-ce que ce serait intéressant
 > pour vous, pour cette année ou pour l'an prochain ?
 

@@ -77,7 +77,7 @@ def bandeau():
     if not VIGNETTES:
         cases = ""
     image = (f'<tr><td style="padding:0;"><img src="{IMG["bandeau"]}" width="600" alt="Panettoni d\'autore, '
-             f'Vilma &amp; Elio, Pinerolo" style="display:block;width:100%;max-width:600px;height:auto;border:0;">'
+             f'Vilma &amp; Elio, Piémont" style="display:block;width:100%;max-width:600px;height:auto;border:0;">'
              f'</td></tr>')
     if not cases:
         return image
@@ -105,8 +105,8 @@ def atouts():
 
 
 def lien_savoie_piemont():
-    return (f'<tr><td style="padding:6px 0 0 0;"><img src="{IMG["lien"]}" width="600" alt="Savoie (Modane) et '
-            f'Piémont (Pinerolo), reliés par le tunnel du Fréjus, 1857-1871 : une même histoire" '
+    return (f'<tr><td style="padding:6px 0 0 0;"><img src="{IMG["lien"]}" width="600" alt="Savoie et '
+            f'Piémont, reliés par le tunnel du Fréjus, 1857-1871 : une même histoire" '
             f'style="display:block;width:100%;max-width:600px;height:auto;border:0;"></td></tr>'
             f'<tr><td style="padding:10px 36px 6px 36px;font-family:{S};font-size:15px;line-height:1.6;'
             f'color:{GRIS};font-style:italic;">À Modane, on raconte que les ouvriers du tunnel du Fréjus aimaient '
@@ -168,20 +168,20 @@ m1 = page("PANETTONI · 1 présentation", entete() + bandeau()
               "sabaude, de la Savoie au Piémont. Pour le projet européen <strong>SavoiaExperience</strong> "
               "(Interreg ALCOTRA), nous menons la recherche gastronomique et préparons le repas de clôture avec "
               "des traiteurs partenaires de Savoie et du Piémont. Parmi eux, <strong>Vilma e Elio</strong>, "
-              "maison artisanale de Pinerolo, dont nous aimerions vous faire goûter les panettoni.")
+              "maison artisanale piémontaise, dont nous aimerions vous faire goûter les panettoni.")
           + "</td></tr>" + lien_savoie_piemont() + atouts()
           + f'<tr><td class="pad" style="padding:8px 36px 4px 36px;">' + p(rayon) + "</td></tr>" + encadre()
           + f'<tr><td class="pad" style="padding:20px 36px 24px 36px;">'
           + p("Nous vous prions d'agréer, Madame, Monsieur, nos salutations distinguées.")
           + f'<p style="margin:0;font-family:{F};font-size:16px;color:{BORDEAUX};">Universitât Sabauda des '
             f"sciences gastronomiques</p></td></tr>" + pied_formel(),
-          pre="Les panettoni de Vilma e Elio, à Pinerolo : de la Savoie au Piémont, une même histoire")
+          pre="Les panettoni de Vilma e Elio : de la Savoie au Piémont, une même histoire")
 
 m2 = page("PANETTONI · 2 relance Franck",
           f'<tr><td class="pad" style="padding:28px 36px 30px 36px;">'
           + p("Bonjour,")
-          + p("Je me permets de revenir vers vous au sujet des panettoni artisanaux de Vilma e Elio, à "
-              "Pinerolo, que nous vous avons présentés le 10 novembre, avec leur catalogue.")
+          + p("Je me permets de revenir vers vous au sujet des panettoni artisanaux de Vilma e Elio, "
+              "maison artisanale piémontaise, que nous vous avons présentés le 10 novembre, avec leur catalogue.")
           + p("Je sais que le temps manque en cette saison, et qu'un e-mail se perd vite : d'où ce petit rappel.")
           + p("Si cela vous intéresse, <strong>un mot en réponse me suffit</strong> : je vous envoie les tarifs "
               "revendeurs, Corinne, chez Vilma e Elio, peut vous faire goûter quelques échantillons, et je vous "
@@ -195,7 +195,7 @@ m3 = page("PANETTONI · 3 date limite", entete()
           + p(f"Pour avoir les panettoni de Vilma e Elio en boutique avant les fêtes, il faut nous écrire "
               f"<strong>au plus tard le {DATE_LIMITE}</strong> : passé cette date, la livraison avant Noël "
               "n'est plus garantie.")
-          + p("Pour rappel : panettoni artisanaux de Vilma e Elio, à Pinerolo (Piémont), traiteur partenaire "
+          + p("Pour rappel : panettoni artisanaux de Vilma e Elio, maison piémontaise et traiteur partenaire "
               "de notre travail sur la gastronomie sabaude : onze recettes, dont le Cubolì à l'abricot, sans raisins "
               "ni fruits confits, et une version sans lactose.")
           + p(f'Leur catalogue : <a href="{CATALOGUE}" style="color:{BORDEAUX};font-weight:bold;">Panettoni '

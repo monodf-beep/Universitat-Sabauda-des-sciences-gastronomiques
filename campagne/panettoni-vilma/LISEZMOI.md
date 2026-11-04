@@ -1,7 +1,7 @@
 # Campagne *Panettoni Vilma* — commerces de Savoie et de Haute-Savoie (novembre 2026)
 
 L'Universitât Sabauda des sciences gastronomiques présente aux commerces de Savoie et de Haute-Savoie
-les panettoni artisanaux de **Vilma & Elio** (Pinerolo, Piémont), dans le cadre de son travail de
+les panettoni artisanaux de **Vilma & Elio** (Piémont), dans le cadre de son travail de
 recherche gastronomique pour le projet SavoiaExperience. Les commerces intéressés répondent à Franck,
 qui les **met en relation** avec Corinne : c'est Vilma & Elio qui vend et livre.
 

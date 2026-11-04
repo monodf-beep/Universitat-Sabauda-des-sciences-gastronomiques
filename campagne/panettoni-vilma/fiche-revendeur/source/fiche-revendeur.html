@@ -1,0 +1,88 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,800&family=Great+Vibes&family=Lato:wght@400;700&display=swap" rel="stylesheet"><title>Fiche revendeur — Panettoni Vilma e Elio</title>
+<style>
+@page { size: A4; margin: 0; }
+:root { --creme:#f7f4f1; --bordeaux:#b3140f; --or:#127a3a; --corail:#d94448; --texte:#1f1b18; --gris:#5f5a55; }
+* { box-sizing: border-box; }
+body { margin:0; font: 9.5pt/1.42 Lato, Arial, Helvetica, sans-serif; color: var(--texte); }
+.page { width:210mm; min-height:296mm; padding:10mm 15mm; position:relative; background:#fff; }
+.marque { font: 9pt Georgia, serif; letter-spacing: 2px; text-transform: uppercase; color: var(--corail); }
+.marque span { color: var(--gris); letter-spacing: 1px; }
+.filet { border-top: .6mm solid var(--or); margin: 2mm 0 3mm; }
+h1 { margin:0; line-height:.95; color: var(--corail); }
+h1 .gras { font: 800 30pt/1 Fraunces, Georgia, serif; letter-spacing:.5pt; }
+h1 .script { display:block; font: 400 30pt/1 "Great Vibes", cursive; margin: -1mm 0 0 22mm; }
+.marque2 { color: var(--or); font-weight:700; letter-spacing:2.5pt; text-transform:uppercase; font-size:8.5pt; margin-bottom:2mm; }
+.sous { color: var(--gris); margin: 2mm 0 0; font-size: 11.5pt; }
+.haut { display:flex; gap:8mm; align-items:center; }
+.photos { flex-shrink:0; display:flex; align-items:flex-end; }
+.photos img { width:33mm; height:auto; mix-blend-mode:multiply; border-radius:50%; }
+.photos img + img { margin-left:-8mm; width:31mm; }
+.surtitre { font: 700 9pt Lato, Arial; letter-spacing: 1.5px; text-transform: uppercase; color: var(--or); margin: 3.2mm 0 1.2mm; border-bottom:.3mm solid #e8e2da; padding-bottom:1mm; }
+.atouts { display:grid; grid-template-columns: 1fr 1fr 1fr; gap: 4mm; }
+.atout { background: var(--creme); padding: 2.5mm 3.5mm; }
+.x b { display:block; font: 400 13pt Georgia, serif; color: var(--bordeaux); margin-bottom: 1mm; }
+table { width:100%; border-collapse: collapse; font-size: 9pt; }
+th, td { text-align:left; padding: .9mm 1.6mm; border-bottom: .3mm solid #ece6de; vertical-align: top; }
+.gamme td:last-child { white-space: nowrap; }
+.gamme td:nth-child(2) b, .gamme td b { color: var(--bordeaux); }
+th { color: var(--gris); font-weight: 600; font-size: 9pt; }
+.ac { background:#fff3a3; padding:0 1mm; }
+.etapes { counter-reset: e; list-style:none; padding:0; margin:0; }
+.etapes li { counter-increment: e; padding-left: 9mm; position: relative; margin-bottom: 1.6mm; }
+.etapes li::before { content: counter(e); position:absolute; left:0; top:-.3mm; width:6mm; height:6mm; border-radius:50%; background: var(--bordeaux); color:#fff; font-size:9pt; text-align:center; line-height:6mm; }
+.contact { border: .4mm solid var(--or); padding: 2.5mm 4mm; margin-top: 3mm; font-size: 9.5pt; }
+footer { margin-top:3mm; font-size:8pt; color:var(--gris); border-top:.3mm solid #e8e2da; padding-top:2.5mm; line-height:1.45; }
+</style></head><body><div class="page">
+<div class="marque">Universitât Sabauda <span>· des sciences gastronomiques</span></div>
+<div class="filet"></div>
+
+<div class="haut">
+  <div>
+    <div class="marque2">Vilma &amp; Elio · Pinerolo</div>
+    <h1><span class="gras">PANETTONI</span><span class="script">d'autore</span></h1>
+    <p class="sous">Maison artisanale de Pinerolo, dans le Piémont,<br>présentée par l'Universitât Sabauda des sciences gastronomiques.</p>
+    <p class="sous" style="color:var(--texte)"><b style="color:var(--bordeaux)">Le Cubolì</b>, leur panettone le plus aimé, à l'abricot, sans raisins ni fruits confits · <b style="color:var(--bordeaux)">Sans lactose</b>, nouveauté 2026 · <b style="color:var(--bordeaux)">Onze recettes</b> artisanales.</p>
+  </div>
+  <div class="photos"><img src="../../visuels/produits/cuboli.jpg" alt="Cubolì"><img src="../../visuels/produits/persi-pien.jpg" alt="Persi Pien"></div>
+</div>
+
+<div class="surtitre">La gamme (catalogue 2025)</div>
+<table class="gamme">
+  <tr><th style="width:17%">Ligne</th><th style="width:24%">Recette</th><th>Description</th><th style="width:19%">Formats</th></tr>
+  <tr><td rowspan="2">Classica</td><td><b>Classico</b></td><td>Recette milanaise au levain, orange et cédrat confits</td><td>500 g · 750 g · 1 kg</td></tr>
+  <tr><td><b>Cioccolato</b></td><td>Pépites de chocolat noir</td><td>500 g · 750 g · 1 kg</td></tr>
+  <tr><td rowspan="2">Gourmet</td><td><b>Cereali e frutti di bosco</b></td><td>Fruits des bois et céréales croquantes</td><td>500 g · 750 g · 1 kg</td></tr>
+  <tr><td><b>Pere e cioccolato</b></td><td>Poire et chocolat noir</td><td>500 g · 750 g · 1 kg</td></tr>
+  <tr><td rowspan="3">Selezione limitata</td><td><b>Persi Pien</b></td><td>Cacao, pêche, amandes, amaretti</td><td>500 g · 750 g</td></tr>
+  <tr><td><b>Pistacchio</b></td><td>Fourré à la crème de pistache</td><td>500 g · 750 g</td></tr>
+  <tr><td><b>Sacher</b></td><td>Framboise et chocolat, glaçage chocolat</td><td>500 g · 750 g</td></tr>
+  <tr><td rowspan="2">Speciale della Casa</td><td><b>Cubolì</b></td><td>Abricot, sans raisins ni fruits confits</td><td>500 g · 750 g · 1 kg</td></tr>
+  <tr><td><b>Pumaté</b></td><td>Pomme et cannelle, recette de Villar Perosa</td><td>500 g · 750 g · 1 kg</td></tr>
+  <tr><td rowspan="2">Monte Granero</td><td><b>Monte Granero</b></td><td>Leur pandoro artisanal</td><td>500 g · 750 g · 1 kg</td></tr>
+  <tr><td><b>Monte Granero al cacao</b></td><td>Le même, au cacao</td><td>500 g · 750 g · 1 kg</td></tr>
+  <tr><td colspan="4" style="white-space:normal">Aussi : <b>Christmas Mistery Box</b> M, L, XL (panettone + produits artisanaux), 50, 75 et 100 € prix public. <span class="ac">[Version sans lactose : quelle recette ?]</span></td></tr>
+</table>
+
+<div class="surtitre">Conditions</div>
+<table>
+  <tr><td style="width:32%">Prix revendeur</td><td><span class="ac">[tarifs 2026 à fournir par Corinne]</span> — dégressifs selon la quantité</td></tr>
+  <tr><td>Prix de vente conseillé</td><td class="ac">[à fournir par Corinne]</td></tr>
+  <tr><td>Minimum de commande</td><td class="ac">[…]</td></tr>
+  <tr><td>Livraison</td><td class="ac">[délai et frais depuis Pinerolo]</td></tr>
+  <tr><td>Conservation (DLUO)</td><td class="ac">[…]</td></tr>
+  <tr><td>Allergènes</td><td class="ac">[liste complète, obligatoire pour la revente]</td></tr>
+</table>
+
+<div class="surtitre">Comment commander</div>
+<ol class="etapes">
+  <li>Vous répondez à notre mail, ou vous écrivez à <b>franck.monod@culturasabauda.eu</b> (Franck Monod, président, 00 33 (0)6 31 19 42 49).</li>
+  <li>Nous vous mettons en relation directe avec <b>Corinne, chez Vilma e Elio</b>.</li>
+  <li>Vilma e Elio prend votre commande et vous livre. Pour Noël, écrivez-nous avant le <span class="ac">[DATE LIMITE]</span>.</li>
+</ol>
+
+
+<footer>
+<b style="color:var(--bordeaux)">Universitât Sabauda des sciences gastronomiques</b> — association qui fait connaître la gastronomie des deux versants des Alpes, entre Savoie et Piémont. Siège : <span class="ac">[ADRESSE DU SIÈGE]</span>.
+L'association met les commerces en relation avec Vilma e Elio, qui vend et livre<span class="ac"> [et peut percevoir une rémunération sur les ventes : à confirmer ou retirer]</span>.
+</footer>
+</div></body></html>

@@ -1,0 +1,237 @@
+<title>Panettoni Vilma en Savoie</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Great+Vibes&family=Lato:wght@400;700&display=swap">
+<style>
+/* Mise en page : un dossier de campagne en colonne, rythmé par les étapes réelles de la séquence (dates d'envoi),
+   aux couleurs du catalogue de Vilma & Elio : rouge corail, rouge profond, vert sapin, sur blanc. */
+:root {
+  --bg: #ffffff;
+  --surface: #f8f5f2;
+  --line: #e9e2dc;
+  --fg: #221d1a;
+  --muted: #6a625c;
+  --corail: #d94448;
+  --rouge: #b3140f;
+  --sapin: #127a3a;
+  --or: #b8862b;
+  --jaune: #fff1a8;
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-script: "Great Vibes", "Brush Script MT", cursive;
+  --font-body: "Lato", "Helvetica Neue", Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #17120f; --surface: #221b17; --line: #3a302a; --fg: #f2ebe5; --muted: #b4a89e;
+    --corail: #f07175; --rouge: #ff6b5f; --sapin: #4cc27a; --or: #d9b062; --jaune: #4a3f12;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #17120f; --surface: #221b17; --line: #3a302a; --fg: #f2ebe5; --muted: #b4a89e;
+  --corail: #f07175; --rouge: #ff6b5f; --sapin: #4cc27a; --or: #d9b062; --jaune: #4a3f12;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--fg); font: 400 1.0625rem/1.65 var(--font-body); }
+.wrap { max-width: 61rem; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 2.5rem 4rem; display: grid; gap: 3.5rem; }
+h1, h2, h3 { font-family: var(--font-display); text-wrap: balance; margin: 0; }
+h2 { font-weight: 800; font-size: clamp(1.6rem, 3.5vw, 2.1rem); line-height: 1.15; color: var(--corail); }
+h3 { font-weight: 600; font-size: 1.2rem; line-height: 1.3; }
+p { margin: 0; max-width: 65ch; }
+.eyebrow { font: 700 .78rem/1.3 var(--font-body); letter-spacing: .14em; text-transform: uppercase; color: var(--sapin); }
+section { display: grid; gap: 1.1rem; }
+.ac { background: var(--jaune); padding: 0 .25em; border-radius: 2px; }
+
+/* En-tête */
+header { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 1.5rem; align-items: center; border-bottom: 2px solid var(--sapin); padding-bottom: 2rem; }
+.marque { font: 600 .82rem/1.4 var(--font-display); letter-spacing: .16em; text-transform: uppercase; color: var(--corail); }
+.marque span { color: var(--muted); }
+.titre { margin-top: .9rem; line-height: .9; }
+.titre .gras { display: block; font: 800 clamp(2.6rem, 8vw, 4.6rem)/0.95 var(--font-display); color: var(--corail); letter-spacing: .01em; }
+.titre .script { display: block; font: 400 clamp(2.5rem, 7.5vw, 4.4rem)/1 var(--font-script); color: var(--corail); margin: -.2rem 0 0 18%; }
+.chapo { margin-top: 1.1rem; color: var(--muted); font-size: 1.1rem; }
+.faits { margin-top: 1.2rem; display: flex; flex-wrap: wrap; gap: .5rem 1.4rem; font-size: .95rem; }
+.faits b { font-family: var(--font-display); font-size: 1.35rem; color: var(--rouge); margin-right: .3rem; font-variant-numeric: tabular-nums; }
+.produits { position: relative; min-height: 15rem; }
+.produits img { position: absolute; height: auto; filter: drop-shadow(0 10px 14px rgba(0,0,0,.18)); }
+.produits .a { width: 62%; left: 0; top: 0; }
+.produits .b { width: 52%; right: 0; top: 34%; }
+
+/* En bref */
+.chiffres { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+.chiffre { border-top: 3px solid var(--corail); padding-top: .7rem; display: grid; gap: .2rem; }
+.chiffre b { font: 800 2.4rem/1 var(--font-display); color: var(--rouge); font-variant-numeric: tabular-nums; }
+.chiffre span { color: var(--muted); font-size: .95rem; }
+
+/* Scénario */
+.legende { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; font-size: .92rem; color: var(--muted); }
+.pastille { display: inline-block; width: .8rem; height: .8rem; border-radius: 50%; margin-right: .4rem; vertical-align: -1px; }
+.pastille.asso { background: var(--rouge); } .pastille.franck { background: var(--sapin); }
+ol.etapes { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
+ol.etapes li { display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 1.2rem; padding: 1.1rem 0; border-top: 1px solid var(--line); }
+ol.etapes li:last-child { border-bottom: 1px solid var(--line); }
+.date { font: 600 1.05rem/1.3 var(--font-display); color: var(--fg); }
+.date small { display: block; font: 400 .85rem/1.4 var(--font-body); color: var(--muted); margin-top: .2rem; }
+.corps { display: grid; gap: .35rem; min-width: 0; }
+.de { font-size: .88rem; color: var(--muted); }
+.de b { color: var(--fg); }
+.objet { font-size: .95rem; }
+.objet span { font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-right: .5rem; }
+li.option .date { color: var(--muted); }
+.note { color: var(--muted); font-size: .97rem; }
+
+/* Mails */
+.mails { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.6rem; }
+figure { margin: 0; display: grid; gap: .55rem; min-width: 0; }
+figure .cadre { border: 1px solid var(--line); border-radius: 6px; overflow: hidden; background: #f7f4f1; max-height: 34rem; overflow-y: auto; }
+figure .cadre img { display: block; width: 100%; height: auto; }
+figcaption { font-size: .9rem; color: var(--muted); }
+figcaption b { color: var(--fg); }
+
+/* Commerces */
+.table { overflow-x: auto; border: 1px solid var(--line); border-radius: 6px; }
+table { border-collapse: collapse; width: 100%; min-width: 34rem; font-size: .95rem; }
+th, td { text-align: left; padding: .7rem .9rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font: 700 .76rem/1.3 var(--font-body); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); background: var(--surface); }
+tr:last-child td { border-bottom: 0; }
+td.n { text-align: right; font-variant-numeric: tabular-nums; font-weight: 700; color: var(--rouge); }
+tfoot td { font-weight: 700; background: var(--surface); }
+.zones { display: flex; flex-wrap: wrap; gap: .5rem; }
+.zone { border: 1px solid var(--line); border-radius: 999px; padding: .3rem .8rem; font-size: .9rem; }
+.zone b { color: var(--rouge); font-variant-numeric: tabular-nums; margin-left: .3rem; }
+
+/* Commande + fiche */
+.deux { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 2rem; align-items: start; }
+ol.chemin { margin: 0; padding: 0; list-style: none; counter-reset: c; display: grid; gap: .9rem; }
+ol.chemin li { counter-increment: c; display: grid; grid-template-columns: 2.2rem minmax(0, 1fr); gap: .8rem; align-items: start; }
+ol.chemin li::before { content: counter(c); width: 2.2rem; height: 2.2rem; border-radius: 50%; background: var(--rouge); color: #fff; display: grid; place-items: center; font: 800 1rem/1 var(--font-display); }
+.fiche img { width: 100%; height: auto; border: 1px solid var(--line); border-radius: 4px; box-shadow: 0 8px 22px rgba(0,0,0,.08); }
+
+/* À fournir */
+ul.besoins { margin: 0; padding: 0; list-style: none; display: grid; gap: .7rem; }
+ul.besoins li { display: grid; grid-template-columns: minmax(0, 13rem) minmax(0, 1fr); gap: 1rem; padding: .8rem 1rem; background: var(--surface); border-radius: 6px; }
+ul.besoins b { font-family: var(--font-display); font-weight: 600; }
+footer { color: var(--muted); font-size: .88rem; border-top: 1px solid var(--line); padding-top: 1.2rem; display: grid; gap: .4rem; }
+
+@media (max-width: 720px) {
+  header, .deux { grid-template-columns: minmax(0, 1fr); }
+  .produits { min-height: 13rem; max-width: 22rem; }
+  .chiffres { grid-template-columns: minmax(0, 1fr); }
+  ol.etapes li { grid-template-columns: minmax(0, 1fr); gap: .4rem; }
+  .mails { grid-template-columns: minmax(0, 1fr); }
+  ul.besoins li { grid-template-columns: minmax(0, 1fr); gap: .2rem; }
+}
+</style>
+
+<div class="wrap">
+
+<header>
+  <div>
+    <div class="marque">Universitât Sabauda <span>· des sciences gastronomiques</span></div>
+    <h1 class="titre"><span class="gras">PANETTONI</span><span class="script">d'autore</span></h1>
+    <p class="chapo">La campagne de l'Universitât Sabauda pour faire connaître les panettoni de Vilma &amp; Elio aux commerces de Savoie et de Haute-Savoie avant Noël : à qui nous écrivons, ce que nous leur écrivons, et dans quel ordre.</p>
+    <div class="faits"><span><b>11</b>recettes au catalogue</span><span><b>95</b>commerces à qui écrire</span><span><b>4</b>e-mails, du 10 au 26 novembre</span></div>
+  </div>
+  <div class="produits" aria-hidden="true">
+    <img class="a" src="{{IMG:p-cuboli.png}}" alt="">
+    <img class="b" src="{{IMG:p-persi-pien.png}}" alt="">
+  </div>
+</header>
+
+<section>
+  <div class="eyebrow">En bref · point au 4 novembre 2026</div>
+  <h2>Quatre e-mails, puis la mise en relation</h2>
+  <p>Chaque commerce reçoit le même parcours : deux e-mails de l'association, deux relances courtes signées Franck Monod. L'association présente les panettoni et répond aux commerces intéressés ; c'est Vilma &amp; Elio qui donne les tarifs, prend la commande et livre. L'envoi se fait par Brevo, depuis franck.monod@culturasabauda.eu.</p>
+  <div class="chiffres">
+    <div class="chiffre"><b>95</b><span>adresses e-mail publiées par les commerces eux-mêmes, chacune avec sa page source</span></div>
+    <div class="chiffre"><b>165</b><span>commerces suivis en tout ; ceux sans e-mail seront appelés</span></div>
+    <div class="chiffre"><b>81</b><span>de ces 95 commerces n'affichent aucun panettone en vente</span></div>
+  </div>
+</section>
+
+<section>
+  <div class="eyebrow">Le scénario</div>
+  <h2>Ce qui se passe pour chaque commerce</h2>
+  <div class="legende"><span><i class="pastille asso"></i>Universitât Sabauda, e-mails formels</span><span><i class="pastille franck"></i>Franck Monod, relances courtes</span></div>
+  <ol class="etapes">
+    <li><div class="date">Mar. 10 nov.<small>E-mail 1</small></div><div class="corps"><div class="de"><i class="pastille asso"></i><b>Universitât Sabauda</b> · franck.monod@culturasabauda.eu</div><h3>La présentation</h3><div class="objet"><span>Objet</span>Des panettoni artisanaux du Piémont pour votre commerce, avant Noël</div><p>L'association, le projet SavoiaExperience entre Savoie et Piémont, l'histoire du pain de Modane, puis le lien vers le catalogue Panettoni d'autore. Le commerce répond pour recevoir les tarifs.</p></div></li>
+    <li><div class="date">Lun. 16 nov.<small>E-mail 2</small></div><div class="corps"><div class="de"><i class="pastille franck"></i><b>Franck Monod</b> · franck.monod@culturasabauda.eu</div><h3>Une relance courte</h3><div class="objet"><span>Objet</span>Les panettoni de Pinerolo, en deux mots</div><p>Quelques lignes : un mot en réponse suffit pour recevoir les tarifs et être mis en relation avec Corinne.</p></div></li>
+    <li><div class="date">Ven. 20 nov.<small>E-mail 3</small></div><div class="corps"><div class="de"><i class="pastille asso"></i><b>Universitât Sabauda</b> · franck.monod@culturasabauda.eu</div><h3>La date limite</h3><div class="objet"><span>Objet</span>Panettoni pour Noël : dernière semaine pour commander</div><p>Pour une livraison avant les fêtes, écrire avant le <span class="ac">[date à fixer avec Vilma &amp; Elio]</span>. Rappel du Cubolì et de la version sans lactose, lien vers le catalogue.</p></div></li>
+    <li><div class="date">Jeu. 26 nov.<small>E-mail 4</small></div><div class="corps"><div class="de"><i class="pastille franck"></i><b>Franck Monod</b> · franck.monod@culturasabauda.eu</div><h3>Le dernier</h3><div class="objet"><span>Objet</span>Dernier mail de ma part au sujet des panettoni</div><p>Dernier jour conseillé pour Noël ; le commerce peut répondre « plus tard » pour l'an prochain.</p></div></li>
+    <li class="option"><div class="date">Ensuite<small>Si le temps le permet</small></div><div class="corps"><h3>Un appel</h3><p>Les commerces restés sans réponse, et ceux qui ne publient pas d'e-mail, peuvent recevoir un appel de Franck. Ce n'est pas une étape garantie.</p></div></li>
+  </ol>
+  <p class="note">Le parcours s'arrête dès qu'un commerce répond. Un refus est définitif : plus aucun e-mail ni appel. Chaque e-mail dit d'où vient l'adresse, explique le rôle de l'association et permet de se désinscrire.</p>
+</section>
+
+<section>
+  <div class="eyebrow">Les e-mails</div>
+  <h2>Un même texte pour tous, une phrase adaptée au commerce</h2>
+  <p>Les quatre e-mails reprennent les couleurs du catalogue de Vilma &amp; Elio. Une phrase change selon le commerce : un caviste lit que le panettone est un cadeau qui change, à côté de ses vins ; une fromagerie, à côté de ses fromages. À ceux qui vendent déjà des panettoni, l'e-mail propose de compléter leur rayon avec des recettes que l'on trouve peu. Ci-dessous, la version envoyée à un caviste. Les cases jaunes sont encore à compléter.</p>
+  <div class="mails">
+    <figure><div class="cadre"><img src="{{IMG:1-presentation.jpg}}" alt="E-mail 1, la présentation"></div><figcaption><b>E-mail 1</b>, de l'association · 10 novembre</figcaption></figure>
+    <figure><div class="cadre"><img src="{{IMG:2-relance-franck.jpg}}" alt="E-mail 2, relance de Franck Monod"></div><figcaption><b>E-mail 2</b>, relance de Franck Monod · 16 novembre</figcaption></figure>
+    <figure><div class="cadre"><img src="{{IMG:3-date-limite.jpg}}" alt="E-mail 3, la date limite"></div><figcaption><b>E-mail 3</b>, de l'association · 20 novembre</figcaption></figure>
+    <figure><div class="cadre"><img src="{{IMG:4-dernier-franck.jpg}}" alt="E-mail 4, le dernier"></div><figcaption><b>E-mail 4</b>, dernier message · 26 novembre</figcaption></figure>
+  </div>
+</section>
+
+<section>
+  <div class="eyebrow">Les commerces</div>
+  <h2>Les types de commerces que nous ciblons</h2>
+  <p>Toutes les adresses sont publiées par le commerce lui-même ou par un annuaire professionnel public, et relues sur leur page source. Pour les réseaux (coopératives, crèmeries, Biocoop), nous écrivons au siège, qui décide pour toutes ses boutiques. Les commerces fermés sont écartés.</p>
+  <div class="table">
+    <table>
+      <thead><tr><th>Type de commerce</th><th>Ce que l'e-mail met en avant</th><th>Adresses</th></tr></thead>
+      <tbody>
+        <tr><td>Cavistes</td><td>Un cadeau gourmand à côté des vins</td><td class="n">33</td></tr>
+        <tr><td>Épiceries fines, italiennes et de produits régionaux</td><td>Un cadeau gourmand pour les fêtes ; des recettes rares pour qui vend déjà du panettone</td><td class="n">28</td></tr>
+        <tr><td>Fromageries, crèmeries, coopératives laitières</td><td>Un cadeau gourmand à côté des fromages</td><td class="n">19</td></tr>
+        <tr><td>Magasins bio et diététiques</td><td>La version sans lactose, la fabrication artisanale</td><td class="n">15</td></tr>
+      </tbody>
+      <tfoot><tr><td colspan="2">Total des adresses à importer</td><td class="n">95</td></tr></tfoot>
+    </table>
+  </div>
+  <div class="zones">
+    <span class="zone">Annecy et alentours<b>32</b></span>
+    <span class="zone">Arve, Mont-Blanc, Faucigny<b>28</b></span>
+    <span class="zone">Genevois et Chablais<b>16</b></span>
+    <span class="zone">Chambéry et agglomération<b>11</b></span>
+    <span class="zone">Maurienne<b>7</b></span>
+    <span class="zone">Aix-les-Bains<b>5</b></span>
+  </div>
+</section>
+
+<section>
+  <div class="eyebrow">Quand un commerce répond</div>
+  <div class="deux">
+    <div style="display:grid;gap:1.1rem;min-width:0">
+      <h2>Comment se passe une commande</h2>
+      <ol class="chemin">
+        <li><p>Le commerce répond à l'e-mail. Franck lui envoie la fiche revendeur, avec les tarifs de Vilma &amp; Elio.</p></li>
+        <li><p>Franck le met en relation avec Corinne par e-mail, Corinne en copie, en présentant le commerce et ce qu'il a demandé.</p></li>
+        <li><p>Vilma &amp; Elio prend la commande, fixe les conditions et livre. L'association suit la réponse et la commande dans son tableau de suivi.</p></li>
+      </ol>
+    </div>
+    <figure class="fiche"><img src="{{IMG:fiche.jpg}}" alt="Fiche revendeur d'une page : la gamme et les conditions"><figcaption><b>La fiche revendeur</b> : les onze recettes du catalogue, puis les conditions à remplir avec Vilma &amp; Elio.</figcaption></figure>
+  </div>
+</section>
+
+<section>
+  <div class="eyebrow">Avant le 10 novembre</div>
+  <h2>Ce qu'il nous faut de Vilma &amp; Elio</h2>
+  <ul class="besoins">
+    <li><b>La date limite</b><span>Le dernier jour pour commander et être livré avant Noël, selon vos délais de fabrication et de livraison depuis Pinerolo. Nous proposons le jeudi 26 novembre.</span></li>
+    <li><b>Les tarifs revendeurs 2026</b><span>Par recette et par format, avec le prix de vente conseillé et la remise selon la quantité.</span></li>
+    <li><b>Les conditions</b><span>Minimum de commande, frais et délai de livraison, conservation, liste des allergènes (obligatoire pour la revente).</span></li>
+    <li><b>La version sans lactose</b><span>Quelle recette, et dans quels formats.</span></li>
+    <li><b>Les photos</b><span>Confirmer que les photos du catalogue peuvent être utilisées dans les e-mails et sur la fiche.</span></li>
+  </ul>
+</section>
+
+<footer>
+  <span>Universitât Sabauda des sciences gastronomiques · Franck Monod, président · franck.monod@culturasabauda.eu · 00 33 (0)6 31 19 42 49</span>
+  <span>Document de travail du 4 novembre 2026. Rien n'est encore envoyé : les e-mails partent après validation.</span>
+</footer>
+
+</div>

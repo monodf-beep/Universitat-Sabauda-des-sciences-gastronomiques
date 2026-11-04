@@ -19,11 +19,6 @@
 
 **À compléter** (un mail qui garde une de ces marques ne part pas) :
 
-- `[ADRESSE DU SIÈGE]` : adresse postale de l'Universitât Sabauda des sciences gastronomiques, obligatoire
-  dans le pied d'un mail de prospection. (Le compte Brevo indique « Cultura Sabauda, 267 rue de la
-  République, 73000 Chambéry » : à n'employer que si c'est bien l'adresse de l'association.)
-- `[INTÉRÊT DÉCLARÉ]` : si l'association est rémunérée sur les ventes (à convenir avec Vilma e Elio), le pied
-  le dit (phrase prête plus bas). Sinon, retirer la phrase.
 - `[DATE LIMITE]` : dernier jour pour se manifester et être livré avant les fêtes, à fixer **avec Corinne**
   (délai de fabrication et de livraison depuis Pinerolo). Proposé : jeudi 26 novembre 2026.
 - Photos : reprises du catalogue de Vilma & Elio (`visuels/`), droits à confirmer avec Corinne.
@@ -47,8 +42,7 @@
   une version sans lactose.
 - **Projet** (message de Franck du 04/11/2026) : Franck a fondé l'Universitât Sabauda ; l'association participe au
   projet SavoiaExperience (Interreg ALCOTRA), chargée de la recherche gastronomique et du repas de clôture avec des
-  traiteurs partenaires. `[À VALIDER avec Chloé Jobert]` : (1) que le Département accepte qu'on cite le projet dans
-  une prospection commerciale pour une entreprise privée ; (2) que Vilma e Elio est bien retenu pour le 3 décembre.
+  traiteurs partenaires. 
 - **Histoire de Modane** (vérifiée le 04/11/2026) : le percement du tunnel du Fréjus commence en 1857, quand la
   Savoie dépend encore du royaume de Piémont-Sardaigne ; le tunnel ouvre en 1871 (et non 1872) — tunnels-ferroviaires.org,
   Britannica. Une seule source (madeinmarseille.net) dit que les ouvriers du tunnel aimaient un pain sucré aux raisins,
@@ -73,9 +67,7 @@
 ```
 Universitât Sabauda des sciences gastronomiques — association qui fait connaître la gastronomie
 des deux versants des Alpes, entre Savoie et Piémont.
-franck.monod@culturasabauda.eu · Siège : [ADRESSE DU SIÈGE]
-[INTÉRÊT DÉCLARÉ] L'association met en relation les commerces avec Vilma e Elio, qui vend et livre ;
-elle peut percevoir une rémunération sur les ventes.
+franck.monod@culturasabauda.eu · Siège : Maison des associations, 67 rue Saint-François-de-Sales, 73000 Chambéry
 Origine de votre adresse : {{ contact.ORIGINE_CONTACT }}. Si vous ne souhaitez plus recevoir nos
 messages, répondez simplement « non merci ».
 Se désinscrire : {{ unsubscribe }}
@@ -88,8 +80,7 @@ Franck Monod
 Président — Universitât Sabauda des sciences gastronomiques
 Tél. : 00 33 (0)6 31 19 42 49 · franck.monod@culturasabauda.eu
 
-[INTÉRÊT DÉCLARÉ] L'association met en relation les commerces avec Vilma e Elio et peut percevoir une
-rémunération sur les ventes. Siège : [ADRESSE DU SIÈGE].
+Universitât Sabauda des sciences gastronomiques · Siège : Maison des associations, 67 rue Saint-François-de-Sales, 73000 Chambéry.
 Origine de votre adresse : {{ contact.ORIGINE_CONTACT }}. Répondez « non merci » et je ne vous écrirai plus.
 Se désinscrire : {{ unsubscribe }}
 ```
@@ -124,7 +115,7 @@ Madame, Monsieur,
 Franck Monod a fondé l'Universitât Sabauda des sciences gastronomiques, une association qui fait connaître
 la gastronomie des deux versants des Alpes, entre Savoie et Piémont.
 
-[À VALIDER avec Chloé] Nous participons au projet européen SavoiaExperience (Interreg ALCOTRA), consacré à la
+Nous participons au projet européen SavoiaExperience (Interreg ALCOTRA), consacré à la
 valorisation culturelle et touristique de l'espace sabaudo, entre Piémont et Savoie. Nous y sommes chargés de
 la recherche gastronomique et du repas de clôture du projet, préparé avec des traiteurs partenaires des deux
 côtés des Alpes, dont Vilma e Elio, maison artisanale de Pinerolo. C'est par eux que nous avons découvert leurs

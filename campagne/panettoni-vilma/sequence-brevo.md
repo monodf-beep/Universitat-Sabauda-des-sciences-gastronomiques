@@ -24,7 +24,7 @@ franck.monod@culturasabauda.eu. Le HTML exact est dans `modeles/` (régénéré 
 
 1. **Lever les cases jaunes** dans `outils/fabrique_modeles.py`, régénérer, puis recopier le HTML dans
    les modèles #58 à #61 (ou demander au connecteur de le faire) :
-   `[ADRESSE DU SIÈGE]`, `[INTÉRÊT DÉCLARÉ]`, `[DATE LIMITE]`, `[À VALIDER avec Chloé]`.
+   `[DATE LIMITE]` (les autres cases ont été levées le 04/11/2026).
 2. **Authentifier le domaine culturasabauda.eu** dans Brevo (Paramètres > Expéditeurs, domaines et IP
    dédiées > Domaines) : DKIM et DMARC à ajouter chez l'hébergeur du domaine. Aujourd'hui seul
    `franckmonod.eu` est déclaré, et pas authentifié. Sans cela, une partie des mails ira en indésirables.

@@ -33,12 +33,7 @@ MAILTO = ("mailto:franck.monod@culturasabauda.eu"
 A_COMPLETER = "background:#fff3a3;padding:0 3px;"
 
 DATE_LIMITE = f'<span style="{A_COMPLETER}">[DATE LIMITE]</span>'
-SIEGE = f'<span style="{A_COMPLETER}">[ADRESSE DU SIÈGE]</span>'
-INTERET = (f'<span style="{A_COMPLETER}">[INTÉRÊT DÉCLARÉ — à confirmer ou retirer]</span> '
-           "L'association met en relation les commerces avec Vilma e Elio, qui vend et livre ; "
-           "elle peut percevoir une rémunération sur les ventes.")
-VALIDER_PROJET = (f'<span style="{A_COMPLETER}">[À VALIDER avec Chloé : mention du projet ; '
-                  'Vilma e Elio confirmé pour le 3 décembre]</span> ')
+SIEGE = "Maison des associations, 67 rue Saint-François-de-Sales, 73000 Chambéry"
 PHOTO = f'<span style="{A_COMPLETER}">[PHOTO DES PANETTONI]</span>'
 
 
@@ -109,7 +104,7 @@ def pied_formel():
             f'<strong style="color:{BORDEAUX};">Universitât Sabauda des sciences gastronomiques</strong> — '
             f"association qui fait connaître la gastronomie des deux versants des Alpes, entre Savoie et Piémont.<br>"
             f'<a href="mailto:franck.monod@culturasabauda.eu" style="color:{BORDEAUX};">franck.monod@culturasabauda.eu</a>'
-            f" · Siège : {SIEGE}<br><br>{INTERET}<br><br>"
+            f" · Siège : {SIEGE}<br><br>"
             "Origine de votre adresse : {{ contact.ORIGINE_CONTACT }}. Si vous ne souhaitez plus recevoir nos "
             "messages, répondez simplement « non merci ».<br>"
             f'<a href="{{{{ unsubscribe }}}}" style="color:{BORDEAUX};">Se désinscrire</a></td></tr>')
@@ -124,7 +119,7 @@ def signature_et_pied_court():
             f'style="color:{BORDEAUX};">franck.monod@culturasabauda.eu</a></td></tr></table>'
             f'<div style="border-top:1px solid #e8e2da;margin:24px 0 12px 0;height:0;line-height:0;font-size:0;">&nbsp;</div>'
             f'<p style="margin:0 0 8px 0;font-family:{S};font-size:12px;line-height:1.5;color:{GRIS};">'
-            f"{INTERET} Siège : {SIEGE}.</p>"
+            f"Universitât Sabauda des sciences gastronomiques · Siège : {SIEGE}.</p>"
             f'<p style="margin:0;font-family:{S};font-size:12px;line-height:1.5;color:{GRIS};">'
             "Origine de votre adresse : {{ contact.ORIGINE_CONTACT }}. Répondez « non merci » et je ne vous "
             f'écrirai plus.<br><a href="{{{{ unsubscribe }}}}" style="color:{BORDEAUX};">Se désinscrire</a></p>')
@@ -145,7 +140,7 @@ m1 = page("PANETTONI · 1 présentation", entete() + bandeau()
           + p("Madame, Monsieur,")
           + p("Franck Monod a fondé l'Universitât Sabauda des sciences gastronomiques, une association qui "
               "fait connaître la gastronomie des deux versants des Alpes, entre Savoie et Piémont.")
-          + p(f"{VALIDER_PROJET}Nous participons au projet européen <strong>SavoiaExperience</strong> (Interreg "
+          + p(f"Nous participons au projet européen <strong>SavoiaExperience</strong> (Interreg "
               "ALCOTRA), consacré à la valorisation culturelle et touristique de l'espace sabaudo, entre Piémont "
               "et Savoie. Nous y sommes chargés de la recherche gastronomique et du repas de clôture du projet, "
               "préparé avec des traiteurs partenaires des deux côtés des Alpes, dont <strong>Vilma e Elio</strong>, "

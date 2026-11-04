@@ -22,13 +22,12 @@ Méthode reprise de la campagne *Diccionèro de fata* de l'Institut de la Langue
 
 ## Ce qui bloque l'envoi (cases jaunes)
 
-1. `[ADRESSE DU SIÈGE]` de l'association (obligatoire dans un mail de prospection).
-2. `[À VALIDER avec Chloé]` : citer SavoiaExperience / Interreg ALCOTRA dans une prospection pour une entreprise
-   privée, et confirmer que Vilma & Elio est bien retenu pour le repas du 3 décembre.
-3. `[DATE LIMITE]` de commande pour Noël, à fixer avec Corinne (proposé : jeudi 26 novembre).
-4. `[INTÉRÊT DÉCLARÉ]` : garder la phrase si l'association est rémunérée sur les ventes, sinon la retirer.
-5. Prix revendeur 2026, minimum, livraison, DLUO, allergènes : à demander à Corinne pour la fiche.
-6. Domaine culturasabauda.eu à authentifier dans Brevo (DKIM, DMARC), sinon risque d'indésirables.
+1. `[DATE LIMITE]` de commande pour Noël, à fixer avec Corinne (proposé : jeudi 26 novembre).
+2. Prix revendeur 2026, minimum, livraison, DLUO, allergènes : à demander à Corinne pour la fiche.
+3. Domaine culturasabauda.eu à authentifier dans Brevo (DKIM, DMARC), sinon risque d'indésirables.
+
+Siège de l'association (pied des mails et de la fiche) : Maison des associations, 67 rue Saint-François-de-Sales,
+73000 Chambéry. La phrase d'« intérêt déclaré » et la case « à valider avec Chloé » ont été retirées (Franck, 04/11/2026).
 
 ## Pièce jointe ou lien ?
 

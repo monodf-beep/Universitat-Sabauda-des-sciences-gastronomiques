@@ -14,10 +14,10 @@ CORAIL = "#d94448"
 # Images : hébergées dans la galerie Brevo (voir IMAGES.md) ; sinon, copie publique du dépôt GitHub.
 IMG = {
     "bandeau": "https://raw.githubusercontent.com/monodf-beep/Universitat-Sabauda-des-sciences-gastronomiques/claude/jolly-dirac-zip2dz/campagne/panettoni-vilma/visuels/bandeau-mail.jpg",
-    "cuboli": "https://raw.githubusercontent.com/monodf-beep/Universitat-Sabauda-des-sciences-gastronomiques/claude/jolly-dirac-zip2dz/campagne/panettoni-vilma/visuels/produits/cuboli.jpg",
-    "persi-pien": "https://raw.githubusercontent.com/monodf-beep/Universitat-Sabauda-des-sciences-gastronomiques/claude/jolly-dirac-zip2dz/campagne/panettoni-vilma/visuels/produits/persi-pien.jpg",
-    "pumate": "https://raw.githubusercontent.com/monodf-beep/Universitat-Sabauda-des-sciences-gastronomiques/claude/jolly-dirac-zip2dz/campagne/panettoni-vilma/visuels/produits/pumate.jpg",
-    "monte-granero": "https://raw.githubusercontent.com/monodf-beep/Universitat-Sabauda-des-sciences-gastronomiques/claude/jolly-dirac-zip2dz/campagne/panettoni-vilma/visuels/produits/monte-granero.jpg",
+    "cuboli": "https://raw.githubusercontent.com/monodf-beep/Universitat-Sabauda-des-sciences-gastronomiques/claude/jolly-dirac-zip2dz/campagne/panettoni-vilma/visuels/produits/cuboli.png",
+    "persi-pien": "https://raw.githubusercontent.com/monodf-beep/Universitat-Sabauda-des-sciences-gastronomiques/claude/jolly-dirac-zip2dz/campagne/panettoni-vilma/visuels/produits/persi-pien.png",
+    "pumate": "https://raw.githubusercontent.com/monodf-beep/Universitat-Sabauda-des-sciences-gastronomiques/claude/jolly-dirac-zip2dz/campagne/panettoni-vilma/visuels/produits/pumate.png",
+    "monte-granero": "https://raw.githubusercontent.com/monodf-beep/Universitat-Sabauda-des-sciences-gastronomiques/claude/jolly-dirac-zip2dz/campagne/panettoni-vilma/visuels/produits/monte-granero.png",
 }
 import json, os
 CATALOGUE = ("https://raw.githubusercontent.com/monodf-beep/Universitat-Sabauda-des-sciences-gastronomiques/"

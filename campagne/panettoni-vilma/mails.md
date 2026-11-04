@@ -97,16 +97,16 @@ Se désinscrire : {{ unsubscribe }}
 
 | Date | Mail | Expéditeur affiché | Attente avant le suivant |
 |---|---|---|---|
-| mar. 10 nov. | 1, présentation (formel) | Universitât Sabauda | 6 jours |
-| lun. 16 nov. | 2, relance courte | Franck Monod | 4 jours |
-| ven. 20 nov. | 3, date limite (formel) | Universitât Sabauda | 6 jours |
+| ven. 6 nov. | 1, présentation (formel) | Universitât Sabauda | 7 jours |
+| ven. 13 nov. | 2, relance courte | Franck Monod | 6 jours |
+| jeu. 19 nov. | 3, date limite (formel) | Universitât Sabauda | 7 jours |
 | jeu. 26 nov. | 4, dernier mail court | Franck Monod | puis appel si rien |
 
 Les dates sont écrites dans les mails 2, 3 et 4 : si le lancement glisse, les corriger avant d'activer.
 
 ---
 
-## Mail 1 — présentation (mar. 10 nov.)
+## Mail 1 — présentation (ven. 6 nov.)
 
 **Expéditeur** : Universitât Sabauda <franck.monod@culturasabauda.eu> · **Réponse à** : franck.monod@culturasabauda.eu
 **Objet** : Des panettoni artisanaux du Piémont pour votre commerce, avant Noël
@@ -150,7 +150,7 @@ Universitât Sabauda des sciences gastronomiques
 « de la Savoie au Piémont », jamais « versant », « de part et d'autre », « deux côtés » ; gentilés (piémontais), pas de
 nationalité ; aucun tiret cadratin dans le texte visible.
 
-## Mail 2 — relance courte de Franck (lun. 16 nov.) · modèle Brevo #59
+## Mail 2 — relance courte de Franck (ven. 13 nov.) · modèle Brevo #59
 
 **Expéditeur** : Franck Monod <franck.monod@culturasabauda.eu>
 **Objet** : Les panettoni de Vilma e Elio, en deux mots
@@ -159,7 +159,7 @@ nationalité ; aucun tiret cadratin dans le texte visible.
 Bonjour,
 
 Je me permets de revenir vers vous au sujet des panettoni artisanaux de Vilma e Elio, maison artisanale piémontaise,
-que nous vous avons présentés le 10 novembre.
+que nous vous avons présentés le 6 novembre.
 
 Je sais que le temps manque en cette saison, et qu'un e-mail se perd vite : d'où ce petit rappel.
 
@@ -172,7 +172,7 @@ Franck
 ```
 *+ signature de Franck + pied court.*
 
-## Mail 3 — date limite (ven. 20 nov.) · modèle Brevo #60
+## Mail 3 — date limite (jeu. 19 nov.) · modèle Brevo #60
 
 **Expéditeur** : Universitât Sabauda <franck.monod@culturasabauda.eu>
 **Objet** : Panettoni pour Noël : dernière semaine pour commander

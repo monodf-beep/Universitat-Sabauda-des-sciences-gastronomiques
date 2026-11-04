@@ -39,15 +39,15 @@ L'API de Brevo ne permet pas de créer un scénario : il se monte dans l'interfa
 
 - **Déclencheur** : « Contact ajouté à une liste » → liste #16.
 - Étape 1 : Envoyer un e-mail → modèle **#58**.
-- Attendre **6 jours**. Condition : si `STATUT_CAMPAGNE` est `repondu`, `interesse`, `plus_tard` ou `exclu` →
+- Attendre **7 jours**. Condition : si `STATUT_CAMPAGNE` est `repondu`, `interesse`, `plus_tard` ou `exclu` →
   **sortie du scénario**.
-- Étape 2 : Envoyer → modèle **#59**. Attendre **4 jours**, même condition de sortie.
-- Étape 3 : Envoyer → modèle **#60**. Attendre **6 jours**, même condition de sortie.
+- Étape 2 : Envoyer → modèle **#59**. Attendre **6 jours**, même condition de sortie.
+- Étape 3 : Envoyer → modèle **#60**. Attendre **7 jours**, même condition de sortie.
 - Étape 4 : Envoyer → modèle **#61**. Attendre 3 jours, puis `STATUT_CAMPAGNE` = `a_appeler`.
 
 **Ordre obligatoire** : Brevo ne fait entrer dans un scénario que les contacts ajoutés à la liste *après*
-son activation. Donc : activer le scénario, **puis** importer la liste, le mardi 10 novembre au matin.
-Les dates écrites dans les mails (10 novembre, [DATE LIMITE]) supposent ce lancement ; s'il glisse,
+son activation. Donc : activer le scénario, **puis** importer la liste, le vendredi 6 novembre au matin.
+Les dates écrites dans les mails (6 novembre, [DATE LIMITE]) supposent ce lancement ; s'il glisse,
 les corriger avant.
 
 **Après une modification d'un modèle**, le scénario garde sa copie : dans l'étape, supprimer le message

@@ -180,7 +180,7 @@ m2 = page("PANETTONI · 2 relance Franck",
           f'<tr><td class="pad" style="padding:28px 36px 30px 36px;">'
           + p("Bonjour,")
           + p("Je me permets de revenir vers vous au sujet des panettoni artisanaux de Vilma e Elio, "
-              "à Grand-Villars (Villar-Perosa, Piémont), que nous vous avons présentés le 10 novembre, avec leur catalogue.")
+              "à Grand-Villars (Villar-Perosa, Piémont), que nous vous avons présentés le 6 novembre, avec leur catalogue.")
           + p("Je sais que le temps manque en cette saison, et qu'un e-mail se perd vite : d'où ce petit rappel.")
           + p("Si cela vous intéresse, <strong>un mot en réponse me suffit</strong> : je vous envoie les tarifs "
               "revendeurs, Corinne, chez Vilma e Elio, peut vous faire goûter quelques échantillons, et je vous "
@@ -201,9 +201,7 @@ m3 = page("PANETTONI · 3 date limite", entete()
               "d'autore (PDF, en italien)</a>. Répondez simplement à ce mail : nous vous envoyons les tarifs "
               "revendeurs, Vilma e Elio peut vous faire goûter quelques échantillons, et nous vous mettons en "
               "relation avec eux.")
-          + f'<p style="margin:22px 0 22px 0;"><a href="{MAILTO}" style="display:inline-block;'
-            f'background-color:{BORDEAUX};color:#ffffff;font-family:{S};font-size:15px;font-weight:bold;'
-            f'text-decoration:none;padding:11px 20px;border-radius:3px;">Recevoir les tarifs revendeurs</a></p>'
+          + f'<div style="margin:4px 0 22px 0;">{fleche("Demander les tarifs revendeurs", MAILTO)}</div>'
           + p("Nous vous prions d'agréer, Madame, Monsieur, nos salutations distinguées.")
           + f'<p style="margin:0;font-family:{F};font-size:16px;color:{BORDEAUX};">Universitât Sabauda des '
             f"sciences gastronomiques</p></td></tr>" + pied_formel(),

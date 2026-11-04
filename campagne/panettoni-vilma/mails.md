@@ -48,7 +48,7 @@
   tombe la nuit de Noël 1870 (laboratorioaltevalli.it, lagendanews.com) ; inauguration le 17 septembre 1871
   (it.wikipedia.org). Les panettoni apportés par les Piémontais pour fêter cela : **aucune source trouvée**, donc écrit
   comme un récit (« on raconte que »).
-- **Vilma & Elio est à Grand-Villars** (Piémont), précisé par Franck le 04/11/2026.
+- **Vilma & Elio est à Grand-Villars (Villar-Perosa, Piémont)**, précisé par Franck le 04/11/2026.
 - **Histoire de Modane** (vérifiée le 04/11/2026) : le percement du tunnel du Fréjus commence en 1857, quand la
   Savoie dépend encore du royaume de Piémont-Sardaigne ; le tunnel ouvre en 1871 (et non 1872) — tunnels-ferroviaires.org,
   Britannica. Une seule source (madeinmarseille.net) dit que les ouvriers du tunnel aimaient un pain sucré aux raisins,
@@ -114,14 +114,14 @@ Les dates sont écrites dans les mails 2, 3 et 4 : si le lancement glisse, les c
 **Modèle Brevo** : #58 · HTML : `modeles/1-presentation.html`
 
 ```
-[Bandeau image] PANETTONI d'autore · Vilma & Elio · Grand-Villars
+[Bandeau image] PANETTONI d'autore · Vilma & Elio · Grand-Villars (Villar-Perosa, Piémont)
 
 Madame, Monsieur,
 
 L'Universitât Sabauda des sciences gastronomiques fait connaître la gastronomie sabaude, de la Savoie au
 Piémont. Pour le projet européen SavoiaExperience (Interreg ALCOTRA), nous menons la recherche gastronomique
 et préparons le repas de clôture avec des traiteurs partenaires de Savoie et du Piémont. Parmi eux, Vilma e
-Elio, maison artisanale de Grand-Villars, dans le Piémont, dont nous aimerions vous faire goûter les panettoni.
+Elio, maison artisanale de Grand-Villars (Villar-Perosa, Piémont), dont nous aimerions vous faire goûter les panettoni.
 
 [Visuel] drapeau de Savoie · tunnel du Fréjus, Noël 1870 · drapeau du Piémont · « une même histoire »
 La nuit de Noël 1870, les mineurs partis de Modane et de Bardonecchia se rejoignent sous le Fréjus. On

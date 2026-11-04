@@ -77,7 +77,7 @@ def bandeau():
     if not VIGNETTES:
         cases = ""
     image = (f'<tr><td style="padding:0;"><img src="{IMG["bandeau"]}" width="600" alt="Panettoni d\'autore, '
-             f'Vilma &amp; Elio, Grand-Villars" style="display:block;width:100%;max-width:600px;height:auto;border:0;">'
+             f'Vilma &amp; Elio, Grand-Villars (Villar-Perosa, Piémont)" style="display:block;width:100%;max-width:600px;height:auto;border:0;">'
              f'</td></tr>')
     if not cases:
         return image
@@ -85,11 +85,9 @@ def bandeau():
             f'cellpadding="0" cellspacing="0" border="0"><tr>{cases}</tr></table></td></tr>')
 
 
-def bouton(texte, lien, plein=True):
-    fond, couleur = (BORDEAUX, "#ffffff") if plein else ("#ffffff", BORDEAUX)
-    return (f'<a href="{lien}" style="display:inline-block;background-color:{fond};color:{couleur};'
-            f'border:2px solid {BORDEAUX};font-family:{S};font-size:15px;font-weight:bold;text-decoration:none;'
-            f'padding:10px 18px;border-radius:3px;margin:0 8px 8px 0;">{texte}</a>')
+def fleche(texte, lien):
+    return (f'<div style="margin:6px 0 0 0;"><a href="{lien}" style="font-family:{S};font-size:15px;'
+            f'font-weight:bold;color:{BORDEAUX};text-decoration:none;">&rarr;&nbsp;{texte}</a></div>')
 
 
 def atouts():
@@ -121,8 +119,8 @@ def encadre():
             f"<strong>Intéressé ?</strong> Répondez à ce mail : nous vous envoyons les tarifs revendeurs et des "
             f"échantillons, et nous vous mettons en relation avec Vilma e Elio, qui prend la commande et livre. "
             f"Pour Noël, écrivez-nous avant le {DATE_LIMITE}."
-            f'<div style="margin:14px 0 0 0;">{bouton("Recevoir les tarifs", MAILTO)}'
-            f'{bouton("Voir le catalogue (PDF)", CATALOGUE, plein=False)}</div></td></tr></table></td></tr>')
+            f'<div style="margin:10px 0 0 0;">{fleche("Demander les tarifs", MAILTO)}'
+            f'{fleche("Voir le catalogue (PDF)", CATALOGUE)}</div></td></tr></table></td></tr>')
 
 
 def pied_formel():
@@ -169,7 +167,7 @@ m1 = page("PANETTONI · 1 présentation", entete() + bandeau()
               "sabaude, de la Savoie au Piémont. Pour le projet européen <strong>SavoiaExperience</strong> "
               "(Interreg ALCOTRA), nous menons la recherche gastronomique et préparons le repas de clôture avec "
               "des traiteurs partenaires de Savoie et du Piémont. Parmi eux, <strong>Vilma e Elio</strong>, "
-              "maison artisanale de Grand-Villars, dans le Piémont, dont nous aimerions vous faire goûter les panettoni.")
+              "maison artisanale de Grand-Villars (Villar-Perosa, Piémont), dont nous aimerions vous faire goûter les panettoni.")
           + "</td></tr>" + lien_savoie_piemont() + atouts()
           + f'<tr><td class="pad" style="padding:8px 36px 4px 36px;">' + p(rayon) + "</td></tr>" + encadre()
           + f'<tr><td class="pad" style="padding:20px 36px 24px 36px;">'
@@ -182,7 +180,7 @@ m2 = page("PANETTONI · 2 relance Franck",
           f'<tr><td class="pad" style="padding:28px 36px 30px 36px;">'
           + p("Bonjour,")
           + p("Je me permets de revenir vers vous au sujet des panettoni artisanaux de Vilma e Elio, "
-              "à Grand-Villars, que nous vous avons présentés le 10 novembre, avec leur catalogue.")
+              "à Grand-Villars (Villar-Perosa, Piémont), que nous vous avons présentés le 10 novembre, avec leur catalogue.")
           + p("Je sais que le temps manque en cette saison, et qu'un e-mail se perd vite : d'où ce petit rappel.")
           + p("Si cela vous intéresse, <strong>un mot en réponse me suffit</strong> : je vous envoie les tarifs "
               "revendeurs, Corinne, chez Vilma e Elio, peut vous faire goûter quelques échantillons, et je vous "
@@ -196,7 +194,7 @@ m3 = page("PANETTONI · 3 date limite", entete()
           + p(f"Pour avoir les panettoni de Vilma e Elio en boutique avant les fêtes, il faut nous écrire "
               f"<strong>au plus tard le {DATE_LIMITE}</strong> : passé cette date, la livraison avant Noël "
               "n'est plus garantie.")
-          + p("Pour rappel : panettoni artisanaux de Vilma e Elio, à Grand-Villars (Piémont), traiteur partenaire "
+          + p("Pour rappel : panettoni artisanaux de Vilma e Elio, à Grand-Villars (Villar-Perosa, Piémont), traiteur partenaire "
               "de notre travail sur la gastronomie sabaude : onze recettes, dont le Cubolì à l'abricot, sans raisins "
               "ni fruits confits, et une version sans lactose.")
           + p(f'Leur catalogue : <a href="{CATALOGUE}" style="color:{BORDEAUX};font-weight:bold;">Panettoni '

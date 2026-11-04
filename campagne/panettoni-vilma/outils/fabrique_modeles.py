@@ -17,6 +17,7 @@ IMG = {
     "cuboli": "https://raw.githubusercontent.com/monodf-beep/Universitat-Sabauda-des-sciences-gastronomiques/claude/jolly-dirac-zip2dz/campagne/panettoni-vilma/visuels/produits/cuboli.png",
     "persi-pien": "https://raw.githubusercontent.com/monodf-beep/Universitat-Sabauda-des-sciences-gastronomiques/claude/jolly-dirac-zip2dz/campagne/panettoni-vilma/visuels/produits/persi-pien.png",
     "pumate": "https://raw.githubusercontent.com/monodf-beep/Universitat-Sabauda-des-sciences-gastronomiques/claude/jolly-dirac-zip2dz/campagne/panettoni-vilma/visuels/produits/pumate.png",
+    "lien": "https://raw.githubusercontent.com/monodf-beep/Universitat-Sabauda-des-sciences-gastronomiques/claude/jolly-dirac-zip2dz/campagne/panettoni-vilma/visuels/lien-savoie-piemont.jpg",
     "monte-granero": "https://raw.githubusercontent.com/monodf-beep/Universitat-Sabauda-des-sciences-gastronomiques/claude/jolly-dirac-zip2dz/campagne/panettoni-vilma/visuels/produits/monte-granero.png",
 }
 import json, os
@@ -84,25 +85,50 @@ def bandeau():
             f'cellpadding="0" cellspacing="0" border="0"><tr>{cases}</tr></table></td></tr>')
 
 
+def bouton(texte, lien, plein=True):
+    fond, couleur = (BORDEAUX, "#ffffff") if plein else ("#ffffff", BORDEAUX)
+    return (f'<a href="{lien}" style="display:inline-block;background-color:{fond};color:{couleur};'
+            f'border:2px solid {BORDEAUX};font-family:{S};font-size:15px;font-weight:bold;text-decoration:none;'
+            f'padding:10px 18px;border-radius:3px;margin:0 8px 8px 0;">{texte}</a>')
+
+
+def atouts():
+    cases = [("Le Cubolì", "à l'abricot, sans fruits confits"), ("Sans lactose", "la nouveauté 2026"),
+             ("Échantillons", "pour goûter avant de commander")]
+    td = "".join(
+        f'<td width="33%" valign="top" style="padding:12px 10px;border-top:3px solid {CORAIL};'
+        f'font-family:{S};font-size:14px;line-height:1.4;color:{GRIS};">'
+        f'<strong style="display:block;font-family:{F};font-size:17px;color:{BORDEAUX};margin-bottom:3px;">'
+        f'{t}</strong>{d}</td>' for t, d in cases)
+    return (f'<tr><td style="padding:4px 26px 8px 26px;"><table role="presentation" width="100%" '
+            f'cellpadding="0" cellspacing="0" border="0"><tr>{td}</tr></table></td></tr>')
+
+
+def lien_savoie_piemont():
+    return (f'<tr><td style="padding:6px 0 0 0;"><img src="{IMG["lien"]}" width="600" alt="Savoie (Modane) et '
+            f'Piémont (Pinerolo), reliés par le tunnel du Fréjus, 1857-1871 : une même histoire" '
+            f'style="display:block;width:100%;max-width:600px;height:auto;border:0;"></td></tr>'
+            f'<tr><td style="padding:10px 36px 6px 36px;font-family:{S};font-size:15px;line-height:1.6;'
+            f'color:{GRIS};font-style:italic;">À Modane, on raconte que les ouvriers du tunnel du Fréjus aimaient '
+            f"un pain sucré aux raisins : l'ancêtre du pain de Modane, cousin du panettone.</td></tr>")
+
+
 def encadre():
-    return (f'<tr><td style="padding:4px 36px 6px 36px;"><table role="presentation" width="100%" '
+    return (f'<tr><td style="padding:10px 36px 6px 36px;"><table role="presentation" width="100%" '
             f'cellpadding="0" cellspacing="0" border="0" style="border:1px solid {OR};"><tr>'
             f'<td style="padding:16px 20px;font-family:{S};font-size:15px;line-height:1.6;color:{TEXTE};">'
-            f'<div style="font-family:{F};font-size:17px;color:{BORDEAUX};margin:0 0 8px 0;">Comment ça marche</div>'
-            f"Si les panettoni vous intéressent, répondez simplement à ce mail : nous vous envoyons les tarifs "
-            f"revendeurs, Vilma e Elio peut vous faire goûter quelques échantillons, et nous vous mettons en "
-            f"relation directe avec eux pour la commande et la livraison. Pour être livré avant les fêtes, mieux vaut nous écrire avant le {DATE_LIMITE}."
-            f'<div style="margin:16px 0 2px 0;"><a href="{MAILTO}" style="display:inline-block;'
-            f'background-color:{BORDEAUX};color:#ffffff;font-family:{S};font-size:15px;font-weight:bold;'
-            f'text-decoration:none;padding:11px 20px;border-radius:3px;">Recevoir les tarifs revendeurs</a>'
-            f'</div></td></tr></table></td></tr>')
+            f"<strong>Intéressé ?</strong> Répondez à ce mail : nous vous envoyons les tarifs revendeurs et des "
+            f"échantillons, et nous vous mettons en relation avec Vilma e Elio, qui prend la commande et livre. "
+            f"Pour Noël, écrivez-nous avant le {DATE_LIMITE}."
+            f'<div style="margin:14px 0 0 0;">{bouton("Recevoir les tarifs", MAILTO)}'
+            f'{bouton("Voir le catalogue (PDF)", CATALOGUE, plein=False)}</div></td></tr></table></td></tr>')
 
 
 def pied_formel():
     return (f'<tr><td style="padding:22px 36px 26px 36px;background-color:{CREME};font-family:{S};'
             f'font-size:12px;line-height:1.55;color:{GRIS};">'
-            f'<strong style="color:{BORDEAUX};">Universitât Sabauda des sciences gastronomiques</strong> — '
-            f"association qui fait connaître la gastronomie des deux versants des Alpes, entre Savoie et Piémont.<br>"
+            f'<strong style="color:{BORDEAUX};">Universitât Sabauda des sciences gastronomiques</strong>, '
+            f"association qui fait connaître la gastronomie sabaude, de la Savoie au Piémont.<br>"
             f'<a href="mailto:franck.monod@culturasabauda.eu" style="color:{BORDEAUX};">franck.monod@culturasabauda.eu</a>'
             f" · Siège : {SIEGE}<br><br>"
             "Origine de votre adresse : {{ contact.ORIGINE_CONTACT }}. Si vous ne souhaitez plus recevoir nos "
@@ -114,7 +140,7 @@ def signature_et_pied_court():
     return (f'<table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin:6px 0 16px 0;"><tr>'
             f'<td style="padding:0 0 0 12px;border-left:3px solid {OR};font-family:{S};font-size:13px;'
             f'line-height:1.55;color:{TEXTE};"><strong style="color:{BORDEAUX};font-size:15px;">Franck Monod</strong><br>'
-            f"Président — Universitât Sabauda des sciences gastronomiques<br>"
+            f"Président, Universitât Sabauda des sciences gastronomiques<br>"
             f'Tél. : 00 33 (0)6 31 19 42 49 · <a href="mailto:franck.monod@culturasabauda.eu" '
             f'style="color:{BORDEAUX};">franck.monod@culturasabauda.eu</a></td></tr></table>'
             f'<div style="border-top:1px solid #e8e2da;margin:24px 0 12px 0;height:0;line-height:0;font-size:0;">&nbsp;</div>'
@@ -138,28 +164,18 @@ rayon = ('{% if contact.PANETTONE_EN_RAYON == "oui" %}'
 m1 = page("PANETTONI · 1 présentation", entete() + bandeau()
           + f'<tr><td class="pad" style="padding:26px 36px 4px 36px;">'
           + p("Madame, Monsieur,")
-          + p("Franck Monod a fondé l'Universitât Sabauda des sciences gastronomiques, une association qui "
-              "fait connaître la gastronomie des deux versants des Alpes, entre Savoie et Piémont.")
-          + p(f"Nous participons au projet européen <strong>SavoiaExperience</strong> (Interreg "
-              "ALCOTRA), consacré à la valorisation culturelle et touristique de l'espace sabaudo, entre Piémont "
-              "et Savoie. Nous y sommes chargés de la recherche gastronomique et du repas de clôture du projet, "
-              "préparé avec des traiteurs partenaires des deux côtés des Alpes, dont <strong>Vilma e Elio</strong>, "
-              "maison artisanale de Pinerolo. C'est par eux que nous avons découvert leurs panettoni, et nous "
-              "aimerions vous les faire connaître.")
-          + p("Entre le panettone et la Savoie, il y a une vieille histoire. À Modane, on raconte que les ouvriers "
-              "du tunnel du Fréjus, percé de 1857 à 1871, aimaient un pain sucré aux raisins, l'ancêtre du pain de "
-              "Modane, cousin du panettone. Au début des travaux, la Savoie faisait encore partie du royaume de "
-              "Piémont-Sardaigne.")
-          + p(f'Leur catalogue est ici : <a href="{CATALOGUE}" style="color:{BORDEAUX};font-weight:bold;">'
-              "voir le catalogue Panettoni d'autore (PDF, en italien)</a>. Deux mots seulement : "
-              "leur panettone le plus aimé, le <strong>Cubolì</strong>, est à l'abricot, sans raisins secs ni "
-              "fruits confits ; et, nouveauté 2026, ils en font une version <strong>sans lactose</strong>.")
-          + p(rayon) + "</td></tr>" + encadre()
+          + p("L'<strong>Universitât Sabauda des sciences gastronomiques</strong> fait connaître la gastronomie "
+              "sabaude, de la Savoie au Piémont. Pour le projet européen <strong>SavoiaExperience</strong> "
+              "(Interreg ALCOTRA), nous menons la recherche gastronomique et préparons le repas de clôture avec "
+              "des traiteurs partenaires de Savoie et du Piémont. Parmi eux, <strong>Vilma e Elio</strong>, "
+              "maison artisanale de Pinerolo, dont nous aimerions vous faire goûter les panettoni.")
+          + "</td></tr>" + lien_savoie_piemont() + atouts()
+          + f'<tr><td class="pad" style="padding:8px 36px 4px 36px;">' + p(rayon) + "</td></tr>" + encadre()
           + f'<tr><td class="pad" style="padding:20px 36px 24px 36px;">'
           + p("Nous vous prions d'agréer, Madame, Monsieur, nos salutations distinguées.")
           + f'<p style="margin:0;font-family:{F};font-size:16px;color:{BORDEAUX};">Universitât Sabauda des '
             f"sciences gastronomiques</p></td></tr>" + pied_formel(),
-          pre="Une maison artisanale de Pinerolo, partenaire de notre projet entre Savoie et Piémont")
+          pre="Les panettoni de Vilma e Elio, à Pinerolo : de la Savoie au Piémont, une même histoire")
 
 m2 = page("PANETTONI · 2 relance Franck",
           f'<tr><td class="pad" style="padding:28px 36px 30px 36px;">'

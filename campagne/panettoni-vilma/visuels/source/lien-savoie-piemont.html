@@ -1,0 +1,34 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,800&family=Great+Vibes&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<style>
+body { margin:0; }
+.v { width:1200px; height:420px; position:relative; background:#f7f4f1; font-family:Lato, Arial, sans-serif; color:#221d1a; overflow:hidden; }
+.pole { position:absolute; top:62px; width:300px; text-align:center; }
+.pole.g { left:40px; } .pole.d { right:40px; }
+.pole svg { width:165px; height:165px; filter: drop-shadow(0 6px 10px rgba(0,0,0,.18)); }
+.pole .nom { font: 800 44px/1.1 Fraunces, Georgia, serif; color:#b3140f; margin-top:14px; }
+.pole .lieu { font: 700 22px/1.3 Lato, Arial, sans-serif; letter-spacing:3px; text-transform:uppercase; color:#127a3a; margin-top:6px; }
+.route { position:absolute; left:330px; right:330px; top:140px; height:6px; background: repeating-linear-gradient(90deg, #b3140f 0 22px, transparent 22px 34px); }
+.milieu { position:absolute; left:330px; right:330px; top:18px; text-align:center; }
+.milieu img { width:165px; height:auto; filter: drop-shadow(0 8px 12px rgba(0,0,0,.2)); }
+.titre { position:absolute; left:330px; right:330px; top:205px; text-align:center; }
+.titre .t { font: 700 30px/1.15 Fraunces, Georgia, serif; color:#221d1a; }
+.titre .d { font: 400 23px/1.35 Lato, Arial, sans-serif; color:#5f5a55; margin-top:8px; }
+.bas { position:absolute; left:0; right:0; bottom:30px; text-align:center; font: 400 58px/1 "Great Vibes", cursive; color:#d94448; }
+</style></head><body>
+<div class="v">
+  <div class="pole g">
+    <!-- Drapeau de Savoie : croix blanche sur fond rouge -->
+    <svg viewBox="0 0 100 100"><rect width="100" height="100" fill="#d00c27"/><rect x="42" y="0" width="16" height="100" fill="#fff"/><rect x="0" y="42" width="100" height="16" fill="#fff"/></svg>
+    <div class="nom">Savoie</div><div class="lieu">Modane</div>
+  </div>
+  <div class="route"></div>
+  <div class="milieu"><img src="../produits/cuboli.png" alt=""></div>
+  <div class="titre"><div class="t">Tunnel du Fréjus, 1857-1871</div><div class="d">Savoie et Piémont, un même État<br>au début des travaux</div></div>
+  <div class="pole d">
+    <!-- Drapeau du Piémont : croix de Savoie et lambel bleu -->
+    <svg viewBox="0 0 100 100"><rect width="100" height="100" fill="#d00c27"/><rect x="42" y="0" width="16" height="100" fill="#fff"/><rect x="0" y="42" width="100" height="16" fill="#fff"/><rect x="0" y="0" width="100" height="9" fill="#1c3f94"/><rect x="14" y="0" width="12" height="20" fill="#1c3f94"/><rect x="44" y="0" width="12" height="20" fill="#1c3f94"/><rect x="74" y="0" width="12" height="20" fill="#1c3f94"/></svg>
+    <div class="nom">Piémont</div><div class="lieu">Pinerolo</div>
+  </div>
+  <div class="bas">une même histoire</div>
+</div></body></html>

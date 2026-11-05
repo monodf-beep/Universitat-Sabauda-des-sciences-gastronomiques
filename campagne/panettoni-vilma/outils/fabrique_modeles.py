@@ -103,14 +103,16 @@ def atouts():
             f'cellpadding="0" cellspacing="0" border="0"><tr>{td}</tr></table></td></tr>')
 
 
+FREJUS = ("Le chantier du Fréjus est dirigé par un ingénieur savoyard, Germain Sommeiller, né à Saint-Jeoire. La nuit de Noël 1870, après treize ans de travaux, les mineurs partis de Modane et de Bardonecchia se rejoignent sous la montagne, à quelques centimètres près. Le tunnel ouvre le 17 septembre 1871. On raconte que les Piémontais ont fêté la percée avec des panettoni : depuis, le panettone a aussi une histoire savoyarde.")
+
+
 def lien_savoie_piemont():
     return (f'<tr><td style="padding:6px 0 0 0;"><img src="{IMG["lien"]}" width="600" alt="Savoie et '
             f'Piémont, reliés par le tunnel du Fréjus à Noël 1870 : une même histoire" '
             f'style="display:block;width:100%;max-width:600px;height:auto;border:0;"></td></tr>'
             f'<tr><td style="padding:10px 36px 6px 36px;font-family:{S};font-size:15px;line-height:1.6;'
-            f'color:{GRIS};font-style:italic;">La nuit de Noël 1870, les mineurs partis de Modane et de Bardonecchia '
-            f"se rejoignent sous le Fréjus. On raconte que les Piémontais ont fêté cela avec des panettoni : depuis "
-            f"l'ouverture du tunnel, en 1871, le panettone a aussi une histoire savoyarde.</td></tr>")
+            f'color:{GRIS};">'
+            + FREJUS + "</td></tr>")
 
 
 def encadre():

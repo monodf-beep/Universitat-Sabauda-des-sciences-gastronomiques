@@ -47,7 +47,9 @@
 - **Le panettone et la Savoie** (Franck, 04/11/2026 ; vérifié le même jour) : le dernier diaphragme du tunnel du Fréjus
   tombe la nuit de Noël 1870 (laboratorioaltevalli.it, lagendanews.com) ; inauguration le 17 septembre 1871
   (it.wikipedia.org). Les panettoni apportés par les Piémontais pour fêter cela : **aucune source trouvée**, donc écrit
-  comme un récit (« on raconte que »).
+  comme un récit (« on raconte que »). Ajouts du 05/11/2026 pour ancrer le récit dans des faits : chantier dirigé
+  par Germain Sommeiller, ingénieur né à Saint-Jeoire (fr.wikipedia.org/wiki/Germain_Sommeiller, britannica.com) ;
+  travaux commencés en 1857 ; jonction à quelques centimètres près (webuildvalue.com) ; ouverture le 17 septembre 1871.
 - **Vilma & Elio est à Grand-Villars (Villar-Perosa, Piémont)**, précisé par Franck le 04/11/2026.
 - **Histoire de Modane** (vérifiée le 04/11/2026) : le percement du tunnel du Fréjus commence en 1857, quand la
   Savoie dépend encore du royaume de Piémont-Sardaigne ; le tunnel ouvre en 1871 (et non 1872) — tunnels-ferroviaires.org,
@@ -124,9 +126,7 @@ et préparons le repas de clôture avec des traiteurs partenaires de Savoie et d
 Elio, maison artisanale de Grand-Villars (Villar-Perosa, Piémont), dont nous aimerions vous faire goûter les panettoni.
 
 [Visuel] drapeau de Savoie · tunnel du Fréjus, Noël 1870 · drapeau du Piémont · « une même histoire »
-La nuit de Noël 1870, les mineurs partis de Modane et de Bardonecchia se rejoignent sous le Fréjus. On
-raconte que les Piémontais ont fêté cela avec des panettoni : depuis l'ouverture du tunnel, en 1871, le
-panettone a aussi une histoire savoyarde.
+Le chantier du Fréjus est dirigé par un ingénieur savoyard, Germain Sommeiller, né à Saint-Jeoire. La nuit de Noël 1870, après treize ans de travaux, les mineurs partis de Modane et de Bardonecchia se rejoignent sous la montagne, à quelques centimètres près. Le tunnel ouvre le 17 septembre 1871. On raconte que les Piémontais ont fêté la percée avec des panettoni : depuis, le panettone a aussi une histoire savoyarde.
 
 [Trois vignettes] Le Cubolì, à l'abricot, sans fruits confits · Sans lactose, la nouveauté 2026 ·
 Échantillons, pour goûter avant de commander

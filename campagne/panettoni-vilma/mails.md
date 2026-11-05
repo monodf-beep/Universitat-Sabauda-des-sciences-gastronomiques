@@ -126,7 +126,7 @@ et préparons le repas de clôture avec des traiteurs partenaires de Savoie et d
 Elio, maison artisanale de Grand-Villars (Villar-Perosa, Piémont), dont nous aimerions vous faire goûter les panettoni.
 
 [Visuel] drapeau de Savoie · tunnel du Fréjus, Noël 1870 · drapeau du Piémont · « une même histoire »
-Le chantier du Fréjus a été dirigé par un ingénieur savoyard, Germain Sommeiller, né à Saint-Jeoire. La nuit de Noël 1870, après treize ans de travaux, les mineurs partis de Modane et de Bardonecchia se sont rejoints sous la montagne, à quelques centimètres près. Le tunnel a ouvert le 17 septembre 1871. On raconte que les Piémontais ont fêté la percée avec des panettoni : depuis, le panettone a aussi une histoire savoyarde.
+La nuit de Noël 1870, après treize ans de travaux, les mineurs de Modane et de Bardonecchia se sont rejoints sous le Fréjus. On raconte que les Piémontais ont fêté la percée avec des panettoni.
 
 [Trois vignettes] Le Cubolì, à l'abricot, sans fruits confits · Sans lactose, la nouveauté 2026 ·
 Échantillons, pour goûter avant de commander

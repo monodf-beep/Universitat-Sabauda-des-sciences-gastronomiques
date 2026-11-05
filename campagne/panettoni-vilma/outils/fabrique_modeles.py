@@ -92,18 +92,22 @@ def fleche(texte, lien, couleur=BORDEAUX):
 
 
 def atouts():
-    cases = [("Le Cubolì", "à l'abricot, sans fruits confits"), ("Sans lactose", "la nouveauté 2026"),
-             ("Échantillons", "pour goûter avant de commander")]
-    td = "".join(
-        f'<td width="33%" valign="top" style="padding:12px 10px;border-top:3px solid {CORAIL};'
-        f'font-family:{S};font-size:14px;line-height:1.4;color:{GRIS};">'
-        f'<strong style="display:block;font-family:{F};font-size:17px;color:{BORDEAUX};margin-bottom:3px;">'
-        f'{t}</strong>{d}</td>' for t, d in cases)
-    return (f'<tr><td style="padding:4px 26px 8px 26px;"><table role="presentation" width="100%" '
-            f'cellpadding="0" cellspacing="0" border="0"><tr>{td}</tr></table></td></tr>')
+    cases = [("Le Cubolì", "à l'abricot,<br>sans fruits confits"), ("Sans lactose", "la nouveauté<br>2026"),
+             ("Échantillons", "pour goûter<br>avant de commander")]
+    td = []
+    for k, (t, d) in enumerate(cases):
+        trait = f"border-left:1px solid #e3d6bf;" if k else ""
+        td.append(f'<td width="33%" align="center" valign="top" style="padding:14px 8px 16px 8px;{trait}'
+                  f'font-family:{S};font-size:13px;line-height:1.45;color:{GRIS};">'
+                  f'<div style="font-size:16px;line-height:1;color:{DORE};margin-bottom:6px;">&#10022;</div>'
+                  f'<strong style="display:block;font-family:{F};font-size:17px;color:{BORDEAUX};margin-bottom:4px;">'
+                  f'{t}</strong>{d}</td>')
+    return (f'<tr><td style="padding:8px 36px 10px 36px;"><table role="presentation" width="100%" '
+            f'cellpadding="0" cellspacing="0" border="0" style="background-color:{CREME};border-radius:6px;">'
+            f'<tr>{"".join(td)}</tr></table></td></tr>')
 
 
-FREJUS = ("Le chantier du Fréjus a été dirigé par un ingénieur savoyard, Germain Sommeiller, né à Saint-Jeoire. La nuit de Noël 1870, après treize ans de travaux, les mineurs partis de Modane et de Bardonecchia se sont rejoints sous la montagne, à quelques centimètres près. Le tunnel a ouvert le 17 septembre 1871. On raconte que les Piémontais ont fêté la percée avec des panettoni : depuis, le panettone a aussi une histoire savoyarde.")
+FREJUS = ("La nuit de Noël 1870, après treize ans de travaux, les mineurs de Modane et de Bardonecchia se sont rejoints sous le Fréjus. On raconte que les Piémontais ont fêté la percée avec des panettoni.")
 
 
 def lien_savoie_piemont():

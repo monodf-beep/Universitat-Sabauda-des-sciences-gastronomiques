@@ -20,7 +20,7 @@
 **À compléter** (un mail qui garde une de ces marques ne part pas) :
 
 - `[DATE LIMITE]` : dernier jour pour se manifester et être livré avant les fêtes, à fixer **avec Corinne**
-  (délai de fabrication et de livraison depuis le Piémont). Proposé : jeudi 26 novembre 2026.
+  (délai de fabrication et de livraison depuis le Piémont). **Validé : mercredi 25 novembre 2026** (Corinne, 05/11/2026).
 - Photos : reprises du catalogue de Vilma & Elio (`visuels/`), droits à confirmer avec Corinne.
 - Prix revendeur et conditions : le catalogue 2025 dit seulement « tarifs dégressifs » ; les prix 2026 sont à
   demander à Corinne.
@@ -99,8 +99,8 @@ Se désinscrire : {{ unsubscribe }}
 |---|---|---|---|
 | ven. 6 nov. | 1, présentation (formel) | Universitât Sabauda | 7 jours |
 | ven. 13 nov. | 2, relance courte | Franck Monod | 6 jours |
-| jeu. 19 nov. | 3, date limite (formel) | Universitât Sabauda | 7 jours |
-| jeu. 26 nov. | 4, dernier mail court | Franck Monod | fin de la séquence |
+| jeu. 19 nov. | 3, date limite (formel) | Universitât Sabauda | 6 jours |
+| mer. 25 nov. | 4, dernier mail court | Franck Monod | fin de la séquence |
 
 Les dates sont écrites dans les mails 2, 3 et 4 : si le lancement glisse, les corriger avant d'activer.
 
@@ -138,7 +138,7 @@ produits bio / de votre épicerie (selon TYPE_COMMERCE).
 
 [Encadré] Intéressé ? Répondez à ce mail : nous vous envoyons les tarifs revendeurs et des échantillons, et
 nous vous mettons en relation avec Vilma e Elio, qui prend la commande et livre. Pour Noël, écrivez-nous
-avant le [DATE LIMITE].
+avant le mercredi 25 novembre.
 Boutons : Recevoir les tarifs (réponse par mail) · Voir le catalogue (PDF)
 
 Nous vous prions d'agréer, Madame, Monsieur, nos salutations distinguées.
@@ -181,7 +181,7 @@ Franck
 Madame, Monsieur,
 
 Pour avoir les panettoni de Vilma e Elio en boutique avant les fêtes, il faut nous écrire au plus tard
-le [DATE LIMITE] : passé cette date, la livraison avant Noël n'est plus garantie.
+le mercredi 25 novembre : passé cette date, la livraison avant Noël n'est plus garantie.
 
 Pour rappel : panettoni artisanaux de Vilma e Elio, maison piémontaise et traiteur partenaire de notre
 travail sur la gastronomie sabaude : onze recettes, dont le Cubolì à l'abricot, sans raisins ni fruits
@@ -197,7 +197,7 @@ Universitât Sabauda des sciences gastronomiques
 ```
 *+ pied de mail.*
 
-## Mail 4 — dernier mail, court, de Franck (jeu. 26 nov.) · modèle Brevo #61
+## Mail 4 — dernier mail, court, de Franck (mer. 25 nov.) · modèle Brevo #61
 
 **Expéditeur** : Franck Monod <franck.monod@culturasabauda.eu>
 **Objet** : Dernier mail de ma part au sujet des panettoni

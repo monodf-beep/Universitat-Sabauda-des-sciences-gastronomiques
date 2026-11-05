@@ -22,7 +22,7 @@ Méthode reprise de la campagne *Diccionèro de fata* de l'Institut de la Langue
 
 ## Ce qui bloque l'envoi (cases jaunes)
 
-1. `[DATE LIMITE]` de commande pour Noël, à fixer avec Corinne (proposé : jeudi 26 novembre).
+1. Date limite de commande pour Noël : **mercredi 25 novembre**, validée par Corinne le 05/11/2026.
 2. Prix revendeur 2026, minimum, livraison, DLUO, allergènes : à demander à Corinne pour la fiche.
 3. Domaine culturasabauda.eu à authentifier dans Brevo (DKIM, DMARC), sinon risque d'indésirables.
 

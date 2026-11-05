@@ -24,7 +24,7 @@ franck.monod@culturasabauda.eu. Le HTML exact est dans `modeles/` (régénéré 
 
 1. **Lever les cases jaunes** dans `outils/fabrique_modeles.py`, régénérer, puis recopier le HTML dans
    les modèles #58 à #61 (ou demander au connecteur de le faire) :
-   `[DATE LIMITE]` (les autres cases ont été levées le 04/11/2026).
+   la date limite, mercredi 25 novembre, validée par Corinne le 05/11/2026 (plus aucune case jaune).
 2. **Authentifier le domaine culturasabauda.eu** dans Brevo (Paramètres > Expéditeurs, domaines et IP
    dédiées > Domaines) : DKIM et DMARC à ajouter chez l'hébergeur du domaine. Aujourd'hui seul
    `franckmonod.eu` est déclaré, et pas authentifié. Sans cela, une partie des mails ira en indésirables.
@@ -42,12 +42,12 @@ L'API de Brevo ne permet pas de créer un scénario : il se monte dans l'interfa
 - Attendre **7 jours**. Condition : si `STATUT_CAMPAGNE` est `repondu`, `interesse`, `plus_tard` ou `exclu` →
   **sortie du scénario**.
 - Étape 2 : Envoyer → modèle **#59**. Attendre **6 jours**, même condition de sortie.
-- Étape 3 : Envoyer → modèle **#60**. Attendre **7 jours**, même condition de sortie.
+- Étape 3 : Envoyer → modèle **#60**. Attendre **6 jours**, même condition de sortie.
 - Étape 4 : Envoyer → modèle **#61**. Attendre 3 jours, puis `STATUT_CAMPAGNE` = `sans_reponse` (fin de la séquence, pas d'appel).
 
 **Ordre obligatoire** : Brevo ne fait entrer dans un scénario que les contacts ajoutés à la liste *après*
 son activation. Donc : activer le scénario, **puis** importer la liste, le vendredi 6 novembre au matin.
-Les dates écrites dans les mails (6 novembre, [DATE LIMITE]) supposent ce lancement ; s'il glisse,
+Les dates écrites dans les mails (6 novembre, mercredi 25 novembre) supposent ce lancement ; s'il glisse,
 les corriger avant.
 
 **Après une modification d'un modèle**, le scénario garde sa copie : dans l'étape, supprimer le message

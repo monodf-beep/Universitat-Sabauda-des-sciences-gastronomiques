@@ -34,7 +34,7 @@ MAILTO = ("mailto:franck.monod@culturasabauda.eu"
           "?subject=Panettoni%20Vilma%20-%20tarifs%20revendeurs")
 A_COMPLETER = "background:#fff3a3;color:#1f1b18;padding:0 3px;"
 
-DATE_LIMITE = f'<span style="{A_COMPLETER}">[DATE LIMITE]</span>'
+DATE_LIMITE = "mercredi 25 novembre"  # validée par Corinne le 05/11/2026 (« intorno al 25 novembre »)
 SIEGE = "Maison des associations, 67 rue Saint-François-de-Sales, 73000 Chambéry"
 PHOTO = f'<span style="{A_COMPLETER}">[PHOTO DES PANETTONI]</span>'
 

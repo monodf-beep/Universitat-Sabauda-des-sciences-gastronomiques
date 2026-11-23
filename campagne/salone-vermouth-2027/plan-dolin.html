@@ -1109,6 +1109,11 @@ button.st5:hover{border-color:var(--hi)}
 .hero .emb{grid-column:2;grid-row:1;align-self:center}
 @media (max-width:900px){.hero{grid-template-columns:minmax(0,1fr) !important}.hero .emb{grid-column:1;grid-row:1}.hero .in{grid-row:2}}
 .hero .ey::before,.pban .ey::before,.band .bey::before{background:none;width:auto;height:auto}
+.band.vis{min-height:0}
+.band.vis .bin{padding:clamp(28px,4vw,48px) clamp(24px,4vw,56px)}
+.band.vis .big{font-size:clamp(30px,4.2vw,54px);line-height:1.1}
+.band.vis .big em{display:block;margin-top:6px}
+.urg .link{color:inherit}
 
 </style>
 <div class="app">
@@ -1180,25 +1185,34 @@ button.st5:hover{border-color:var(--hi)}
         </div>
       </div>
 
-      <div class="sec"><h2>En deux rendez-vous : où on en est, où on veut aller</h2><span class="note">Objectifs indicatifs, à fixer avec Pierre-Olivier Rousseaux.</span></div>
-      <div class="big2">
-        <div class="bg2"><span class="l">Dolin au Salone del Vermouth</span>
-          <div class="ft"><div><small>Aujourd'hui</small><span class="now">0</span><em>Dolin n'y a jamais exposé</em></div><span class="arr" aria-hidden="true">→</span><div><small>Objectif</small><span class="to">2027</span><em>29 janvier – 1<sup>er</sup> février, Turin</em></div></div>
-        </div>
-        <div class="bg2"><span class="l">Le récit Chambéry–Turin</span>
-          <div class="ft"><div><small>Aujourd'hui</small><span class="now">—</span><em>pas de document sourcé</em></div><span class="arr" aria-hidden="true">→</span><div><small>Objectif</small><span class="to">1</span><em>récit validé, printemps 2027</em></div></div>
-        </div>
-      </div>
-      <div class="luc"><b>Une maison de 1821, absente du récit de Turin</b><span>Le vermouth est né dans les États de Savoie, entre Turin et Chambéry. Turin raconte cette histoire ; Chambéry, presque pas. Dolin est le mieux placé pour la porter. <button type="button" class="link" data-view="constat">Le constat →</button></span></div>
+      <section class="band vis" aria-label="La vision">
+        <div class="bin"><p class="bey">La vision · horizon 2030</p><h2 class="big">Turin et Chambéry, les deux villes du vermouth sabaudo. <em>Dolin, la maison qui les relie.</em></h2><p class="blead">Aujourd'hui, le vermouth de l'espace sabaudo se raconte à Turin. Demain, il se raconte entre Turin et Chambéry, et c'est Dolin qu'on cite, qu'on visite et qu'on sert.</p></div>
+      </section>
 
-      <div class="urg"><span>L'occasion</span><b>Turin nous attend en janvier</b><p>Laura Carello, qui organise le Salone del Vermouth, cherchait depuis longtemps un producteur de ce côté des Alpes. Elle propose d'intégrer Dolin au Fuorisalone et à la table ronde avec la presse.</p></div>
+      <div class="sec"><h2>À quoi on la reconnaîtra</h2><span class="note">Trois signes concrets, en Piémont comme en Savoie.</span></div>
+      <div class="why3">
+        <div><b>On cite Dolin à Turin</b><span>Dans la presse italienne, au Salone, dans les cafés historiques : Dolin fait partie de l'histoire du vermouth qu'on raconte en Piémont.</span></div>
+        <div><b>On visite Dolin à Chambéry</b><span>Un lieu, un parcours et un récit font venir à Chambéry ceux qui s'intéressent au vermouth, comme on va à Turin.</span></div>
+        <div><b>On boit Dolin dans l'espace sabaudo</b><span>Sur les cartes des bars de Turin comme sur celles de Savoie : une maison chez elle des deux villes.</span></div>
+      </div>
+
+      <div class="sec"><h2>Le chemin, en trois temps</h2><span class="note">Horizon indicatif, à construire avec Pierre-Olivier Rousseaux.</span></div>
       <div class="trj">
+        <div class="trow" aria-hidden="true">
+          <div class="tjc"><span class="tdisc d1"><b>2027</b><small>Turin</small></span></div>
+          <div class="tjc"><span class="tdisc d2"><em>Le cœur</em><b>2028-29</b><small>Chambéry</small></span></div>
+          <div class="tjc"><span class="tdisc d3"><b>2030</b><small>L'espace sabaudo</small></span></div>
+        </div>
         <div class="ttx">
-          <div class="tt"><span class="tyr">Décembre 2026 · lancer</span><b>Poser le cap</b><p>Valider l'accompagnement, signer pour le Salone, réunir les archives.</p></div>
-          <div class="tt key"><span class="tyr">Janvier 2027 · Turin</span><b>Dolin au Salone</b><p>Le Salone, le Fuorisalone, la presse : raconter Dolin à Turin, en italien.</p></div>
-          <div class="tt"><span class="tyr">Printemps 2027 · Chambéry</span><b>La route du vermouth</b><p>Le récit sourcé, puis un projet de fond : Comoz, un musée, la route européenne.</p></div>
+          <div class="tt"><span class="tyr">2027 · se faire reconnaître</span><b>Dolin entre à Turin</b><p>Raconter Dolin là où le vermouth se raconte déjà.</p><ul class="achips"><li>Salone del Vermouth</li><li>Presse italienne</li><li>Récit Chambéry–Turin sourcé</li></ul></div>
+          <div class="tt key"><span class="tyr">2028-29 · ancrer</span><b>Chambéry, ville du vermouth</b><p>Donner au vermouth de Chambéry un lieu et un récit qui font venir.</p><ul class="achips"><li>Relance de Comoz</li><li>Un lieu du vermouth</li><li>Tourisme et élus</li><li>Route européenne</li></ul></div>
+          <div class="tt"><span class="tyr">2030 · relier</span><b>La maison du vermouth sabaudo</b><p>Dolin relie les deux villes, en Savoie comme en Piémont.</p><ul class="achips"><li>Présence durable en Italie</li><li>Projets Savoie–Piémont</li><li>Une marque qui porte un territoire</li></ul></div>
         </div>
       </div>
+
+      <div class="luc"><b>Le point de départ : une maison de 1821, absente du récit de Turin</b><span>Le vermouth est né dans les États de Savoie, entre Turin et Chambéry. Turin raconte cette histoire ; Chambéry, presque pas. Dolin est le mieux placé pour la porter. <button type="button" class="link" data-view="constat">Le constat →</button></span></div>
+
+      <div class="urg"><span>Le premier pas</span><b>Turin, janvier 2027</b><p>Laura Carello, qui organise le Salone del Vermouth, cherchait depuis longtemps un producteur de vermouth en Savoie. Elle propose d'intégrer Dolin au Fuorisalone et à la table ronde avec la presse : c'est la première porte du chemin. <button type="button" class="link" data-view="turin" style="color:inherit;text-decoration:underline">Chantier 1 →</button></p></div>
 
       <div class="card"><p><b>Qui fait ce plan :</b> Franck Monod accompagne Dolin dans la durée, en partenaire : il propose, challenge et ouvre les portes à Turin ; Dolin décide et exécute. Le plan s'appuie sur l'échange avec Pierre-Olivier Rousseaux (octobre 2026), la réunion avec Laura Carello à Turin (13 novembre 2026), les échanges avec le Salone depuis mai 2026, et la méthode déjà menée avec le GFA Rumilly-Vallières. <button type="button" class="link" data-view="references">Les sources →</button></p><p style="margin-top:8px"><b>Un mot inconnu ?</b> Survolez-le : sa définition apparaît. Tous sont réunis dans le <button type="button" class="link" data-view="lexique">lexique →</button></p></div>
 
@@ -1215,7 +1229,7 @@ button.st5:hover{border-color:var(--hi)}
           <li>Une maison fondée en 1821 à Chambéry, toujours en activité</li>
           <li>Une histoire commune avec Turin : les mêmes États de Savoie jusqu'en 1860</li>
           <li>Un patrimoine qui raconte : le vermouth de Chambéry, la marque Comoz</li>
-          <li>Une porte ouverte au Salone : l'organisatrice cherchait un producteur de ce côté des Alpes</li>
+          <li>Une porte ouverte au Salone : l'organisatrice cherchait un producteur de vermouth en Savoie</li>
           <li>Un relais à Turin, qui parle italien, savoyard et piémontais</li></ul></div>
         <div class="sw w"><h3>Faiblesses</h3><ul>
           <li>Chambéry presque absente du récit actuel du vermouth</li>
@@ -1323,7 +1337,7 @@ button.st5:hover{border-color:var(--hi)}
 
     <!-- OBJECTIFS -->
     <section class="view" id="v-objectifs" data-title="Les objectifs" hidden>
-      <header class="vh"><div><p class="ey">Objectifs</p><h1>Cinq objectifs <em>d'ici l'été 2027</em></h1><p class="lead">Les valeurs proposées sont à valider avec Pierre-Olivier Rousseaux à la séance de lancement ; celles entre crochets restent à fixer avec lui.</p></div></header>
+      <header class="vh"><div><p class="ey">Objectifs</p><h1>Cinq objectifs <em>d'ici l'été 2027</em></h1><p class="lead">La première étape de la vision : se faire reconnaître à Turin et poser le récit. Les valeurs proposées sont à valider avec Pierre-Olivier Rousseaux à la séance de lancement ; celles entre crochets restent à fixer avec lui. <button type="button" class="link" data-view="accueil">La vision →</button></p></div></header>
       <div class="goals">
         <div class="goal"><span class="gn">1</span><b>Être au Salone del Vermouth 2027</b><p>Dolin expose au musée et entre dans le circuit du Fuorisalone ; Pierre-Olivier raconte la maison à la table ronde avec la presse.</p><dl class="smart"><div><dt>Mesure</dt><dd>Formulaire signé, événements du Fuorisalone, table ronde</dd></div><div><dt>Départ</dt><dd>Jamais exposé</dd></div><div><dt>Cible</dt><dd>Présent, 1 table ronde</dd></div><div><dt>Échéance</dt><dd>29 janvier 2027</dd></div></dl><span class="ind">Formule Partner di prodotto, 1 800 € HT.</span></div>
         <div class="goal"><span class="gn">2</span><b>Être cité en Italie</b><p>Des articles et des publications italiennes qui citent Dolin et Chambéry.<button type="button" class="ck" data-view="questions">À fixer</button></p><dl class="smart"><div><dt>Mesure</dt><dd>Retombées presse et réseaux en Italie</dd></div><div><dt>Départ</dt><dd>À mesurer</dd></div><div><dt>Cible</dt><dd>[__] retombées</dd></div><div><dt>Échéance</dt><dd>Février 2027</dd></div></dl><span class="ind">La table ronde attire en général la presse, et parfois la télévision (Laura Carello).</span></div>
@@ -1338,9 +1352,9 @@ button.st5:hover{border-color:var(--hi)}
     <section class="view" id="v-strategie" data-title="La stratégie globale" hidden>
       <header class="pban" style="--leaf:var(--leaf-pink);--leaf2:var(--leaf-yellow)"><div class="in"><p class="ey">Stratégie · Vue d'ensemble</p><h1>Le vermouth <em>de l'espace sabaudo</em></h1><p>Les objectifs disent où aller ; la stratégie dit par quel chemin. Elle tient en trois choix : ce qu'on raconte, où on commence, comment on le dit.</p></div></header>
       <div class="luc"><b>Le positionnement en une phrase</b><span>Pour les amateurs et les professionnels du vermouth, en France comme en Italie, Dolin est le vermouth sabaudo : la maison de Chambéry qui porte, depuis 1821, l'histoire commune du vermouth de Savoie et du Piémont.</span></div>
-      <div class="card"><div class="ch"><h2>Une ambition, des objectifs, deux chantiers</h2><span class="meta">Trois moyens pour les mener, deux outils pour les servir</span></div>
+      <div class="card"><div class="ch"><h2>Une ambition, des objectifs, deux chantiers</h2><span class="meta">Le premier objectif ouvre le chemin ; trois moyens et deux outils le servent</span></div>
         <div class="sdg">
-          <div class="amb"><span>L'ambition</span><b>Remettre Chambéry sur la <em>route du vermouth</em></b></div>
+          <div class="amb"><span>La vision · 2030</span><b>Turin et Chambéry, les deux villes du vermouth sabaudo. <em>Dolin, la maison qui les relie.</em></b></div>
           <div class="cn">mesurée par</div>
           <div class="row"><div class="bx obj"><em>Le premier objectif</em><strong>2027</strong><div><b>Dolin au Salone del Vermouth de Turin</b><span>et un récit Chambéry–Turin sourcé au printemps</span></div></div></div>
           <div class="cn">portée par</div>

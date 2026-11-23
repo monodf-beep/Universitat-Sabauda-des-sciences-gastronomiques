@@ -1,0 +1,260 @@
+<title>Dolin et l'espace sabaudo</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: une lettre de proposition en colonne étroite, ponctuée de deux grilles (axes, formules) et d'un devis en tableau. */
+:root {
+  --bg: #f5f6f1;
+  --surface: #ffffff;
+  --fg: #1d211c;
+  --muted: #5b6157;
+  --line: #d9dcd2;
+  --accent: #8e1b1e;      /* rouge de Savoie */
+  --herb: #4f6b3a;        /* absinthe, plante du vermouth */
+  --accent-soft: #f3e6e4;
+  --herb-soft: #e7eddf;
+  --font-display: "Instrument Serif", "Iowan Old Style", Georgia, serif;
+  --font-body: "Public Sans", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #151814; --surface: #1d211b; --fg: #e8eae3; --muted: #a3a99c; --line: #343a30;
+    --accent: #e0726a; --herb: #9dbb83; --accent-soft: #3a2120; --herb-soft: #26301f;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #151814; --surface: #1d211b; --fg: #e8eae3; --muted: #a3a99c; --line: #343a30;
+  --accent: #e0726a; --herb: #9dbb83; --accent-soft: #3a2120; --herb-soft: #26301f;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--fg);
+  font-family: var(--font-body); font-size: 16px; line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.wrap { max-width: 860px; margin: 0 auto; padding-block: 48px 72px; }
+.prose { max-width: 66ch; }
+h1, h2, h3 { text-wrap: balance; font-weight: 400; margin: 0; }
+h1 { font-family: var(--font-display); font-size: clamp(2.4rem, 6vw, 3.8rem); line-height: 1.02; letter-spacing: -0.01em; }
+h1 em { color: var(--accent); }
+h2 { font-family: var(--font-display); font-size: clamp(1.7rem, 3.6vw, 2.3rem); line-height: 1.1; }
+h3 { font-family: var(--font-body); font-size: 1.02rem; font-weight: 700; }
+p { margin: 0; }
+.eyebrow { font-family: var(--font-mono); font-size: 0.74rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+.lede { font-size: 1.15rem; color: var(--fg); }
+.muted { color: var(--muted); }
+section { display: grid; gap: 18px; padding-block: 40px; border-top: 1px solid var(--line); }
+header.hero { display: grid; gap: 22px; padding-block: 8px 40px; }
+.meta { display: flex; flex-wrap: wrap; gap: 8px 22px; font-family: var(--font-mono); font-size: 0.8rem; color: var(--muted); }
+.route { font-family: var(--font-mono); font-size: 0.82rem; color: var(--herb); letter-spacing: 0.04em; overflow-x: auto; white-space: nowrap; padding-block: 4px; }
+.route b { color: var(--accent); font-weight: 500; }
+
+.quote { font-family: var(--font-display); font-style: italic; font-size: 1.45rem; line-height: 1.3; border-left: 2px solid var(--accent); padding-left: 18px; max-width: 58ch; }
+
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.contrast { display: grid; gap: 10px; padding: 18px 20px; border-radius: 6px; }
+.contrast.no { background: var(--accent-soft); }
+.contrast.yes { background: var(--herb-soft); }
+.contrast ul { margin: 0; padding-left: 18px; display: grid; gap: 6px; }
+.contrast h3 { font-family: var(--font-mono); font-size: 0.76rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 500; }
+.contrast.no h3 { color: var(--accent); }
+.contrast.yes h3 { color: var(--herb); }
+
+.axes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 32px; }
+.axe { display: grid; gap: 8px; align-content: start; }
+.axe .k { font-family: var(--font-mono); font-size: 0.74rem; color: var(--herb); letter-spacing: 0.08em; text-transform: uppercase; }
+.axe ul { margin: 0; padding-left: 18px; display: grid; gap: 4px; color: var(--muted); font-size: 0.95rem; }
+
+.assets { display: grid; gap: 0; }
+.asset { display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 16px; padding-block: 12px; border-bottom: 1px solid var(--line); }
+.asset:last-child { border-bottom: 0; }
+.asset dt { font-weight: 600; }
+.asset dd { margin: 0; color: var(--muted); }
+
+.steps { display: grid; gap: 0; counter-reset: s; }
+.step { display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: 16px; padding-block: 14px; border-bottom: 1px solid var(--line); }
+.step:last-child { border-bottom: 0; }
+.step .when { font-family: var(--font-mono); font-size: 0.82rem; color: var(--accent); padding-top: 2px; }
+.step p { color: var(--muted); }
+
+.offer { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 26px; display: grid; gap: 20px; }
+.figures { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.fig { display: grid; gap: 2px; }
+.fig .n { font-family: var(--font-display); font-size: 2.2rem; line-height: 1; font-variant-numeric: tabular-nums; }
+.fig .l { font-size: 0.82rem; color: var(--muted); }
+.fig.total .n { color: var(--accent); }
+.tablewrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 0.93rem; font-variant-numeric: tabular-nums; }
+th { text-align: left; font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); font-weight: 500; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+td { padding: 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+td.num, th.num { text-align: right; white-space: nowrap; }
+tr.total td { font-weight: 700; border-bottom: 0; }
+tr.total td.num { color: var(--accent); }
+.small { font-size: 0.85rem; color: var(--muted); }
+ul.plain { margin: 0; padding-left: 18px; display: grid; gap: 6px; }
+
+footer { border-top: 1px solid var(--line); padding-top: 24px; display: grid; gap: 6px; }
+footer .sig { font-family: var(--font-display); font-size: 1.6rem; }
+a { color: var(--accent); }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+@media (max-width: 680px) {
+  .two, .axes { grid-template-columns: 1fr; }
+  .figures { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .asset, .step { grid-template-columns: 1fr; gap: 4px; }
+  .offer { padding: 18px; }
+}
+</style>
+
+<div class="wrap">
+
+<header class="hero">
+  <p class="eyebrow">Proposition de partenariat · Dolin &amp; Cie · novembre 2026</p>
+  <h1>Faire de Dolin le vermouth <em>sabaudo</em>, de Chambéry à Turin</h1>
+  <p class="lede prose">Un accompagnement stratégique dans la durée, pour construire avec Dolin une place à la hauteur de son histoire : dans l'espace Savoie–Piémont, sur la route européenne du vermouth et sur le marché italien.</p>
+  <div class="meta"><span>Pour Pierre-Olivier Rousseaux, directeur</span><span>De Franck Monod</span><span>Chambéry · Turin</span></div>
+  <p class="route" aria-label="Route européenne du vermouth">Reus → Marseillan → <b>Chambéry</b> → <b>Turin</b></p>
+</header>
+
+<section>
+  <p class="eyebrow">Le point de départ</p>
+  <h2>Une histoire commune que personne ne raconte encore</h2>
+  <div class="prose" style="display:grid;gap:14px">
+    <p>Le vermouth est né dans les États de Savoie, entre Turin et Chambéry. Dolin (1821), Comoz (1856) et la maison turinoise Chazalettes, de famille savoyarde, appartiennent à la même histoire. Aujourd'hui, Turin a structuré son récit : maisons historiques, cafés storici, Salone del Vermouth, route européenne. Chambéry y reste sous-représentée.</p>
+    <p>Dolin a une carte que personne d'autre ne peut jouer : être à la fois un vermouth de Savoie et un vermouth du Piémont, plutôt qu'un « vermouth français ». Les prochains mois ouvrent plusieurs portes en même temps : le Salone de janvier 2027, la relance de Comoz, l'idée d'un musée du vermouth à Chambéry, les 270 ans de Cinzano en 2027.</p>
+  </div>
+  <p class="quote">« Chambéry e Torino condividono una storia profonda legata a questo prodotto ed è fondamentale che siano entrambe rappresentate. »<br><span class="small" style="font-style:normal;font-family:var(--font-body)">Laura Carello, fondatrice du Salone del Vermouth, mai 2026</span></p>
+</section>
+
+<section>
+  <p class="eyebrow">Ma façon de travailler</p>
+  <h2>Un partenaire de réflexion, pas un prestataire</h2>
+  <p class="prose">Je ne propose pas une mission fermée avec une liste de livrables. Je propose d'être à vos côtés dans la durée : on se confronte, on monte des projets ensemble, et je vous challenge sur la stratégie, le marketing et l'identité de la marque. Vos équipes et vos prestataires exécutent ; j'apporte le cap, le récit, le réseau et le regard extérieur.</p>
+  <div class="two">
+    <div class="contrast no">
+      <h3>Ce que je ne propose pas</h3>
+      <ul>
+        <li>Une mission ponctuelle qui s'arrête au rendu</li>
+        <li>De la production en volume (posts, traductions, fiches)</li>
+        <li>Un discours folklorique plaqué sur la marque</li>
+      </ul>
+    </div>
+    <div class="contrast yes">
+      <h3>Ce que je propose</h3>
+      <ul>
+        <li>Des séances de travail régulières avec la direction</li>
+        <li>Des projets montés ensemble, sur six mois puis plus</li>
+        <li>Un ancrage culturel sourcé qui crée de la valeur</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <p class="eyebrow">Les chantiers possibles</p>
+  <h2>Quatre axes à ouvrir ensemble</h2>
+  <p class="prose muted">Ce sont des pistes de travail, pas un cahier des charges. On choisit ensemble les priorités à chaque séance.</p>
+  <div class="axes">
+    <div class="axe">
+      <span class="k">Identité de marque</span>
+      <h3>Le positionnement « vermouth sabaudo »</h3>
+      <p>Appliquer le place-based marketing à Dolin : faire de l'histoire et des langues du territoire une matière première de la marque.</p>
+      <ul>
+        <li>Quelques mots de savoyard ou de piémontais, bien choisis, jamais une traduction complète</li>
+        <li>Sortir du seul registre « vermouth français »</li>
+      </ul>
+    </div>
+    <div class="axe">
+      <span class="k">Récit</span>
+      <h3>L'histoire Chambéry–Turin, documentée</h3>
+      <p>Un récit sourcé et validé, pour les élus, les offices de tourisme, la presse et les cafés.</p>
+      <ul>
+        <li>Archives Dolin, histoire de Comoz, fabricants chambériens</li>
+        <li>Place de Chambéry dans la route européenne du vermouth</li>
+      </ul>
+    </div>
+    <div class="axe">
+      <span class="k">Italie</span>
+      <h3>Turin et le marché italien</h3>
+      <p>Un relais à Turin, dans la langue et dans les codes du milieu.</p>
+      <ul>
+        <li>Salone del Vermouth 2027, Fuorisalone, table ronde de presse</li>
+        <li>Maisons historiques, cafés storici, bars, acheteurs (foire de Rimini)</li>
+      </ul>
+    </div>
+    <div class="axe">
+      <span class="k">Moyen terme</span>
+      <h3>Les projets structurants</h3>
+      <p>Les sujets qui demandent du temps et des partenaires des deux côtés des Alpes.</p>
+      <ul>
+        <li>Relance de Comoz, musée du vermouth à Chambéry</li>
+        <li>Coopérations transfrontalières : SavoiaExperience, Interreg</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <p class="eyebrow">Ce que j'apporte</p>
+  <h2>Un pied de chaque côté des Alpes</h2>
+  <dl class="assets">
+    <div class="asset"><dt>Le territoire</dt><dd>Savoyard installé à Turin depuis six ans, je travaille sur l'espace Savoie–Piémont au quotidien, en français, en italien, en savoyard et en piémontais.</dd></div>
+    <div class="asset"><dt>La méthode</dt><dd>Le place-based marketing, déjà appliqué au football avec le GFA : quelques mots en savoyard sur les visuels de match, qui ont fait réagir et parler du club.</dd></div>
+    <div class="asset"><dt>Le réseau à Turin</dt><dd>Laura Carello et le Salone del Vermouth, la famille Bava (Chazalettes), les acteurs de la route européenne du vermouth.</dd></div>
+    <div class="asset"><dt>Les structures</dt><dd>Institut de la Langue Savoyarde, Universitât Sabauda des sciences gastronomiques, projet Interreg SavoiaExperience, journal transfrontalier Nos Alpes.</dd></div>
+  </dl>
+</section>
+
+<section>
+  <p class="eyebrow">Les six premiers mois</p>
+  <h2>Un rythme, pas un planning figé</h2>
+  <div class="steps">
+    <div class="step"><span class="when">Décembre</span><div><h3>Séance de lancement</h3><p>Partager l'ambition de Dolin, choisir les priorités, poser le positionnement « sabaudo ». Première occasion concrète : des bouteilles Dolin au déjeuner SavoiaExperience du 3 décembre, devant 150 acteurs du tourisme et du patrimoine.</p></div></div>
+    <div class="step"><span class="when">Janvier</span><div><h3>Salone del Vermouth</h3><p>Préparer le récit présenté à Turin, la table ronde de presse et les rencontres. Je suis à Turin pendant le salon.</p></div></div>
+    <div class="step"><span class="when">Février – mars</span><div><h3>Bilan et cap</h3><p>Tirer les leçons du salon, décider des suites en Italie, lancer le récit historique Chambéry–Turin.</p></div></div>
+    <div class="step"><span class="when">Avril – mai</span><div><h3>Projets de fond</h3><p>Avancer sur un projet structurant choisi ensemble (Comoz, musée, route européenne), puis faire le point pour la suite.</p></div></div>
+  </div>
+</section>
+
+<section>
+  <p class="eyebrow">L'accompagnement</p>
+  <h2>Comment on travaille ensemble</h2>
+  <div class="offer">
+    <div class="figures">
+      <div class="fig"><span class="n">2</span><span class="l">demi-journées par mois</span></div>
+      <div class="fig"><span class="n">8 h</span><span class="l">de travail par mois</span></div>
+      <div class="fig"><span class="n">400 €</span><span class="l">la demi-journée</span></div>
+      <div class="fig total"><span class="n">800 €</span><span class="l">par mois</span></div>
+    </div>
+    <ul class="plain">
+      <li><b>Une séance de travail stratégique par mois</b> avec la direction (une demi-journée, à Chambéry ou en visio).</li>
+      <li><b>Une demi-journée de suivi</b> : préparation, mises en relation, relecture de vos projets, échanges entre deux séances.</li>
+      <li><b>Engagement de six mois</b>, de décembre 2026 à mai 2027, puis renouvelable au trimestre si on souhaite continuer.</li>
+      <li><b>Des demi-journées en plus sur demande</b>, au même tarif, quand un projet le demande (par exemple les jours du Salone à Turin).</li>
+    </ul>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Ligne</th><th class="num">Quantité</th><th class="num">Prix unitaire</th><th class="num">Total</th></tr></thead>
+        <tbody>
+          <tr><td>Accompagnement stratégique, décembre 2026 – mai 2027 (2 demi-journées de 4 h par mois)</td><td class="num">12 demi-journées</td><td class="num">400 €</td><td class="num">4 800 €</td></tr>
+          <tr><td class="muted">Option : présence au Salone del Vermouth, Turin (2 jours)</td><td class="num muted">4 demi-journées</td><td class="num muted">400 €</td><td class="num muted">1 600 €</td></tr>
+          <tr class="total"><td>Total de l'engagement de six mois, hors option</td><td></td><td></td><td class="num">4 800 €</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small">TVA non applicable, article 293 B du CGI. Facturation mensuelle de 800 €. Les frais de participation au Salone sont réglés directement par Dolin à l'organisateur.</p>
+  </div>
+</section>
+
+<footer>
+  <span class="sig">Franck Monod</span>
+  <p class="muted">franckmonod.eu · 06 31 19 42 49 · franck.monod@culturasabauda.eu</p>
+  <p class="muted">Grant-marci, et à bientôt pour en parler de vive voix.</p>
+</footer>
+
+</div>

@@ -1491,6 +1491,22 @@ button.idea{font:inherit;color:inherit;text-align:left;cursor:pointer}button.ide
 .tl3 b{font:700 18px/1.2 var(--cond);color:var(--ink)}
 .tl3 p{margin:0;font-size:14px;color:var(--ink2)}
 @media (max-width:800px){.tl3{grid-template-columns:minmax(0,1fr);padding:0 0 0 26px}.tl3::before{left:7px;right:auto;top:0;bottom:0;width:2px;height:auto;background:linear-gradient(180deg,var(--band-hi),var(--hi))}.tl3>li::before{top:8px;left:-26px;padding:0 0 4px}.tl3>li.on::before{top:6px}}
+/* ---- Dolin moteur, pas propriétaire ---- */
+.mot{position:relative;border-radius:14px;padding:clamp(20px,3.4vw,36px);background:radial-gradient(120% 200% at 90% 0%,var(--band2) 0%,var(--band) 70%);color:var(--on-band);display:flex;flex-direction:column;gap:14px}
+.mot::before{content:"";position:absolute;inset:10px;border:1px solid color-mix(in srgb,var(--band-hi) 50%,transparent);border-radius:6px;pointer-events:none}
+.motk{margin:0;font:700 12px var(--body);letter-spacing:.08em;color:var(--band-hi)}
+.moth{margin:0;font:700 clamp(28px,3.6vw,42px)/1.05 var(--cond);color:var(--on-band)}
+.moth em{font-style:italic;color:var(--band-hi)}
+.motf{display:grid;grid-template-columns:minmax(0,1fr) 32px minmax(0,1.1fr) 32px minmax(0,1fr);align-items:stretch;gap:8px;position:relative;z-index:1}
+.motf>div{border:1px solid color-mix(in srgb,var(--band-hi) 45%,transparent);border-radius:10px;padding:14px 16px;background:color-mix(in srgb,var(--on-band) 6%,transparent);display:flex;flex-direction:column;gap:4px}
+.motf>div.mid{background:var(--band-hi);border-color:var(--band-hi)}
+.motf span{font:700 11.5px var(--body);letter-spacing:.06em;color:var(--band-hi)}
+.motf b{font:700 21px/1.1 var(--cond);color:var(--on-band)}
+.motf p{margin:0;font-size:13.5px;color:var(--on-band2)}
+.motf .mid span,.motf .mid b,.motf .mid p{color:var(--band)}
+.motf i{font-style:normal;align-self:center;justify-self:center;color:var(--band-hi);font-size:22px;font-weight:700}
+.motn{margin:0;font-size:14px;color:var(--on-band2);max-width:80ch;position:relative;z-index:1}
+@media (max-width:900px){.motf{grid-template-columns:minmax(0,1fr)}.motf i{transform:rotate(90deg)}}
 </style>
 <div class="app">
   <aside class="side">
@@ -1638,15 +1654,6 @@ button.idea{font:inherit;color:inherit;text-align:left;cursor:pointer}button.ide
         <div class="nk"><span class="ntag">Dolin</span><span class="nv">5 %</span><span class="nl">de ses ventes en bars et restaurants (2020)</span></div>
       </div>
 
-      <div class="sec"><h2>Lecture critique</h2><span class="note">Ce que ces chiffres disent du projet</span></div>
-      <div class="rules">
-        <div class="rule"><b>L'essor de Turin n'est pas un marché local</b><span>Il se fait aux deux tiers à l'export, surtout aux États-Unis, et dans les bars. S'inspirer de Turin, ce n'est pas vendre plus de bouteilles en Savoie : c'est organiser une offre, un nom et un récit.</span></div>
-        <div class="rule"><b>Dolin est peu présent là où le vermouth progresse</b><span>5 % des ventes en bars et restaurants, quand le renouveau du vermouth passe par le cocktail et le service au verre. C'est le premier écart à combler, en Savoie comme à Turin.</span></div>
-        <div class="rule" style="--rc:var(--warn)"><b>Chambéry n'a plus de nom protégé</b><span>Turin a son indication géographique depuis 2017 ; « Vermouth de Chambéry » a perdu la sienne la même année, faute de dossier. Un nom se défend à plusieurs : avec deux maisons, Dolin et Routin, la question d'une démarche commune se pose.</span></div>
-        <div class="rule" style="--rc:var(--warn)"><b>L'Italie n'est pas encore un marché pour Dolin</b><span>Aucune source ne la cite parmi ses pays d'export. Le Salone est une première porte, pas un débouché acquis.</span></div>
-        <div class="rule"><b>Moins de volume, plus de valeur</b><span>Le marché mondial se resserre et monte en gamme. C'est un marché pour des maisons qui ont une histoire à raconter et un prix à défendre : il favorise Dolin, à condition d'être servi là où le vermouth se boit.</span></div>
-        <div class="rule"><b>La notoriété locale reste à construire</b><span>En 2021, Pierre-Olivier Rousseaux souhaitait que « les Chambériens et les Savoyards » prennent conscience que des maisons familiales portent le nom de Chambéry. C'est toujours l'enjeu.</span></div>
-      </div>
 
       <div class="sec"><h2>Le détail des chiffres</h2><span class="note">À ouvrir au besoin</span></div>
       <details class="card acc"><summary><span class="ach"><h2>Le monde et la France</h2><span class="meta">IWSR 2026, présenté par la FFVA au colloque Iter Vitis du 3 juin 2026</span></span></summary><div class="accb">
@@ -1778,13 +1785,6 @@ button.idea{font:inherit;color:inherit;text-align:left;cursor:pointer}button.ide
       </div>
       <div class="luc"><b>Ce que dit le marketing</b><span>C'est la stratégie classique du leader : développer la demande globale plutôt que se battre pour des parts de marché, parce que c'est le leader qui profite le plus d'un marché qui grandit (Philip Kotler, <i>Marketing Management</i>). En Savoie, le leader, c'est Dolin. On parle aussi de coopétition : coopérer avec ses concurrents pour agrandir le marché, puis s'y faire concurrence (Adam Brandenburger et Barry Nalebuff, 1996). À Turin, les maisons se font concurrence, mais défendent ensemble un nom et un récit.</span></div>
 
-      <div class="sec"><h2>Lecture critique</h2><span class="note">Ce que la vision engage, et ce qu'elle risque</span></div>
-      <div class="rules">
-        <div class="rule"><b>Les outils ne sont pas des buts</b><span>Être au Salone ou sur la route européenne ne dit rien de la réussite. Ce qui compte : les relations qui durent à Turin, les établissements qui servent Dolin en Savoie, les projets qui naissent.</span></div>
-        <div class="rule"><b>Développer le marché, c'est aider des concurrents</b><span>Un nouveau vermouth savoyard peut prendre des clients à Dolin. Le pari est que le marché grandit plus vite que la part perdue, comme à Turin. Il se vérifie : on suit les ventes de Dolin en Savoie à chaque étape.</span></div>
-        <div class="rule" style="--rc:var(--warn)"><b>Dolin moteur, pas propriétaire</b><span>Les projets qui dépassent Dolin passent par l'Universitât Sabauda, pour que d'autres maisons, des bars et des producteurs puissent s'y joindre. Un projet portant le seul nom de Dolin les tiendrait à l'écart.</span></div>
-        <div class="rule" style="--rc:var(--warn)"><b>Le risque de la dispersion</b><span>Deux axes, trois outils, des projets : on n'en mène qu'un ou deux à la fois, choisis à chaque trimestre.</span></div>
-      </div>
       <div class="luc"><b>De la vision aux objectifs</b><span>Chaque axe se traduit en objectifs mesurables d'ici mai 2027. <button type="button" class="link" data-view="objectifs">Les objectifs →</button></span></div>
     </section>
 
@@ -1983,7 +1983,18 @@ button.idea{font:inherit;color:inherit;text-align:left;cursor:pointer}button.ide
     <!-- PROJETS -->
     <section class="view" id="v-projets" data-title="Projets" hidden>
       <header class="vh"><div><p class="ey">Les moyens · 3 · Projets</p><h1>La renaissance <em>des vermouths savoyards</em></h1><p class="lead">Développer le marché savoyard du vermouth : plus de lieux, plus de vermouths, plus de clients, avec Dolin pour leader. On choisit un ou deux projets à la fois.</p></div></header>
-      <div class="thread"><span class="tl">Le porteur</span><b>L'Universitât Sabauda, pour les projets qui dépassent Dolin</b><span>Une structure neutre peut réunir d'autres maisons, des bars, des producteurs et des collectivités, et répondre aux appels à projets comme Interreg ALCOTRA. Dolin y est moteur, pas propriétaire ; les projets propres à Dolin restent chez Dolin. Chaque projet est chiffré à part.</span></div>
+      <div class="mot">
+        <p class="motk">Pour les projets qui dépassent Dolin</p>
+        <h2 class="moth">Dolin moteur, <em>pas propriétaire</em></h2>
+        <div class="motf">
+          <div><span>Le moteur</span><b>Dolin</b><p>Propose, apporte son savoir-faire et son nom</p></div>
+          <i aria-hidden="true">→</i>
+          <div class="mid"><span>Le porteur neutre</span><b>Universitât Sabauda</b><p>Réunit tout le monde, porte les dossiers, répond aux appels à projets (Interreg ALCOTRA)</p></div>
+          <i aria-hidden="true">→</i>
+          <div><span>Les partenaires</span><b>Tout le territoire</b><p>D'autres maisons, des bars, des producteurs, des chefs, des collectivités</p></div>
+        </div>
+        <p class="motn">Un projet au seul nom de Dolin tiendrait les autres à l'écart ; porté par une structure neutre, il les réunit, et le marché grandit pour tous. Les projets propres à Dolin restent chez Dolin ; chaque projet est chiffré à part.</p>
+      </div>
       <div class="sec"><h2>Pour le marché savoyard</h2><span class="note">Axe 2</span></div>
       <div class="proj">
         <div class="pj"><div class="pjh"><b>Un lieu du vermouth à Chambéry</b><span class="tag pis">Piste</span></div><p>Un musée et un lieu de dégustation : être présent dans la ville, pas seulement dans les rayons. C'est aussi ce que demande la route européenne : des lieux ouverts au public.</p><small>Porté par Dolin · un espace d'exposition annoncé en 2022, à vérifier</small></div>
@@ -2558,6 +2569,8 @@ button.idea{font:inherit;color:inherit;text-align:left;cursor:pointer}button.ide
   }
 })();
 </script>
+
+
 
 
 

@@ -1467,6 +1467,19 @@ button.idea{font:inherit;color:inherit;text-align:left;cursor:pointer}button.ide
 .hbn b{font-size:19px}
 .hbn button{flex-direction:row;align-items:baseline;gap:12px;flex-wrap:wrap}
 @media (max-width:900px){.hbn{grid-template-columns:minmax(0,1fr)}}
+/* ---- maison v2 : comme au GFA ---- */
+.hroof{padding:clamp(56px,7vw,84px) 20px 26px;border-radius:0 0 10px 10px}
+.hgap{height:14px}
+.hob{grid-template-columns:120px repeat(2,minmax(0,1fr));border:2px solid var(--band);border-radius:12px 12px 0 0}
+.hob b{color:var(--band);font-size:clamp(19px,2vw,24px)}
+.hob ol{margin-top:8px}
+.hbn{border-color:var(--band);border-top:1px dashed var(--line2)}
+.hto{grid-template-columns:120px repeat(3,minmax(0,1fr));border-style:dashed;background:var(--surface2)}
+.hto b{font:700 16px/1.2 var(--body);display:flex;align-items:center;gap:6px}
+.hto .hl,.hto em{color:var(--muted)}
+.qm{font-style:normal;display:inline-grid;place-items:center;width:17px;height:17px;border-radius:50%;border:1px solid var(--line2);font:700 11px var(--body);color:var(--muted);cursor:help}
+.hfoot{margin:12px 0 0;text-align:center;font-size:13px;color:var(--muted)}
+@media (max-width:900px){.hto{grid-template-columns:minmax(0,1fr)}}
 </style>
 <div class="app">
   <aside class="side">
@@ -1808,36 +1821,32 @@ button.idea{font:inherit;color:inherit;text-align:left;cursor:pointer}button.ide
     <section class="view" id="v-strategie" data-title="La stratégie globale" hidden>
       <div class="house">
         <div class="hroof"><p class="hk hk2">Vision 2030</p><h2 class="ht">Chambéry, à nouveau <em>ville du vermouth</em></h2></div>
-        <div class="hrow hax"><span class="hl">Deux axes</span>
-          <button type="button" data-view="vision"><em>Axe 1</em><b>Renouer avec l'espace sabaudo du vermouth</b></button>
-          <button type="button" data-view="vision"><em>Axe 2</em><b>Travailler le marché savoyard</b></button>
-        </div>
-        <div class="hpill">↑ mesurée par</div>
+        <div class="hgap"></div>
         <div class="hrow hob"><span class="hl">Les objectifs</span>
-          <button type="button" data-view="objectifs"><em>Axe 1 · fin 2027</em><ol start="1"><li>Entrer dans la famille du vermouth de Turin</li><li>Nouer des partenariats avec d'autres maisons</li><li>Mettre Chambéry sur la Route des vermouths</li></ol></button>
-          <button type="button" data-view="objectifs"><em>Axe 2 · fin 2027</em><ol start="4"><li>Être connu en Savoie</li><li>Être servi en Savoie</li><li>Lancer un premier projet qui agrandit le gâteau</li></ol></button>
+          <button type="button" data-view="objectifs"><em>Axe 1 · fin 2027</em><b>Renouer avec l'espace sabaudo du vermouth</b><ol start="1"><li>Entrer dans la famille du vermouth de Turin</li><li>Nouer des partenariats avec d'autres maisons</li><li>Mettre Chambéry sur la Route des vermouths</li></ol></button>
+          <button type="button" data-view="objectifs"><em>Axe 2 · fin 2027</em><b>Travailler le marché savoyard</b><ol start="4"><li>Être connu en Savoie</li><li>Être servi en Savoie</li><li>Lancer un premier projet qui agrandit le gâteau</li></ol></button>
         </div>
         <div class="hrow hbn"><span class="hl">En bonus</span>
           <button type="button" data-view="objectifs"><b>Le Suédois, l'amer de Dolin</b><span>Sur les deux axes : l'amaro dans les bars de Turin, le digestif dans les restaurants de Savoie</span></button>
         </div>
         <div class="hpill">↑ portés par</div>
         <div class="hrow hch"><span class="hl">Deux chantiers</span>
-          <button type="button" data-view="turin"><em>Chantier 1</em><b>L'espace sabaudo</b><span>Le Salone, les maisons de Turin, la Route des vermouths</span></button>
-          <button type="button" data-view="chambery"><em>Chantier 2</em><b>Le marché savoyard</b><span>Les bars et restaurants, un lieu à Chambéry, les projets</span></button>
+          <button type="button" data-view="turin"><em>Chantier 1 · axe 1</em><b>L'espace sabaudo</b><span>Le Salone, les maisons de Turin, la Route des vermouths</span></button>
+          <button type="button" data-view="chambery"><em>Chantier 2 · axe 2</em><b>Le marché savoyard</b><span>Les bars et restaurants, un lieu à Chambéry, les projets</span></button>
         </div>
         <div class="hpill">↑ nourris par</div>
         <div class="hrow hmo"><span class="hl">Les moyens</span>
-          <button type="button" data-view="marketing"><em>Faire vivre</em><b>Marketing</b><span>Les expériences : le stand, les bars, un lieu à Chambéry</span></button><i class="harr" aria-hidden="true">→</i>
-          <button type="button" data-view="communication"><em>Faire savoir</em><b>Communication</b><span>Les messages, en français et en italien</span></button><i class="harr" aria-hidden="true">→</i>
-          <button type="button" data-view="projets"><em>Faire grandir</em><b>Projets</b><span>Agrandir le gâteau, avec d'autres</span></button>
+          <button type="button" data-view="marketing"><em>Faire vivre</em><b>Marketing</b><span>Concevoir les expériences : le stand, les bars, un lieu à Chambéry</span></button><i class="harr" aria-hidden="true">→</i>
+          <button type="button" data-view="communication"><em>Faire savoir</em><b>Communication</b><span>Faire connaître la maison, en français et en italien</span></button><i class="harr" aria-hidden="true">→</i>
+          <button type="button" data-view="projets"><em>Faire grandir</em><b>Projets</b><span>Agrandir le gâteau, avec d'autres maisons et des bars</span></button>
         </div>
         <div class="hpill">↑ servis par</div>
-        <div class="hrow hso"><span class="hl">Les outils</span>
-          <button type="button" data-view="marque"><b>Identité de marque</b><span>Le vermouth sabaudo, le socle</span></button>
-          <button type="button" data-view="marketing"><b>Place-based marketing</b><span>La culture du territoire comme matière</span></button>
-          <button type="button" data-view="moyens"><b>Institut de la Langue Savoyarde</b><span>Le label de la langue</span></button>
-          <button type="button" data-view="moyens"><b>Universitât Sabauda</b><span>Le label des projets collectifs</span></button>
+        <div class="hrow hto"><span class="hl">Les outils</span>
+          <button type="button" data-view="marketing"><b>Place-based marketing <i class="qm" title="Faire de la culture d'un territoire (sa langue, son histoire, sa table) la matière première de la marque.">?</i></b><span>Faire de la culture du territoire la matière des offres</span></button>
+          <button type="button" data-view="chambery"><b>Marketing local <i class="qm" title="Agir au plus près des clients d'un territoire : cavistes, bars, restaurants, offices de tourisme, entreprises, communes.">?</i></b><span>S'ancrer en Savoie : cavistes, bars, restaurants, tourisme</span></button>
+          <button type="button" data-view="tableau"><b>Cycle de vie client <i class="qm" title="Les étapes par lesquelles passe un client : notoriété, intérêt, considération, achat, fidélité, recommandation. On en pilote chacune.">?</i></b><span>Piloter chaque étape, de la notoriété à la recommandation</span></button>
         </div>
+        <p class="hfoot">Le socle : l'identité de marque, le vermouth sabaudo. Deux labels : l'Institut de la Langue Savoyarde pour la langue, l'Universitât Sabauda pour les projets collectifs.</p>
       </div>
       <div class="luc"><b>Le positionnement en une phrase</b><span>Pour les amateurs et les professionnels du vermouth, en Savoie, en Piémont et en Europe, Dolin est le vermouth sabaudo : la maison de Chambéry qui porte, depuis 1821, l'histoire commune du vermouth de Savoie et du Piémont, et sa renaissance.</span></div>
       <div class="card"><div class="ch"><h2>Trois choix qui guident tout le plan</h2></div>
@@ -1871,7 +1880,7 @@ button.idea{font:inherit;color:inherit;text-align:left;cursor:pointer}button.ide
 
     <!-- OUTILS -->
     <section class="view" id="v-moyens" data-title="Les moyens" hidden>
-      <header class="vh"><div><p class="ey">Stratégie · Les moyens</p><h1>Marketing, communication, <em>projets</em></h1><p class="lead">Trois moyens pour mener les deux chantiers : le marketing fait vivre, la communication fait savoir, les projets font grandir le gâteau. Ils s'appuient sur des outils : l'identité de marque, le place-based marketing et deux labels.</p></div></header>
+      <header class="vh"><div><p class="ey">Stratégie · Les moyens</p><h1>Marketing, communication, <em>projets</em></h1><p class="lead">Trois moyens pour mener les deux chantiers : le marketing fait vivre, la communication fait savoir, les projets font grandir le gâteau. Ils s'appuient sur trois outils (place-based marketing, marketing local, cycle de vie client), sur l'identité de marque et sur deux labels.</p></div></header>
       <div class="stair">
         <button type="button" class="st5" data-view="marketing"><em>1</em><b>Marketing</b><span>Faire vivre : les expériences, le stand, les bars, un lieu à Chambéry.</span></button>
         <button type="button" class="st5" data-view="communication"><em>2</em><b>Communication</b><span>Faire savoir : les messages, les publics, les canaux, en français et en italien.</span></button>
@@ -1879,9 +1888,11 @@ button.idea{font:inherit;color:inherit;text-align:left;cursor:pointer}button.ide
       </div>
       <div class="sec"><h2>Les outils</h2><span class="note">Au service des trois moyens</span></div>
       <div class="ideas">
-        <button type="button" class="idea" data-view="marque"><i>a</i><div><b>Identité de marque</b><span>Le socle : le vermouth sabaudo, la plateforme, le récit</span></div></button>
-        <button type="button" class="idea" data-view="marketing"><i>b</i><div><b>Place-based marketing</b><span>La langue, l'histoire et la table du territoire comme matière</span></div></button>
+        <button type="button" class="idea" data-view="marketing"><i>a</i><div><b>Place-based marketing</b><span>Faire de la culture du territoire la matière des offres</span></div></button>
+        <button type="button" class="idea" data-view="chambery"><i>b</i><div><b>Marketing local</b><span>S'ancrer en Savoie : cavistes, bars, restaurants, tourisme</span></div></button>
+        <button type="button" class="idea" data-view="tableau"><i>c</i><div><b>Cycle de vie client</b><span>Piloter chaque étape, de la notoriété à la recommandation</span></div></button>
       </div>
+      <p class="note">Le socle : l'<button type="button" class="link" data-view="marque">identité de marque</button>, le vermouth sabaudo.</p>
       <div class="thread"><span class="tl">Le cap</span><b>D'une identité de géographie à une identité de culture</b><span>Aujourd'hui, Dolin est « un vermouth français » ; demain, le vermouth sabaudo. Le place-based marketing n'est pas un moyen de plus : c'est ce cap, qui traverse les trois moyens.</span></div>
       <div class="thread"><span class="tl">Le fil rouge</span><b>Véhiculer la culture des Savoyards</b><span>Faire vivre, à travers Dolin, la culture de la Savoie : sa langue, son histoire, sa table. Elle passe par le marketing, par la communication, et par des projets culturels. <button type="button" class="link" data-view="projets">Les projets →</button></span></div>
       <div class="sec"><h2>Et deux labels</h2><span class="note">Chacun dans son rôle</span></div>
@@ -2543,6 +2554,8 @@ button.idea{font:inherit;color:inherit;text-align:left;cursor:pointer}button.ide
   }
 })();
 </script>
+
+
 
 
 

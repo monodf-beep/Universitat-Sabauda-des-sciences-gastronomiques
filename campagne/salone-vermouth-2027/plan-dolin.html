@@ -1458,6 +1458,9 @@ button.st5:hover{border-color:var(--hi)}
 .hpill::before{top:-10px}.hpill::after{bottom:-10px}
 @media (max-width:900px){.hrow,.hmo,.hso,.hob{grid-template-columns:minmax(0,1fr)}.hrow .hl{border-right:0;border-bottom:1px solid var(--line)}.hrow button{border-left:0;border-top:1px solid var(--line)}.harr{display:none}}
 button.idea{font:inherit;color:inherit;text-align:left;cursor:pointer}button.idea:hover{border-color:var(--hi)}
+.hroof .hk2{font:700 clamp(18px,2.2vw,26px)/1 var(--cond);letter-spacing:.04em;margin-bottom:10px}
+.hroof .hk2::before,.hroof .hk2::after{width:36px}
+#v-strategie>.house:first-child{margin-top:4px}
 </style>
 <div class="app">
   <aside class="side">
@@ -1797,10 +1800,8 @@ button.idea{font:inherit;color:inherit;text-align:left;cursor:pointer}button.ide
 
     <!-- STRATÉGIE -->
     <section class="view" id="v-strategie" data-title="La stratégie globale" hidden>
-      <header class="pban"><div class="in"><p class="ey">Stratégie · Vue d'ensemble</p><h1>Le vermouth <em>de l'espace sabaudo</em></h1><p>La vision a deux axes ; la stratégie dit comment les tenir ensemble : ce qu'on raconte, où on agit, avec quels outils.</p></div></header>
-      <div class="luc"><b>Le positionnement en une phrase</b><span>Pour les amateurs et les professionnels du vermouth, en Savoie, en Piémont et en Europe, Dolin est le vermouth sabaudo : la maison de Chambéry qui porte, depuis 1821, l'histoire commune du vermouth de Savoie et du Piémont, et sa renaissance.</span></div>
       <div class="house">
-        <div class="hroof"><p class="hk">Vision 2030</p><h2 class="ht">Chambéry, à nouveau <em>ville du vermouth</em></h2></div>
+        <div class="hroof"><p class="hk hk2">Vision 2030</p><h2 class="ht">Chambéry, à nouveau <em>ville du vermouth</em></h2></div>
         <div class="hrow hax"><span class="hl">Deux axes</span>
           <button type="button" data-view="vision"><em>Axe 1</em><b>Renouer avec l'espace sabaudo du vermouth</b></button>
           <button type="button" data-view="vision"><em>Axe 2</em><b>Travailler le marché savoyard</b></button>
@@ -1830,6 +1831,7 @@ button.idea{font:inherit;color:inherit;text-align:left;cursor:pointer}button.ide
           <button type="button" data-view="moyens"><b>Universitât Sabauda</b><span>Le label des projets collectifs</span></button>
         </div>
       </div>
+      <div class="luc"><b>Le positionnement en une phrase</b><span>Pour les amateurs et les professionnels du vermouth, en Savoie, en Piémont et en Europe, Dolin est le vermouth sabaudo : la maison de Chambéry qui porte, depuis 1821, l'histoire commune du vermouth de Savoie et du Piémont, et sa renaissance.</span></div>
       <div class="card"><div class="ch"><h2>Trois choix qui guident tout le plan</h2></div>
         <div class="why3">
           <div><b>Une histoire commune, d'abord</b><span>Dolin ne se présente pas comme un vermouth français à Turin, mais comme une maison de la même histoire que les maisons turinoises.</span></div>
@@ -2533,6 +2535,7 @@ button.idea{font:inherit;color:inherit;text-align:left;cursor:pointer}button.ide
   }
 })();
 </script>
+
 
 
 

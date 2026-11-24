@@ -1627,6 +1627,11 @@ body{margin:0}
 .mktf figcaption{font-size:13px;color:var(--muted);text-align:center}
 .mkt .mk-n.w{fill:var(--on-band)}.mkt .mk-s.w{fill:var(--band-hi)}
 .mkt .r1{fill:var(--band)}.mkt .mk-c{fill:var(--band2)}
+.grow{width:100%;max-width:190px;height:auto;display:block;margin-bottom:6px}
+.grow .gb1{fill:color-mix(in srgb,var(--band-hi) 35%,var(--surface))}.grow .gb2{fill:color-mix(in srgb,var(--band-hi) 75%,var(--surface))}.grow .gb3{fill:var(--hi)}
+.grow .gl{font:600 11px var(--body);fill:var(--muted)}
+.grow .ga{fill:none;stroke:var(--ink2);stroke-width:2;stroke-dasharray:4 4}.grow .gah{fill:none;stroke:var(--ink2);stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
+.hroof .hsub{margin:6px 0 0;font-size:14px;color:var(--on-band2);position:relative}
 </style>
 <div class="app">
   <aside class="side">
@@ -1890,7 +1895,7 @@ body{margin:0}
       <header class="vh"><div><p class="ey">Vision et objectif · L'objectif</p><h1>L'objectif, <em>et comment y arriver</em></h1><p class="lead">Un objectif, trois étapes jusqu'en 2030, six jalons pour les deux chantiers. Les cibles entre crochets se fixent avec Pierre-Olivier Rousseaux. <button type="button" class="link" data-view="vision">La vision →</button></p></div></header>
       <div class="biz">
         <div class="bizh"><p class="bizk">L'objectif</p><h2>Faire grandir <em>les ventes de Dolin</em></h2><p>En Savoie, en France, en Italie et à l'export : le vermouth, Comoz et le Suédois, portés par le même récit.</p></div>
-        <div class="bizn"><strong>+[__] %</strong><span>de chiffre d'affaires d'ici 2030, la Savoie en tête</span><em class="tbd">à fixer</em></div>
+        <div class="bizn"><svg class="grow" viewBox="0 0 170 104" role="img" aria-label="Trois barres qui montent, de 2027 à 2030 : le chiffre d'affaires de Dolin grandit."><rect class="gb1" x="8" y="58" width="44" height="24" rx="3"/><text class="gl" x="30" y="98" text-anchor="middle">2027</text><rect class="gb2" x="62" y="40" width="44" height="42" rx="3"/><text class="gl" x="84" y="98" text-anchor="middle">2028-29</text><rect class="gb3" x="116" y="14" width="44" height="68" rx="3"/><text class="gl" x="138" y="98" text-anchor="middle">2030</text><path class="ga" d="M20 50 Q80 34 150 6"/><path class="gah" d="M140 4 L152 5 L146 15"/></svg><span>Le chiffre d'affaires grandit d'ici 2030, la Savoie en tête</span><em class="tbd">cible à fixer</em></div>
         <figure class="mktf"><svg class="mkt" viewBox="0 10 600 228" role="img" aria-label="Des cercles qui partent de Chambéry : la Savoie en tête, puis la France, l'Italie et l'export. Le même récit nourrit tous les marchés de Dolin."><path class="r4" d="M86 236 A214 214 0 0 1 514 236 Z"/><path class="r3" d="M132 236 A168 168 0 0 1 468 236 Z"/><path class="r2" d="M178 236 A122 122 0 0 1 422 236 Z"/><path class="r1" d="M224 236 A76 76 0 0 1 376 236 Z"/><text class="mk-n" x="300" y="44" text-anchor="middle">Export</text><text class="mk-s" x="300" y="59" text-anchor="middle">États-Unis, Europe…</text><text class="mk-n" x="300" y="90" text-anchor="middle">Italie</text><text class="mk-s" x="300" y="105" text-anchor="middle">Turin, un distributeur</text><text class="mk-n" x="300" y="136" text-anchor="middle">France</text><text class="mk-s" x="300" y="151" text-anchor="middle">cavistes, bars, rayons</text><text class="mk-n w" x="300" y="188" text-anchor="middle">Savoie</text><text class="mk-s w" x="300" y="203" text-anchor="middle">en tête</text><path class="mk-c" d="M266 236 A34 34 0 0 1 334 236 Z"/><text class="mk-cn" x="300" y="229" text-anchor="middle">Dolin</text></svg><figcaption>Le même récit, de Chambéry à tous les marchés. Les indicateurs, marché par marché : <button type="button" class="link" data-view="tableau">le tableau de bord →</button></figcaption></figure>
       </div>
       <details class="card acc"><summary><span class="ach"><h2>Ce que ça peut rapporter</h2><span class="meta">Le calcul, à faire à la séance de lancement</span></span></summary><div class="accb">
@@ -1936,11 +1941,11 @@ body{margin:0}
     <!-- STRATÉGIE -->
     <section class="view" id="v-strategie" data-title="La stratégie globale" hidden>
       <div class="house">
-        <div class="hroof"><p class="hk hk2">Vision 2030</p><h2 class="ht">Dolin, la référence <em>du vermouth, de Chambéry à Turin</em></h2><p class="hax">Deux axes : renouer avec l'espace sabaudo du vermouth ; travailler le marché savoyard</p></div>
+        <div class="hroof"><p class="hk hk2">Vision 2030</p><h2 class="ht">Dolin, la référence <em>du vermouth, de Chambéry à Turin</em></h2><p class="hsub">Deux axes : renouer avec l'espace sabaudo du vermouth ; travailler le marché savoyard</p></div>
         <div class="hgap"></div>
         <div class="hrow hobj"><span class="hl">L'objectif</span>
           <button type="button" data-view="objectifs"><b>Faire grandir les ventes de Dolin</b><span>En Savoie, en France, en Italie et à l'export : le même récit nourrit tous les marchés</span></button>
-          <button type="button" data-view="objectifs" class="hnum"><strong>+[__] %</strong><span>de chiffre d'affaires d'ici 2030, la Savoie en tête <em class="tbd">à fixer</em></span></button>
+          <button type="button" data-view="objectifs" class="hnum"><svg class="grow" viewBox="0 0 170 104" role="img" aria-label="Trois barres qui montent, de 2027 à 2030 : le chiffre d'affaires de Dolin grandit."><rect class="gb1" x="8" y="58" width="44" height="24" rx="3"/><text class="gl" x="30" y="98" text-anchor="middle">2027</text><rect class="gb2" x="62" y="40" width="44" height="42" rx="3"/><text class="gl" x="84" y="98" text-anchor="middle">2028-29</text><rect class="gb3" x="116" y="14" width="44" height="68" rx="3"/><text class="gl" x="138" y="98" text-anchor="middle">2030</text><path class="ga" d="M20 50 Q80 34 150 6"/><path class="gah" d="M140 4 L152 5 L146 15"/></svg><span>Le chiffre d'affaires grandit d'ici 2030, la Savoie en tête <em class="tbd">cible à fixer</em></span></button>
         </div>
         <div class="hpill">↑ portés par</div>
         <div class="hrow hch"><span class="hl">Deux chantiers</span>
@@ -2688,6 +2693,8 @@ body{margin:0}
   }
 })();
 </script>
+
+
 
 
 

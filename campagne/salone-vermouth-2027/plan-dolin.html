@@ -1461,6 +1461,12 @@ button.idea{font:inherit;color:inherit;text-align:left;cursor:pointer}button.ide
 .hroof .hk2{font:700 clamp(18px,2.2vw,26px)/1 var(--cond);letter-spacing:.04em;margin-bottom:10px}
 .hroof .hk2::before,.hroof .hk2::after{width:36px}
 #v-strategie>.house:first-child{margin-top:4px}
+.hob{grid-template-columns:120px repeat(2,minmax(0,1fr))}
+.hbn{grid-template-columns:120px minmax(0,1fr);margin-top:-1px;border-radius:0 0 12px 12px;border:2px solid var(--hi);border-top:1px dashed var(--line2);background:color-mix(in srgb,var(--band-hi) 16%,var(--surface))}
+.hob{border-radius:12px 12px 0 0}
+.hbn b{font-size:19px}
+.hbn button{flex-direction:row;align-items:baseline;gap:12px;flex-wrap:wrap}
+@media (max-width:900px){.hbn{grid-template-columns:minmax(0,1fr)}}
 </style>
 <div class="app">
   <aside class="side">
@@ -1810,7 +1816,9 @@ button.idea{font:inherit;color:inherit;text-align:left;cursor:pointer}button.ide
         <div class="hrow hob"><span class="hl">Les objectifs</span>
           <button type="button" data-view="objectifs"><em>Axe 1 · fin 2027</em><ol start="1"><li>Entrer dans la famille du vermouth de Turin</li><li>Nouer des partenariats avec d'autres maisons</li><li>Mettre Chambéry sur la Route des vermouths</li></ol></button>
           <button type="button" data-view="objectifs"><em>Axe 2 · fin 2027</em><ol start="4"><li>Être connu en Savoie</li><li>Être servi en Savoie</li><li>Lancer un premier projet qui agrandit le gâteau</li></ol></button>
-          <button type="button" data-view="objectifs" class="hbon"><em>En bonus</em><b>Le Suédois</b><span>l'amer de Dolin, à Turin et en Savoie</span></button>
+        </div>
+        <div class="hrow hbn"><span class="hl">En bonus</span>
+          <button type="button" data-view="objectifs"><b>Le Suédois, l'amer de Dolin</b><span>Sur les deux axes : l'amaro dans les bars de Turin, le digestif dans les restaurants de Savoie</span></button>
         </div>
         <div class="hpill">↑ portés par</div>
         <div class="hrow hch"><span class="hl">Deux chantiers</span>
@@ -2535,6 +2543,7 @@ button.idea{font:inherit;color:inherit;text-align:left;cursor:pointer}button.ide
   }
 })();
 </script>
+
 
 
 

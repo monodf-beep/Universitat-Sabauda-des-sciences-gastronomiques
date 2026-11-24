@@ -1646,6 +1646,8 @@ body{margin:0}
 .gfa3 figcaption{font-size:13.5px;color:var(--ink2)}
 @media (max-width:600px){.gfa3i{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}}
 .cmp .cm1 ul,.cmp .cm2 ul{margin:6px 0 8px;padding-left:18px;font-size:14px;color:var(--ink2)}.cmp li{margin:3px 0}
+.hmo{grid-template-columns:120px minmax(0,1fr) 24px minmax(0,1fr) 24px minmax(0,1fr) 24px minmax(0,1fr)}
+@media (max-width:900px){.hmo{grid-template-columns:minmax(0,1fr)}}
 </style>
 <div class="app">
   <aside class="side">
@@ -1668,10 +1670,10 @@ body{margin:0}
         <p class="ngrp" title="Quel chemin choisit-on ?">3 · Stratégie</p>
         <button type="button" data-view="strategie"><svg viewBox="0 0 24 24"><path d="M4 20 10 8l4 6 6-10"/><path d="M14 4h6v6"/></svg>La stratégie globale</button>
         <button type="button" data-view="moyens"><svg viewBox="0 0 24 24"><path d="M12 3 3 8l9 5 9-5-9-5z"/><path d="M3 13l9 5 9-5"/></svg>Les moyens</button>
+        <button type="button" data-view="marque" class="sub">Identité de marque</button>
         <button type="button" data-view="marketing" class="sub">Marketing</button>
         <button type="button" data-view="communication" class="sub">Communication</button>
         <button type="button" data-view="projets" class="sub">Projets</button>
-        <button type="button" data-view="marque" class="sub">Identité de marque</button>
       </div>
       <div class="ng ngr4">
         <p class="ngrp" title="Qui fait quoi, et quand ?">4 · Tactique</p>
@@ -1968,7 +1970,8 @@ body{margin:0}
         </div>
         <div class="hpill">↑ nourris par</div>
         <div class="hrow hmo"><span class="hl">Les moyens</span>
-          <button type="button" data-view="marketing"><em>Faire vivre</em><b>Marketing</b><span>Les expériences : le stand, les bars, un lieu à Chambéry</span></button><i class="harr" aria-hidden="true">→</i>
+          <button type="button" data-view="marque"><em>Dire qui on est</em><b>Identité de marque</b><span>Le récit, la voix, les repères visuels</span></button><i class="harr" aria-hidden="true">→</i>
+          <button type="button" data-view="marketing"><em>Faire vivre</em><b>Marketing</b><span>Le place-based marketing dans les offres : le stand, les bars, un lieu à Chambéry</span></button><i class="harr" aria-hidden="true">→</i>
           <button type="button" data-view="communication"><em>Faire savoir</em><b>Communication</b><span>Les messages, les publics, les canaux, en français et en italien</span></button><i class="harr" aria-hidden="true">→</i>
           <button type="button" data-view="projets"><em>Faire grandir</em><b>Projets</b><span>Développer le marché, avec d'autres maisons, des bars, des producteurs</span></button>
         </div>
@@ -1978,7 +1981,7 @@ body{margin:0}
           <button type="button" data-view="lexique"><b>Marketing local <i class="qm" title="Agir au plus près des clients d'un territoire : cavistes, bars, restaurants, offices de tourisme, entreprises, communes.">?</i></b><span>S'ancrer en Savoie : cavistes, bars, restaurants, tourisme</span></button>
           <button type="button" data-view="lexique"><b>Cycle de vie client <i class="qm" title="Les étapes par lesquelles passe un client : notoriété, intérêt, considération, achat, fidélité, recommandation. On en pilote chacune.">?</i></b><span>Piloter chaque étape, de la notoriété à la recommandation</span></button>
         </div>
-        <p class="hfoot">Le socle : l'identité de marque, le vermouth sabaudo. Deux labels : l'Institut de la Langue Savoyarde pour la langue, l'Universitât Sabauda pour les projets qui dépassent Dolin.</p>
+        <p class="hfoot">Deux labels : l'Institut de la Langue Savoyarde pour la langue, l'Universitât Sabauda pour les projets qui dépassent Dolin.</p>
       </div>
       <details class="card acc"><summary><span class="ach"><h2>À qui on s'adresse</h2><span class="meta">Les publics des deux chantiers</span></span></summary><div class="accb">
         <div class="ppl">
@@ -1993,7 +1996,7 @@ body{margin:0}
       </div></details>
       <details class="card acc"><summary><span class="ach"><h2>De la stratégie à l'action</h2><span class="meta">Ce que recouvre chaque étape du plan</span></span></summary><div class="accb">
         <div class="scroll"><table class="s3x"><thead><tr><th>Étape</th><th>La question</th><th>Dans ce plan</th></tr></thead><tbody>
-          <tr class="us"><td>Stratégie</td><td>Où va-t-on, avec quoi ?</td><td>La vision 2030 ; l'objectif : les ventes de Dolin ; deux chantiers ; trois moyens : marketing, communication, projets</td></tr>
+          <tr class="us"><td>Stratégie</td><td>Où va-t-on, avec quoi ?</td><td>La vision 2030 ; l'objectif : les ventes de Dolin ; deux chantiers ; quatre moyens : identité de marque, marketing, communication, projets</td></tr>
           <tr><td>Tactique</td><td>Qui fait quoi, et quand ?</td><td>Les actions de chaque jalon, avec un moyen, un responsable, une date ; le calendrier ; les décisions</td></tr>
           <tr><td>Budget</td><td>Avec quel temps, quel argent ?</td><td>Le devis d'accompagnement ; les conventions avec l'Institut et l'Universitât ; les projets chiffrés au projet</td></tr>
           <tr><td>Suivi</td><td>Est-ce que ça avance ?</td><td>Le suivi des actions et le tableau de bord, revus à chaque séance</td></tr>
@@ -2003,20 +2006,20 @@ body{margin:0}
 
     <!-- OUTILS -->
     <section class="view" id="v-moyens" data-title="Les moyens" hidden>
-      <header class="vh"><div><p class="ey">Stratégie · Les moyens</p><h1>Marketing, communication, <em>projets</em></h1><p class="lead">Trois moyens pour mener les deux chantiers : le marketing fait vivre, la communication fait savoir, les projets font grandir le marché. Avec trois outils, un socle et deux labels.</p></div></header>
+      <header class="vh"><div><p class="ey">Stratégie · Les moyens</p><h1>Identité, marketing, communication, <em>projets</em></h1><p class="lead">Quatre moyens, dans l'ordre : l'identité de marque dit qui est Dolin, le marketing fait vivre, la communication fait savoir, les projets font grandir le marché.</p></div></header>
       <div class="stair">
-        <button type="button" class="st5" data-view="marketing"><em>1</em><b>Marketing</b><span>Faire vivre : les expériences, le stand, les bars, un lieu à Chambéry.</span></button>
-        <button type="button" class="st5" data-view="communication"><em>2</em><b>Communication</b><span>Faire savoir : les messages, les publics, les canaux, en français et en italien.</span></button>
-        <button type="button" class="st5" data-view="projets"><em>3</em><b>Projets</b><span>Faire grandir : développer le marché, avec d'autres maisons, des bars, des producteurs.</span></button>
+        <button type="button" class="st5" data-view="marque"><em>1</em><b>Identité de marque</b><span>Dire qui est Dolin : ce qu'il raconte, comment il parle, comment on le reconnaît.</span></button>
+        <button type="button" class="st5" data-view="marketing"><em>2</em><b>Marketing</b><span>Faire vivre : le place-based marketing dans les offres, le stand, les bars, un lieu à Chambéry.</span></button>
+        <button type="button" class="st5" data-view="communication"><em>3</em><b>Communication</b><span>Faire savoir : les messages, les publics, les canaux, en français et en italien.</span></button>
+        <button type="button" class="st5" data-view="projets"><em>4</em><b>Projets</b><span>Faire grandir : développer le marché, avec d'autres maisons, des bars, des producteurs.</span></button>
       </div>
-      <div class="sec"><h2>Les outils</h2><span class="note">Au service des trois moyens</span></div>
+      <div class="sec"><h2>Les outils</h2><span class="note">Au service des quatre moyens</span></div>
       <div class="ideas">
         <button type="button" class="idea" data-view="marketing"><i>a</i><div><b>Place-based marketing</b><span>La culture du territoire, matière première de la marque</span></div></button>
         <button type="button" class="idea" data-view="chambery"><i>b</i><div><b>Marketing local</b><span>S'ancrer en Savoie : cavistes, bars, restaurants, tourisme</span></div></button>
         <button type="button" class="idea" data-view="tableau"><i>c</i><div><b>Cycle de vie client</b><span>Piloter chaque étape, de la notoriété à la recommandation</span></div></button>
       </div>
-      <p class="note">Le socle : l'<button type="button" class="link" data-view="marque">identité de marque</button>, le vermouth sabaudo.</p>
-      <div class="thread"><span class="tl">Le fil rouge</span><b>Véhiculer la culture des Savoyards</b><span>La langue, l'histoire et la table de la Savoie, portées par Dolin dans les trois moyens. <button type="button" class="link" data-view="projets">Les projets →</button></span></div>
+      <div class="thread"><span class="tl">Le fil rouge</span><b>Véhiculer la culture des Savoyards</b><span>La langue, l'histoire et la table de la Savoie, portées par Dolin dans les quatre moyens. <button type="button" class="link" data-view="projets">Les projets →</button></span></div>
       <div class="sec"><h2>Et deux labels</h2><span class="note">Chacun dans son rôle</span></div>
       <div class="lbls">
         <div class="lbl lbs"><svg class="seal ils" viewBox="0 0 120 120" role="img" aria-label="Maquette du label de l'Institut de la Langue Savoyarde : Enstitut de la lengoua savoyârda, Savôya"><defs><path id="sl-ils" d="M60 60 m-46 0 a46 46 0 1 1 92 0 a46 46 0 1 1 -92 0"/></defs><circle class="s-o" cx="60" cy="60" r="57"/><circle class="s-i" cx="60" cy="60" r="36"/><text class="s-r"><textPath href="#sl-ils" startOffset="0" textLength="284" lengthAdjust="spacing">Enstitut de la lengoua savoyârda ·</textPath></text><text class="s-c2 big" x="60" y="66" text-anchor="middle">Savôya</text></svg><div><em>La langue</em><b>Institut de la Langue Savoyarde</b><span>Il valide la graphie des mots en savoyard, pour le place-based marketing. Son rôle s'arrête là.</span></div></div>
@@ -2027,96 +2030,9 @@ body{margin:0}
     </section>
 
 
-    <!-- MARKETING -->
-    <section class="view" id="v-marketing" data-title="Marketing" hidden>
-      <header class="vh"><div><p class="ey">Stratégie · Moyen 1 · Marketing</p><h1>Faire <em>vivre</em></h1><p class="lead">Le marketing de Dolin passe par le place-based marketing : faire de la culture du territoire, sa langue, son histoire, ses symboles, la matière première de la marque.</p></div></header>
-      <div class="sec"><h2>Le place-based marketing</h2><span class="note">La méthode</span></div>
-      <div class="cmp">
-        <div class="cm1"><span>Marketing local</span><b>S'adapter à une zone</b><ul><li>Montagne, apéritif, terroir : une géographie</li><li>Copiable par n'importe quelle marque</li></ul><em>Le lieu comme cible</em></div>
-        <div class="cmar" aria-hidden="true">→</div>
-        <div class="cm2"><span>Place-based marketing</span><b>Se fonder sur une culture</b><ul><li>La langue, l'histoire et les symboles de l'espace sabaudo</li><li>Impossible à copier : « la culture fait société »</li></ul><em>Le lieu comme actif</em></div>
-      </div>
-      <div class="rules">
-        <div class="rule"><b>La reconnaissance avant la compréhension</b><span>Un mot n'a pas besoin d'être compris pour fonctionner : complicité pour ceux qui savent, authenticité pour les autres.</span></div>
-        <div class="rule"><b>La parcimonie</b><span>Un mot sur un stand, une signature, un nom : jamais une traduction complète. L'effet vient du dosage.</span></div>
-        <div class="rule"><b>Faire s'interroger</b><span>Les gens demandent ce que veut dire le mot : l'histoire se raconte à partir de cette question.</span></div>
-        <div class="rule"><b>Toujours la langue commune à côté</b><span>Le français ou l'italien reste présent ; les mots en savoyard ou en piémontais s'ajoutent, ils ne remplacent rien.</span></div>
-        <div class="rule"><b>Les bons mots pour les langues</b><span>On nomme toujours la langue : le savoyard, le piémontais. On parle d'identité, pas d'« identitaire ».</span></div>
-        <div class="rule"><b>Rien sans vérification</b><span>Chaque mot est validé par un locuteur (le label de l'Institut de la Langue Savoyarde pour le savoyard), chaque date par une source.</span></div>
-      </div>
-      <div class="sec"><h2>La méthode, déjà à l'œuvre</h2><span class="note">Un nom, quelques mots : le lieu devient un atout</span></div>
-      <div class="mat4">
-        <div class="mt"><div class="mtv word"><span>Punt e Mes</span></div><div class="mtb"><em>Turin</em><b>Un nom en piémontais</b><p>« Un point et demi » en piémontais : un nom local devenu une marque connue dans le monde entier.</p><small>Le vermouth le fait déjà</small></div></div>
-        <div class="mt"><div class="mtv word"><span>Victouèra</span></div><div class="mtb"><em>GFA Rumilly-Vallières</em><b>Un mot sur un visuel</b><p>Quelques mots en savoyard sur les visuels de match (« Jorn de Partia », « Victouèra ») : le club a fait parler de lui.</p><small>Mené par Franck Monod en 2026</small></div></div>
-        <div class="mt"><div class="mtv word"><span>Wed'ze</span></div><div class="mtb"><em>Decathlon</em><b>Un nom savoyard</b><p>Une marque de sports de glisse au nom tiré d'une expression savoyarde.</p><small>La culture n'empêche pas d'être moderne</small></div></div>
-        <div class="mt"><div class="mtv word"><span>Chazalettes</span></div><div class="mtb"><em>Chambéry, puis Turin</em><b>Une maison chambérienne</b><p>Une maison chambérienne avant tout, installée à Turin, que la famille Bava relance à partir de ses recettes d'origine.</p><small>L'histoire comme argument</small></div></div>
-      </div>
-      <p class="note">La méthode appliquée, jalon par jalon : <button type="button" class="link" data-view="turin">chantier 1</button> · <button type="button" class="link" data-view="chambery">chantier 2</button>.</p>
-    </section>
-
-    <!-- COMMUNICATION -->
-    <section class="view" id="v-communication" data-title="Communication" hidden>
-      <header class="vh"><div><p class="ey">Stratégie · Moyen 2 · Communication</p><h1>Faire <em>savoir</em></h1><p class="lead">Trois messages, deux langues : ce qu'on dit, à qui, par quels canaux, et les règles à tenir.</p></div></header>
-      <div class="ord3">
-        <div><span>Message 1</span><b>Dolin, depuis 1821</b><p>Une maison de vermouth de Chambéry, toujours en activité.</p></div>
-        <div><span>Message 2</span><b>Une histoire commune</b><p>Chambéry et Turin ont fait le vermouth dans le même État.</p></div>
-        <div><span>Message 3</span><b>Le vermouth sabaudo</b><p>Ni seulement français, ni seulement italien : sabaudo, entre Savoie et Piémont.</p></div>
-      </div>
-      <div class="card"><div class="ch"><h2>Les canaux</h2></div>
-        <div class="scroll"><table class="tbl"><thead><tr><th>Canal</th><th>Public</th><th>Quand</th><th>Qui</th></tr></thead><tbody>
-          <tr><td><b>Supports du Salone</b> (site, programme, réseaux)</td><td>Visiteurs, presse, bars</td><td>Dès décembre</td><td>Laura Carello, avec le matériel de Dolin</td></tr>
-          <tr class="us"><td><b>Table ronde avec la presse</b></td><td>Journalistes, télévision</td><td>Début du Fuorisalone</td><td>Pierre-Olivier Rousseaux, Franck Monod</td></tr>
-          <tr><td><b>Route des vermouths</b> (plateforme d'Iter Vitis)</td><td>Amateurs et voyageurs, en Europe</td><td>Contenus en décembre</td><td>Marketing de Dolin, avec Franck Monod pour le récit</td></tr>
-          <tr><td><b>Réseaux de Dolin</b></td><td>Amateurs, cavistes</td><td>Janvier-février</td><td>Équipes de Dolin</td></tr>
-          <tr><td><b>Nos Alpes</b>, journal de l'espace sabaudo</td><td>Lecteurs de Savoie et d'Italie</td><td>Après le Salone</td><td>Franck Monod</td></tr>
-          <tr><td><b>Presse de Savoie</b></td><td>Chambéry et la Savoie</td><td>Après le Salone</td><td>Dolin</td></tr>
-        </tbody></table></div>
-      </div>
-      <div class="rules">
-        <div class="rule"><b>Commencer tôt</b><span>Laura Carello veut lancer la communication plus tôt que d'habitude : le matériel en italien doit être prêt en décembre.</span></div>
-        <div class="rule"><b>Raconter avant de vendre</b><span>À Turin, on présente d'abord une histoire, ensuite un vermouth.</span></div>
-        <div class="rule"><b>Véhiculer une culture</b><span>Chaque message porte un peu de la culture des Savoyards : un mot de savoyard, une date, un geste de la table. Dolin parle de la Savoie, pas seulement de ses bouteilles.</span></div>
-        <div class="rule"><b>Rester neutre</b><span>Ne pas prendre parti dans les débats entre le Salone et le Consorzio.</span></div>
-        <div class="rule"><b>Ne rien affirmer sans source</b><span>Les dates et les chiffres historiques passent d'abord par la liste des questions.</span></div>
-      </div>
-    </section>
-
-    <!-- PROJETS -->
-    <section class="view" id="v-projets" data-title="Projets" hidden>
-      <header class="vh"><div><p class="ey">Stratégie · Moyen 3 · Projets</p><h1>Des projets <em>structurants</em></h1><p class="lead">Des projets structurants : ils durent, réunissent d'autres acteurs et font grandir le marché. Un ou deux à la fois, chacun chiffré à part.</p></div></header>
-      <div class="mot">
-        <p class="motk">Pour les projets qui dépassent Dolin</p>
-        <h2 class="moth">Dolin moteur, <em>pas propriétaire</em></h2>
-        <div class="motf">
-          <div><span>Le moteur</span><b>Dolin</b><p>Propose, apporte son savoir-faire et son nom</p></div>
-          <i aria-hidden="true">→</i>
-          <div class="mid"><span>Le porteur neutre</span><b>Universitât Sabauda</b><p>Réunit tout le monde, porte les dossiers, répond aux appels à projets (Interreg ALCOTRA)</p></div>
-          <i aria-hidden="true">→</i>
-          <div><span>Les partenaires</span><b>Tout le territoire</b><p>D'autres maisons, des bars, des producteurs, des chefs, des collectivités</p></div>
-        </div>
-        <p class="motn">Porté par une structure neutre, un projet réunit les autres maisons, et le marché grandit pour tous. Les projets propres à Dolin restent chez Dolin.</p>
-      </div>
-      <div class="sec"><h2>En Savoie</h2><span class="note">Faire grandir le marché savoyard</span></div>
-      <div class="proj">
-        <div class="pj"><div class="pjh"><b>Un lieu du vermouth à Chambéry</b><span class="tag pis">Piste</span></div><p>Un musée et un lieu de dégustation : être présent dans la ville, pas seulement dans les rayons. C'est aussi ce que demande la route européenne : des lieux ouverts au public.</p><small>Porté par Dolin · un espace d'exposition annoncé en 2022, à vérifier</small></div>
-        <div class="pj"><div class="pjh"><b>Comoz</b><span class="tag eng">En cours</span></div><p>Dolin a relancé Comoz, la maison fondée à Chambéry en 1856 : il le produit à Chambéry et le vend, pour l'instant, aux seuls États-Unis. Un vermouth de Chambéry inconnu à Chambéry : le faire connaître en Savoie est une piste pour le chantier 2.</p><small>Porté par Dolin, avec l'importateur Haus Alpenz</small></div>
-        <div class="pj"><div class="pjh"><b>Le Suédois</b><span class="tag pis">Piste</span></div><p>Mettre en avant l'amer de Dolin : au digestif dans les restaurants de Savoie, dans les cocktails des bars à Turin, où l'amaro fait partie des habitudes.</p><small>Porté par Dolin · ventes et marchés à connaître</small></div>
-        <div class="pj"><div class="pjh"><b>Les bars à vermouth</b><span class="tag pis">Piste</span></div><p>Accompagner l'ouverture de bars à vermouth, comme le projet évoqué à Annecy : le lieu où le vermouth se boit, se raconte et se compare.</p><small>Porté par l'Universitât Sabauda, avec Dolin · porteur du bar et calendrier à préciser</small></div>
-        <div class="pj"><div class="pjh"><b>Les nouveaux vermouths savoyards</b><span class="tag pis">Piste</span></div><p>Accompagner de nouveaux producteurs : savoir-faire, plantes, mise en marché. Plus il y a de vermouths savoyards, plus la catégorie existe.</p><small>Porté par l'Universitât Sabauda, avec Dolin · à instruire</small></div>
-        <div class="pj"><div class="pjh"><b>Le vermouth à la table savoyarde</b><span class="tag pis">Piste</span></div><p>Des accords entre le vermouth, le Suédois et la cuisine savoyarde, avec des chefs et des restaurants de Savoie : en apéritif comme en digestif.</p><small>Porté par l'Universitât Sabauda, avec Dolin</small></div>
-      </div>
-      <div class="sec"><h2>Dans l'espace sabaudo</h2><span class="note">Chambéry et Turin, ensemble</span></div>
-      <div class="proj">
-        <div class="pj"><div class="pjh"><b>Une cuvée sabauda</b><span class="tag pis">Piste</span></div><p>Un vermouth créé avec une maison de Turin, Chazalettes en tête, maison chambérienne avant tout : l'histoire commune de Chambéry et Turin, en bouteille, vendue des deux côtés.</p><small>Porté par Dolin et une maison turinoise</small></div>
-        <div class="pj"><div class="pjh"><b>Les rencontres du vermouth sabaudo</b><span class="tag pis">Piste</span></div><p>Une rencontre par an, à Chambéry ou à Turin : l'histoire, la langue et la culture du vermouth de l'espace sabaudo, avec des historiens, des maisons, des bartenders et le public.</p><small>Porté par l'Universitât Sabauda, avec Dolin</small></div>
-      </div>
-      <p class="note">Ne sont pas des projets, mais des actions des chantiers : le Salone, la Route des vermouths, les salons en Italie (<button type="button" class="link" data-view="turin">chantier 1</button>) ; le déjeuner SavoiaExperience (<button type="button" class="link" data-view="chambery">chantier 2</button>).</p>
-      <div class="luc"><b>Le critère de choix</b><span>Un projet entre dans le plan s'il fait grandir le marché : plus de lieux, plus de vermouths, plus de gens qui en parlent en Savoie et à Turin. Sinon, il attend.</span></div>
-    </section>
-
     <!-- IDENTITÉ DE MARQUE -->
     <section class="view" id="v-marque" data-title="Identité de marque" hidden>
-      <header class="vh"><div><p class="ey">Stratégie · Le socle</p><h1>Qui est Dolin, <em>et comment on le reconnaît</em></h1><p class="lead">Ce qu'il raconte, comment il parle. L'histoire en est un pilier, pas le tout.</p></div></header>
+      <header class="vh"><div><p class="ey">Stratégie · Moyen 1 · Identité de marque</p><h1>Qui est Dolin, <em>et comment on le reconnaît</em></h1><p class="lead">Ce qu'il raconte, comment il parle. L'histoire en est un pilier, pas le tout.</p></div></header>
       <div class="cmp">
         <div class="cm1"><span>Aujourd'hui</span><b>Un vermouth français</b><p>Dolin est rangé parmi les vermouths de France, à côté de ceux du sud.</p><em>Une catégorie parmi d'autres</em></div>
         <div class="cmar" aria-hidden="true">→</div>
@@ -2169,11 +2085,98 @@ body{margin:0}
     </section>
 
 
+    <!-- MARKETING -->
+    <section class="view" id="v-marketing" data-title="Marketing" hidden>
+      <header class="vh"><div><p class="ey">Stratégie · Moyen 2 · Marketing</p><h1>Faire <em>vivre</em></h1><p class="lead">Le marketing de Dolin passe par le place-based marketing : faire de la culture du territoire, sa langue, son histoire, ses symboles, la matière première de la marque.</p></div></header>
+      <div class="sec"><h2>Le place-based marketing</h2><span class="note">La méthode</span></div>
+      <div class="cmp">
+        <div class="cm1"><span>Marketing local</span><b>S'adapter à une zone</b><ul><li>Montagne, apéritif, terroir : une géographie</li><li>Copiable par n'importe quelle marque</li></ul><em>Le lieu comme cible</em></div>
+        <div class="cmar" aria-hidden="true">→</div>
+        <div class="cm2"><span>Place-based marketing</span><b>Se fonder sur une culture</b><ul><li>La langue, l'histoire et les symboles de l'espace sabaudo</li><li>Impossible à copier : « la culture fait société »</li></ul><em>Le lieu comme actif</em></div>
+      </div>
+      <div class="rules">
+        <div class="rule"><b>La reconnaissance avant la compréhension</b><span>Un mot n'a pas besoin d'être compris pour fonctionner : complicité pour ceux qui savent, authenticité pour les autres.</span></div>
+        <div class="rule"><b>La parcimonie</b><span>Un mot sur un stand, une signature, un nom : jamais une traduction complète. L'effet vient du dosage.</span></div>
+        <div class="rule"><b>Faire s'interroger</b><span>Les gens demandent ce que veut dire le mot : l'histoire se raconte à partir de cette question.</span></div>
+        <div class="rule"><b>Toujours la langue commune à côté</b><span>Le français ou l'italien reste présent ; les mots en savoyard ou en piémontais s'ajoutent, ils ne remplacent rien.</span></div>
+        <div class="rule"><b>Les bons mots pour les langues</b><span>On nomme toujours la langue : le savoyard, le piémontais. On parle d'identité, pas d'« identitaire ».</span></div>
+        <div class="rule"><b>Rien sans vérification</b><span>Chaque mot est validé par un locuteur (le label de l'Institut de la Langue Savoyarde pour le savoyard), chaque date par une source.</span></div>
+      </div>
+      <div class="sec"><h2>La méthode, déjà à l'œuvre</h2><span class="note">Un nom, quelques mots : le lieu devient un atout</span></div>
+      <div class="mat4">
+        <div class="mt"><div class="mtv word"><span>Punt e Mes</span></div><div class="mtb"><em>Turin</em><b>Un nom en piémontais</b><p>« Un point et demi » en piémontais : un nom local devenu une marque connue dans le monde entier.</p><small>Le vermouth le fait déjà</small></div></div>
+        <div class="mt"><div class="mtv word"><span>Victouèra</span></div><div class="mtb"><em>GFA Rumilly-Vallières</em><b>Un mot sur un visuel</b><p>Quelques mots en savoyard sur les visuels de match (« Jorn de Partia », « Victouèra ») : le club a fait parler de lui.</p><small>Mené par Franck Monod en 2026</small></div></div>
+        <div class="mt"><div class="mtv word"><span>Wed'ze</span></div><div class="mtb"><em>Decathlon</em><b>Un nom savoyard</b><p>Une marque de sports de glisse au nom tiré d'une expression savoyarde.</p><small>La culture n'empêche pas d'être moderne</small></div></div>
+        <div class="mt"><div class="mtv word"><span>Chazalettes</span></div><div class="mtb"><em>Chambéry, puis Turin</em><b>Une maison chambérienne</b><p>Une maison chambérienne avant tout, installée à Turin, que la famille Bava relance à partir de ses recettes d'origine.</p><small>L'histoire comme argument</small></div></div>
+      </div>
+      <p class="note">La méthode appliquée, jalon par jalon : <button type="button" class="link" data-view="turin">chantier 1</button> · <button type="button" class="link" data-view="chambery">chantier 2</button>.</p>
+    </section>
+
+    <!-- COMMUNICATION -->
+    <section class="view" id="v-communication" data-title="Communication" hidden>
+      <header class="vh"><div><p class="ey">Stratégie · Moyen 3 · Communication</p><h1>Faire <em>savoir</em></h1><p class="lead">Trois messages, deux langues : ce qu'on dit, à qui, par quels canaux, et les règles à tenir.</p></div></header>
+      <div class="ord3">
+        <div><span>Message 1</span><b>Dolin, depuis 1821</b><p>Une maison de vermouth de Chambéry, toujours en activité.</p></div>
+        <div><span>Message 2</span><b>Une histoire commune</b><p>Chambéry et Turin ont fait le vermouth dans le même État.</p></div>
+        <div><span>Message 3</span><b>Le vermouth sabaudo</b><p>Ni seulement français, ni seulement italien : sabaudo, entre Savoie et Piémont.</p></div>
+      </div>
+      <div class="card"><div class="ch"><h2>Les canaux</h2></div>
+        <div class="scroll"><table class="tbl"><thead><tr><th>Canal</th><th>Public</th><th>Quand</th><th>Qui</th></tr></thead><tbody>
+          <tr><td><b>Supports du Salone</b> (site, programme, réseaux)</td><td>Visiteurs, presse, bars</td><td>Dès décembre</td><td>Laura Carello, avec le matériel de Dolin</td></tr>
+          <tr class="us"><td><b>Table ronde avec la presse</b></td><td>Journalistes, télévision</td><td>Début du Fuorisalone</td><td>Pierre-Olivier Rousseaux, Franck Monod</td></tr>
+          <tr><td><b>Route des vermouths</b> (plateforme d'Iter Vitis)</td><td>Amateurs et voyageurs, en Europe</td><td>Contenus en décembre</td><td>Marketing de Dolin, avec Franck Monod pour le récit</td></tr>
+          <tr><td><b>Réseaux de Dolin</b></td><td>Amateurs, cavistes</td><td>Janvier-février</td><td>Équipes de Dolin</td></tr>
+          <tr><td><b>Nos Alpes</b>, journal de l'espace sabaudo</td><td>Lecteurs de Savoie et d'Italie</td><td>Après le Salone</td><td>Franck Monod</td></tr>
+          <tr><td><b>Presse de Savoie</b></td><td>Chambéry et la Savoie</td><td>Après le Salone</td><td>Dolin</td></tr>
+        </tbody></table></div>
+      </div>
+      <div class="rules">
+        <div class="rule"><b>Commencer tôt</b><span>Laura Carello veut lancer la communication plus tôt que d'habitude : le matériel en italien doit être prêt en décembre.</span></div>
+        <div class="rule"><b>Raconter avant de vendre</b><span>À Turin, on présente d'abord une histoire, ensuite un vermouth.</span></div>
+        <div class="rule"><b>Véhiculer une culture</b><span>Chaque message porte un peu de la culture des Savoyards : un mot de savoyard, une date, un geste de la table. Dolin parle de la Savoie, pas seulement de ses bouteilles.</span></div>
+        <div class="rule"><b>Rester neutre</b><span>Ne pas prendre parti dans les débats entre le Salone et le Consorzio.</span></div>
+        <div class="rule"><b>Ne rien affirmer sans source</b><span>Les dates et les chiffres historiques passent d'abord par la liste des questions.</span></div>
+      </div>
+    </section>
+
+    <!-- PROJETS -->
+    <section class="view" id="v-projets" data-title="Projets" hidden>
+      <header class="vh"><div><p class="ey">Stratégie · Moyen 4 · Projets</p><h1>Des projets <em>structurants</em></h1><p class="lead">Des projets structurants : ils durent, réunissent d'autres acteurs et font grandir le marché. Un ou deux à la fois, chacun chiffré à part.</p></div></header>
+      <div class="mot">
+        <p class="motk">Pour les projets qui dépassent Dolin</p>
+        <h2 class="moth">Dolin moteur, <em>pas propriétaire</em></h2>
+        <div class="motf">
+          <div><span>Le moteur</span><b>Dolin</b><p>Propose, apporte son savoir-faire et son nom</p></div>
+          <i aria-hidden="true">→</i>
+          <div class="mid"><span>Le porteur neutre</span><b>Universitât Sabauda</b><p>Réunit tout le monde, porte les dossiers, répond aux appels à projets (Interreg ALCOTRA)</p></div>
+          <i aria-hidden="true">→</i>
+          <div><span>Les partenaires</span><b>Tout le territoire</b><p>D'autres maisons, des bars, des producteurs, des chefs, des collectivités</p></div>
+        </div>
+        <p class="motn">Porté par une structure neutre, un projet réunit les autres maisons, et le marché grandit pour tous. Les projets propres à Dolin restent chez Dolin.</p>
+      </div>
+      <div class="sec"><h2>En Savoie</h2><span class="note">Faire grandir le marché savoyard</span></div>
+      <div class="proj">
+        <div class="pj"><div class="pjh"><b>Un lieu du vermouth à Chambéry</b><span class="tag pis">Piste</span></div><p>Un musée et un lieu de dégustation : être présent dans la ville, pas seulement dans les rayons. C'est aussi ce que demande la route européenne : des lieux ouverts au public.</p><small>Porté par Dolin · un espace d'exposition annoncé en 2022, à vérifier</small></div>
+        <div class="pj"><div class="pjh"><b>Comoz</b><span class="tag eng">En cours</span></div><p>Dolin a relancé Comoz, la maison fondée à Chambéry en 1856 : il le produit à Chambéry et le vend, pour l'instant, aux seuls États-Unis. Un vermouth de Chambéry inconnu à Chambéry : le faire connaître en Savoie est une piste pour le chantier 2.</p><small>Porté par Dolin, avec l'importateur Haus Alpenz</small></div>
+        <div class="pj"><div class="pjh"><b>Le Suédois</b><span class="tag pis">Piste</span></div><p>Mettre en avant l'amer de Dolin : au digestif dans les restaurants de Savoie, dans les cocktails des bars à Turin, où l'amaro fait partie des habitudes.</p><small>Porté par Dolin · ventes et marchés à connaître</small></div>
+        <div class="pj"><div class="pjh"><b>Les bars à vermouth</b><span class="tag pis">Piste</span></div><p>Accompagner l'ouverture de bars à vermouth, comme le projet évoqué à Annecy : le lieu où le vermouth se boit, se raconte et se compare.</p><small>Porté par l'Universitât Sabauda, avec Dolin · porteur du bar et calendrier à préciser</small></div>
+        <div class="pj"><div class="pjh"><b>Les nouveaux vermouths savoyards</b><span class="tag pis">Piste</span></div><p>Accompagner de nouveaux producteurs : savoir-faire, plantes, mise en marché. Plus il y a de vermouths savoyards, plus la catégorie existe.</p><small>Porté par l'Universitât Sabauda, avec Dolin · à instruire</small></div>
+        <div class="pj"><div class="pjh"><b>Le vermouth à la table savoyarde</b><span class="tag pis">Piste</span></div><p>Des accords entre le vermouth, le Suédois et la cuisine savoyarde, avec des chefs et des restaurants de Savoie : en apéritif comme en digestif.</p><small>Porté par l'Universitât Sabauda, avec Dolin</small></div>
+      </div>
+      <div class="sec"><h2>Dans l'espace sabaudo</h2><span class="note">Chambéry et Turin, ensemble</span></div>
+      <div class="proj">
+        <div class="pj"><div class="pjh"><b>Une cuvée sabauda</b><span class="tag pis">Piste</span></div><p>Un vermouth créé avec une maison de Turin, Chazalettes en tête, maison chambérienne avant tout : l'histoire commune de Chambéry et Turin, en bouteille, vendue des deux côtés.</p><small>Porté par Dolin et une maison turinoise</small></div>
+        <div class="pj"><div class="pjh"><b>Les rencontres du vermouth sabaudo</b><span class="tag pis">Piste</span></div><p>Une rencontre par an, à Chambéry ou à Turin : l'histoire, la langue et la culture du vermouth de l'espace sabaudo, avec des historiens, des maisons, des bartenders et le public.</p><small>Porté par l'Universitât Sabauda, avec Dolin</small></div>
+      </div>
+      <p class="note">Ne sont pas des projets, mais des actions des chantiers : le Salone, la Route des vermouths, les salons en Italie (<button type="button" class="link" data-view="turin">chantier 1</button>) ; le déjeuner SavoiaExperience (<button type="button" class="link" data-view="chambery">chantier 2</button>).</p>
+      <div class="luc"><b>Le critère de choix</b><span>Un projet entre dans le plan s'il fait grandir le marché : plus de lieux, plus de vermouths, plus de gens qui en parlent en Savoie et à Turin. Sinon, il attend.</span></div>
+    </section>
+
     <!-- CHANTIER 1 · ESPACE SABAUDO -->
     <section class="view" id="v-turin" data-title="Chantier 1 · Turin et l'Europe" hidden>
       <header class="vh"><div><p class="ey">Tactique · Chantier 1</p><h1>Turin <em>et l'Europe</em></h1><p class="lead">Les actions des jalons 1, 2 et 3 : qui les mène, et quand.</p></div></header>
       <div class="cmp st">
-        <div class="cm1"><span>La stratégie</span><b>Où va-t-on, avec quoi ?</b><p>La vision, l'objectif, deux chantiers, trois moyens.</p><em><button type="button" class="link" data-view="strategie">La stratégie globale</button></em></div>
+        <div class="cm1"><span>La stratégie</span><b>Où va-t-on, avec quoi ?</b><p>La vision, l'objectif, deux chantiers, quatre moyens.</p><em><button type="button" class="link" data-view="strategie">La stratégie globale</button></em></div>
         <div class="cmar" aria-hidden="true">→</div>
         <div class="cm2"><span>La tactique</span><b>Qui fait quoi, et quand ?</b><p>Les actions de chaque jalon, le calendrier, les décisions.</p><em>Ces pages</em></div>
       </div>
@@ -2470,7 +2473,7 @@ body{margin:0}
         <dt>Axe</dt><dd>L'une des deux directions de la vision : renouer avec l'espace sabaudo du vermouth ; travailler le marché savoyard.</dd>
         <dt>Chantier</dt><dd>Un axe mis en actions : chantier 1, Turin et l'Europe ; chantier 2, Chambéry et la Savoie.</dd>
         <dt>Jalon</dt><dd>Un résultat daté et mesuré d'un chantier ; six jalons en tout.</dd>
-        <dt>Moyen</dt><dd>Ce qui fait avancer les chantiers : le marketing, la communication, les projets.</dd>
+        <dt>Moyen</dt><dd>Ce qui fait avancer les chantiers : l'identité de marque, le marketing, la communication, les projets.</dd>
         <dt>Marketing local</dt><dd>Adapter un message à une zone, avec les références de ceux qui y vivent.</dd>
         <dt>Cycle de vie client</dt><dd>Les étapes d'un client : notoriété, intérêt, achat, fidélité, recommandation.</dd>
         <dt>Savôya</dt><dd>La Savoie, en savoyard.</dd>
@@ -2689,6 +2692,8 @@ body{margin:0}
   }
 })();
 </script>
+
+
 
 
 

@@ -1618,6 +1618,15 @@ body{margin:0}
 .thread{background:color-mix(in srgb,var(--band-hi) 16%,var(--surface))}
 .suph img{object-position:0% 50%}
 .why3.w2{grid-template-columns:repeat(2,minmax(0,1fr))}@media (max-width:700px){.why3.w2{grid-template-columns:minmax(0,1fr)}}
+.mktf{grid-column:1/-1;margin:6px 0 0;border-top:1px solid var(--line);padding-top:14px;display:flex;flex-direction:column;align-items:center;gap:6px}
+.mkt{width:100%;max-width:620px;height:auto}
+.mkt .r4{fill:color-mix(in srgb,var(--band-hi) 10%,var(--surface))}.mkt .r3{fill:color-mix(in srgb,var(--band-hi) 22%,var(--surface))}.mkt .r2{fill:color-mix(in srgb,var(--band-hi) 38%,var(--surface))}.mkt .r1{fill:var(--hi)}
+.mkt path{stroke:var(--surface);stroke-width:2}
+.mkt .mk-n{font:700 19px var(--cond);fill:var(--ink)}.mkt .mk-s{font:500 12.5px var(--body);fill:var(--muted)}
+.mkt .mk-c{fill:var(--band);stroke:var(--band-hi);stroke-width:2}.mkt .mk-cn{font:700 13px var(--cond);fill:var(--band-hi)}
+.mktf figcaption{font-size:13px;color:var(--muted);text-align:center}
+.mkt .mk-n.w{fill:var(--on-band)}.mkt .mk-s.w{fill:var(--band-hi)}
+.mkt .r1{fill:var(--band)}.mkt .mk-c{fill:var(--band2)}
 </style>
 <div class="app">
   <aside class="side">
@@ -1882,15 +1891,7 @@ body{margin:0}
       <div class="biz">
         <div class="bizh"><p class="bizk">L'objectif</p><h2>Faire grandir <em>les ventes de Dolin</em></h2><p>En Savoie, en France, en Italie et à l'export : le vermouth, Comoz et le Suédois, portés par le même récit.</p></div>
         <div class="bizn"><strong>+[__] %</strong><span>de chiffre d'affaires d'ici 2030, la Savoie en tête</span><em class="tbd">à fixer</em></div>
-        <dl class="bizi">
-          <div><dt>Chiffre d'affaires de Dolin en Savoie</dt><dd><span class="o0">À mesurer</span><i>→</i><span class="o1">+[__] %</span></dd></div>
-          <div><dt>Part des bars et restaurants</dt><dd><span class="o0">5 % (2020)</span><i>→</i><span class="o1">[__] %</span></dd></div>
-          <div><dt>Ventes en grande distribution en Savoie</dt><dd><span class="o0">À mesurer</span><i>→</i><span class="o1">+[__] %</span></dd></div>
-          <div><dt>Ventes en France, hors Savoie</dt><dd><span class="o0">À mesurer</span><i>→</i><span class="o1">+[__] %</span></dd></div>
-          <div><dt>Ventes à l'export</dt><dd><span class="o0">32 % des ventes</span><i>→</i><span class="o1">+[__] %</span></dd></div>
-          <div><dt>Ventes en Italie</dt><dd><span class="o0">Aucune connue</span><i>→</i><span class="o1">Premiers clients</span></dd></div>
-          <div><dt>Le Suédois</dt><dd><span class="o0">À mesurer</span><i>→</i><span class="o1">En hausse</span></dd></div>
-        </dl>
+        <figure class="mktf"><svg class="mkt" viewBox="0 10 600 228" role="img" aria-label="Des cercles qui partent de Chambéry : la Savoie en tête, puis la France, l'Italie et l'export. Le même récit nourrit tous les marchés de Dolin."><path class="r4" d="M86 236 A214 214 0 0 1 514 236 Z"/><path class="r3" d="M132 236 A168 168 0 0 1 468 236 Z"/><path class="r2" d="M178 236 A122 122 0 0 1 422 236 Z"/><path class="r1" d="M224 236 A76 76 0 0 1 376 236 Z"/><text class="mk-n" x="300" y="44" text-anchor="middle">Export</text><text class="mk-s" x="300" y="59" text-anchor="middle">États-Unis, Europe…</text><text class="mk-n" x="300" y="90" text-anchor="middle">Italie</text><text class="mk-s" x="300" y="105" text-anchor="middle">Turin, un distributeur</text><text class="mk-n" x="300" y="136" text-anchor="middle">France</text><text class="mk-s" x="300" y="151" text-anchor="middle">cavistes, bars, rayons</text><text class="mk-n w" x="300" y="188" text-anchor="middle">Savoie</text><text class="mk-s w" x="300" y="203" text-anchor="middle">en tête</text><path class="mk-c" d="M266 236 A34 34 0 0 1 334 236 Z"/><text class="mk-cn" x="300" y="229" text-anchor="middle">Dolin</text></svg><figcaption>Le même récit, de Chambéry à tous les marchés. Les indicateurs, marché par marché : <button type="button" class="link" data-view="tableau">le tableau de bord →</button></figcaption></figure>
       </div>
       <details class="card acc"><summary><span class="ach"><h2>Ce que ça peut rapporter</h2><span class="meta">Le calcul, à faire à la séance de lancement</span></span></summary><div class="accb">
         <p>[__] établissements × [__] bouteilles par mois × [__] € = [__] € de chiffre d'affaires en Savoie par an ; plus [__] % en grande distribution en Savoie ; plus [__] premiers clients en Italie ; plus [__] % en France et à l'export, portés par le même récit.</p>
@@ -2687,6 +2688,9 @@ body{margin:0}
   }
 })();
 </script>
+
+
+
 
 
 

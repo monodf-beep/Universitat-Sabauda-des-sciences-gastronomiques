@@ -1480,6 +1480,17 @@ button.idea{font:inherit;color:inherit;text-align:left;cursor:pointer}button.ide
 .qm{font-style:normal;display:inline-grid;place-items:center;width:17px;height:17px;border-radius:50%;border:1px solid var(--line2);font:700 11px var(--body);color:var(--muted);cursor:help}
 .hfoot{margin:12px 0 0;text-align:center;font-size:13px;color:var(--muted)}
 @media (max-width:900px){.hto{grid-template-columns:minmax(0,1fr)}}
+/* ---- le chemin, en trois temps ---- */
+.tl3{list-style:none;margin:0;padding:28px 0 0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;position:relative}
+.tl3::before{content:"";position:absolute;left:0;right:0;top:9px;height:2px;background:linear-gradient(90deg,var(--band-hi),var(--hi))}
+.tl3>li{position:relative;display:flex;flex-direction:column;gap:6px;padding-top:6px}
+.tl3>li::before{content:"◆";position:absolute;top:-28px;left:0;font-size:16px;line-height:1;color:var(--band-hi);background:var(--bg);padding-right:6px}
+.tl3>li.on::before{color:var(--hi);font-size:20px;top:-30px}
+.tl3 .ty{font:700 clamp(30px,3.4vw,44px)/1 var(--cond);color:var(--ink2)}
+.tl3 .on .ty{color:var(--hi)}
+.tl3 b{font:700 18px/1.2 var(--cond);color:var(--ink)}
+.tl3 p{margin:0;font-size:14px;color:var(--ink2)}
+@media (max-width:800px){.tl3{grid-template-columns:minmax(0,1fr);padding:0 0 0 26px}.tl3::before{left:7px;right:auto;top:0;bottom:0;width:2px;height:auto;background:linear-gradient(180deg,var(--band-hi),var(--hi))}.tl3>li::before{top:8px;left:-26px;padding:0 0 4px}.tl3>li.on::before{top:6px}}
 </style>
 <div class="app">
   <aside class="side">
@@ -1546,23 +1557,16 @@ button.idea{font:inherit;color:inherit;text-align:left;cursor:pointer}button.ide
           <p class="ey">Proposition de Franck Monod · 2026-2027</p>
           <h1>Le vermouth <em>sabaudo.</em></h1>
           <p class="sig">Chambéry et Turin, une même histoire.</p>
-          <p>Deux axes pour Dolin : renouer avec l'espace sabaudo du vermouth, et travailler le marché savoyard. Le Salone del Vermouth de Turin et la Route des vermouths sont des outils ; en Savoie, la vision, c'est de faire grandir le gâteau du vermouth, pour que Dolin en ait une plus belle part.</p>
+          <p>Deux axes pour Dolin : renouer avec l'espace sabaudo du vermouth, et travailler le marché savoyard. Le Salone del Vermouth de Turin et la Route des vermouths sont des outils ; en Savoie, la vision, c'est de faire grandir le marché du vermouth, dont Dolin est le leader.</p>
         </div>
       </div>
 
       <div class="sec"><h2>Le chemin, en trois temps</h2><span class="note">Horizon indicatif, à construire avec Pierre-Olivier Rousseaux.</span></div>
-      <div class="trj">
-        <div class="trow" aria-hidden="true">
-          <div class="tjc"><span class="tdisc d1"><b>2027</b><small>Renouer</small></span></div>
-          <div class="tjc"><span class="tdisc d2"><em>Le cœur</em><b>2028-29</b><small>Le marché</small></span></div>
-          <div class="tjc"><span class="tdisc d3"><b>2030</b><small>Le gâteau</small></span></div>
-        </div>
-        <div class="ttx">
-          <div class="tt"><span class="tyr">2027 · renouer</span><b>Une place à Turin et en Europe</b><p>Le Salone ouvre la porte de Turin ; la route européenne inscrit Chambéry sur la carte. Ce qui s'y gagne se raconte en Savoie.</p><ul class="achips"><li>Salone del Vermouth</li><li>Route des vermouths</li><li>Récit sourcé</li></ul></div>
-          <div class="tt key"><span class="tyr">2028-29 · le marché savoyard</span><b>Dolin servi chez soi</b><p>Sur les cartes des bars et restaurants, chez les cavistes, dans un lieu à Chambéry, dans la presse de Savoie.</p><ul class="achips"><li>Bars et restaurants</li><li>Cavistes</li><li>Un lieu à Chambéry</li><li>Presse de Savoie</li></ul></div>
-          <div class="tt"><span class="tyr">2030 · un gâteau plus grand</span><b>La renaissance des vermouths savoyards</b><p>D'autres font vivre le vermouth en Savoie, et Dolin en est la référence.</p><ul class="achips"><li>Comoz</li><li>Bars à vermouth</li><li>Nouveaux vermouths</li><li>Chambéry sur la route</li></ul></div>
-        </div>
-      </div>
+      <ol class="tl3">
+        <li><span class="ty">2027</span><b>Renouer</b><p>Le Salone ouvre la porte de Turin ; Chambéry entre sur la route européenne.</p><ul class="achips"><li>Salone del Vermouth</li><li>Route des vermouths</li></ul></li>
+        <li><span class="ty">2028-29</span><b>Le marché savoyard</b><p>Dolin servi chez soi : bars, restaurants, cavistes, un lieu à Chambéry.</p><ul class="achips"><li>Bars et restaurants</li><li>Un lieu à Chambéry</li></ul></li>
+        <li class="on"><span class="ty">2030</span><b>Un marché savoyard plus grand</b><p>Plus de points de vente, de nouveaux vermouths : un marché qui grandit, dont Dolin reste le leader.</p><ul class="achips"><li>Bars à vermouth</li><li>Nouveaux vermouths</li><li>Comoz en Savoie</li></ul></li>
+      </ol>
 
       <div class="luc"><b>Le point de départ : une maison de 1821, plus présente en rayon que sur les cartes</b><span>Dolin réalise 18,6 M€ de chiffre d'affaires, dont un tiers à l'export. En France, ses ventes passent surtout par la grande distribution (56 %), très peu par les bars et restaurants (5 %, chiffres 2020). <button type="button" class="link" data-view="constat">Le constat →</button></span></div>
 
@@ -1586,7 +1590,7 @@ button.idea{font:inherit;color:inherit;text-align:left;cursor:pointer}button.ide
           <li>Un relais à Turin, qui parle italien, savoyard et piémontais</li></ul></div>
         <div class="sw w"><h3>Faiblesses</h3><ul>
           <li>Chambéry presque absente du récit actuel du vermouth</li>
-          <li>Dolin porte presque seul le vermouth de Chambéry, quand Turin compte 41 à 45 maisons  : un petit gâteau, qui ne grandit pas</li>
+          <li>Dolin porte presque seul le vermouth de Chambéry, quand Turin compte 41 à 45 maisons  : un petit marché, qui ne grandit pas</li>
           <li>Dolin souvent présenté comme un « vermouth français »</li>
           <li>Une histoire pas encore documentée ni sourcée en un seul récit</li>
           <li>Aucune trace de l'Italie parmi les pays d'export</li>
@@ -1624,7 +1628,7 @@ button.idea{font:inherit;color:inherit;text-align:left;cursor:pointer}button.ide
       <div class="why3">
         <div><b>Un marché de valeur</b><span>On boit moins de vermouth, mais on le boit mieux : le prix du litre monte. C'est favorable à une maison comme Dolin.</span></div>
         <div><b>La France, servie par d'autres</b><span>4<sup>e</sup> marché du monde, devant l'Italie ; mais une bonne part va à des vermouths venus d'ailleurs.</span></div>
-        <div><b>La Savoie, un petit gâteau</b><span>Environ 1,5 M€ par an, et Dolin peu présent dans les bars et restaurants, là où le vermouth progresse.</span></div>
+        <div><b>La Savoie, un petit marché</b><span>Environ 1,5 M€ par an, et Dolin peu présent dans les bars et restaurants, là où le vermouth progresse.</span></div>
       </div>
 
       <div class="sec"><h2>Trois chiffres à retenir</h2></div>
@@ -1756,28 +1760,28 @@ button.idea{font:inherit;color:inherit;text-align:left;cursor:pointer}button.ide
         <div><b>Une seule histoire</b><span>Le vermouth sabaudo : la même histoire, racontée à Chambéry, à Turin et sur la route européenne.</span></div>
       </div>
 
-      <div class="sec"><h2>Pour le marché savoyard : agrandir le gâteau</h2><span class="note">Ne pas se battre pour le marché actuel</span></div>
+      <div class="sec"><h2>Le marché savoyard : développer la demande, pas seulement sa part</h2><span class="note">La stratégie du leader</span></div>
       <div class="cake4">
-        <div class="ck4h"><p>Faire grossir le marché savoyard du vermouth, c'est le faire grossir pour tous : Comoz, les bars à vermouth, les nouveaux vermouths. Dolin, la maison de référence, garde sa part, et cette part pèse bien plus.</p></div>
+        <div class="ck4h"><p>Le marché savoyard du vermouth pèse environ 1,5 M€ par an. Leader sur ce marché, Dolin gagne plus à le développer qu'à y grignoter des parts : plus de bars à vermouth, de lieux, de nouveaux vermouths, c'est plus de clients pour tous, et d'abord pour le leader.</p></div>
         <svg class="gsvg2" viewBox="0 0 620 300" role="img" aria-label="Deux gâteaux dessinés à la même échelle : aujourd'hui un petit gâteau, en 2030 un gâteau bien plus grand ; Dolin y garde la même part, qui pèse bien plus.">
 <g class="gsm"><circle class="g-all" cx="130" cy="170" r="58"/><path class="g-d" d="M130.0 170.0 L130.0 112.0 A58 58 0 1 1 95.9 216.9 Z"/></g>
 <path class="g-ar" d="M222 170 H262 M252 160 L262 170 L252 180"/>
 <g class="gbig"><circle class="g-all" cx="440" cy="150" r="128"/><path class="g-d" d="M440.0 150.0 L440.0 22.0 A128 128 0 1 1 364.8 253.6 Z"/><text class="g-in" x="488" y="178" text-anchor="middle">Dolin</text></g>
-<text class="g-lab" x="130" y="288" text-anchor="middle">Aujourd'hui · ≈ 1,5 M€</text><text class="g-lab" x="440" y="296" text-anchor="middle">Demain · un marché qui grandit</text>
+<text class="g-lab" x="130" y="288" text-anchor="middle">Aujourd'hui · ≈ 1,5 M€</text><text class="g-lab" x="440" y="296" text-anchor="middle">2030 · un marché plus grand</text>
 </svg>
-        <p class="gcap"><b>Même part, bien plus de ventes.</b> Les deux gâteaux sont dessinés à la même échelle.</p>
+        <p class="gcap"><b>Même part de marché, bien plus de chiffre d'affaires.</b> Les deux gâteaux sont dessinés à la même échelle.</p>
       </div>
       <div class="north hk" style="--n:3">
         <div class="nk"><span class="ntag">Turin</span><span class="nv">41 à 45</span><span class="nl">maisons dans le consortium du Vermouth di Torino, 96 % de la production</span></div>
         <div class="nk key"><span class="ntag">En six ans</span><span class="nv">× 5</span><span class="nl">le chiffre d'affaires de l'appellation : 32,6 M€ en 2018, 172 M€ en 2024 (WineNews)</span></div>
         <div class="nk"><span class="ntag">Chambéry</span><span class="nv">1821</span><span class="nl">Dolin, presque seul à porter le vermouth de Chambéry ; le nom protégé perdu en 2017, faute de dossier</span></div>
       </div>
-      <div class="luc"><b>Ce que dit le marketing</b><span>C'est la stratégie classique du leader : faire grossir le gâteau plutôt que se battre pour sa part, parce que c'est le leader qui profite le plus d'un marché qui grandit (Philip Kotler, <i>Marketing Management</i>). En Savoie, le leader, c'est Dolin. On parle aussi de coopétition : coopérer avec ses concurrents pour agrandir le marché, puis s'y faire concurrence (Adam Brandenburger et Barry Nalebuff, 1996). À Turin, les maisons se font concurrence, mais défendent ensemble un nom et un récit.</span></div>
+      <div class="luc"><b>Ce que dit le marketing</b><span>C'est la stratégie classique du leader : développer la demande globale plutôt que se battre pour des parts de marché, parce que c'est le leader qui profite le plus d'un marché qui grandit (Philip Kotler, <i>Marketing Management</i>). En Savoie, le leader, c'est Dolin. On parle aussi de coopétition : coopérer avec ses concurrents pour agrandir le marché, puis s'y faire concurrence (Adam Brandenburger et Barry Nalebuff, 1996). À Turin, les maisons se font concurrence, mais défendent ensemble un nom et un récit.</span></div>
 
       <div class="sec"><h2>Lecture critique</h2><span class="note">Ce que la vision engage, et ce qu'elle risque</span></div>
       <div class="rules">
         <div class="rule"><b>Les outils ne sont pas des buts</b><span>Être au Salone ou sur la route européenne ne dit rien de la réussite. Ce qui compte : les relations qui durent à Turin, les établissements qui servent Dolin en Savoie, les projets qui naissent.</span></div>
-        <div class="rule"><b>Faire grandir le gâteau, c'est aider des concurrents</b><span>Un nouveau vermouth savoyard peut prendre des clients à Dolin. Le pari est que le gâteau grandit plus vite que la part perdue, comme à Turin. Il se vérifie : on suit les ventes de Dolin en Savoie à chaque étape.</span></div>
+        <div class="rule"><b>Développer le marché, c'est aider des concurrents</b><span>Un nouveau vermouth savoyard peut prendre des clients à Dolin. Le pari est que le marché grandit plus vite que la part perdue, comme à Turin. Il se vérifie : on suit les ventes de Dolin en Savoie à chaque étape.</span></div>
         <div class="rule" style="--rc:var(--warn)"><b>Dolin moteur, pas propriétaire</b><span>Les projets qui dépassent Dolin passent par l'Universitât Sabauda, pour que d'autres maisons, des bars et des producteurs puissent s'y joindre. Un projet portant le seul nom de Dolin les tiendrait à l'écart.</span></div>
         <div class="rule" style="--rc:var(--warn)"><b>Le risque de la dispersion</b><span>Deux axes, trois outils, des projets : on n'en mène qu'un ou deux à la fois, choisis à chaque trimestre.</span></div>
       </div>
@@ -1796,7 +1800,7 @@ button.idea{font:inherit;color:inherit;text-align:left;cursor:pointer}button.ide
         <div class="obcol a2"><p class="obax"><span>Axe 2</span>Travailler le marché savoyard</p>
           <div class="obt"><span class="obn">4</span><div class="obb"><b>Être connu en Savoie</b><ul class="obp"><li>la presse de Savoie</li><li>le tourisme et les élus</li><li>les événements du territoire</li><li>le récit de Chambéry, depuis 1821</li></ul><div class="obr"><span class="o0">À mesurer</span><i aria-hidden="true">→</i><span class="o1">[__] points de notoriété</span></div><small>Printemps 2027</small></div></div>
           <div class="obt"><span class="obn">5</span><div class="obb"><b>Être servi en Savoie</b><ul class="obp"><li>une offre pour les bars et restaurants</li><li>un cocktail signature</li><li>les stations</li></ul><div class="obr"><span class="o0">5 % des ventes</span><i aria-hidden="true">→</i><span class="o1">[__] établissements</span></div><small>Fin 2027</small></div></div>
-          <div class="obt"><span class="obn">6</span><div class="obb"><b>Lancer un premier projet qui agrandit le gâteau</b><ul class="obp"><li>un bar à vermouth à Annecy</li><li>un lieu de dégustation à Chambéry</li><li>Comoz vendu en Savoie</li></ul><div class="obr"><span class="o0">Des pistes</span><i aria-hidden="true">→</i><span class="o1">1 projet lancé</span></div><small>Mai 2027</small></div></div>
+          <div class="obt"><span class="obn">6</span><div class="obb"><b>Lancer un premier projet qui fait grandir le marché</b><ul class="obp"><li>un bar à vermouth à Annecy</li><li>un lieu de dégustation à Chambéry</li><li>Comoz vendu en Savoie</li></ul><div class="obr"><span class="o0">Des pistes</span><i aria-hidden="true">→</i><span class="o1">1 projet lancé</span></div><small>Mai 2027</small></div></div>
         </div>
       </div>
       <div class="sued">
@@ -1809,7 +1813,7 @@ button.idea{font:inherit;color:inherit;text-align:left;cursor:pointer}button.ide
       <div class="sec"><h2>Axe 1 · Renouer avec l'espace sabaudo du vermouth</h2></div>
       <div class="goals"><div class="goal"><span class="gn">1</span><b>Entrer dans la famille du vermouth de Turin</b><p>Être reconnu par Turin comme une maison de la même histoire, et l'afficher. Le nom « Vermouth di Torino » est réservé aux vermouths produits en Piémont : la reconnaissance passe donc par le Salone, les cafés historiques et des projets avec des maisons turinoises.</p><dl class="smart"><div><dt>Par</dt><dd>le Salone : exposant et table ronde ; les cafés historiques de Turin ; une cuvée avec une maison turinoise</dd></div><div><dt>Départ</dt><dd>Un contact, le Salone</dd></div><div><dt>Cible</dt><dd>Dolin cité et servi à Turin</dd></div><div><dt>Échéance</dt><dd>Mai 2027</dd></div></dl><span class="ind">Mesure : mentions dans la presse italienne, lieux qui servent Dolin à Turin, une marque de reconnaissance (partenaire du Salone, cafés historiques).</span></div><div class="goal"><span class="gn">2</span><b>Nouer des partenariats avec d'autres maisons</b><p>Un événement commun, une cuvée, un échange : travailler avec d'autres maisons de vermouth plutôt que seul. Chazalettes, maison turinoise d'origine savoyarde, est la piste la plus naturelle.</p><dl class="smart"><div><dt>Par</dt><dd>Chazalettes et les maisons turinoises ; les producteurs français de la FFVA ; les maisons de la route européenne</dd></div><div><dt>Départ</dt><dd>Aucun</dd></div><div><dt>Cible</dt><dd>1 partenariat signé</dd></div><div><dt>Échéance</dt><dd>Fin 2027</dd></div></dl><span class="ind">Mesure : partenariats signés et projets communs lancés.</span></div><div class="goal gw"><span class="gn">3</span><b>Mettre Chambéry sur la Route des vermouths</b><p>Le projet européen : la plateforme Route des vermouths, portée par Iter Vitis, réseau reconnu par le Conseil de l'Europe. Dolin y porte l'axe Chambéry–Turin, et le regard d'un producteur d'aujourd'hui.</p><dl class="smart"><div><dt>Par</dt><dd>la plateforme d'Iter Vitis ; les contenus de Dolin ; une prise de parole aux rencontres</dd></div><div><dt>Départ</dt><dd>Un oui de principe</dd></div><div><dt>Cible</dt><dd>Chambéry, étape de la route</dd></div><div><dt>Échéance</dt><dd>Printemps 2027</dd></div></dl><span class="ind">Mesure : fiche Dolin en ligne, Chambéry présentée comme étape, une intervention aux prochaines rencontres.</span></div></div>
       <div class="sec"><h2>Axe 2 · Travailler le marché savoyard</h2></div>
-      <div class="goals"><div class="goal"><span class="gn">4</span><b>Être connu en Savoie</b><p>Que les Savoyards sachent que Dolin est une maison de Chambéry, et Chambéry une ville du vermouth. On mesure d'abord, par un questionnaire court, puis on chiffre la cible.</p><dl class="smart"><div><dt>Par</dt><dd>la presse de Savoie ; le tourisme et les élus ; les événements du territoire ; le récit de Chambéry, depuis 1821</dd></div><div><dt>Départ</dt><dd>À mesurer</dd></div><div><dt>Cible</dt><dd>[__] points de notoriété</dd></div><div><dt>Échéance</dt><dd>Printemps 2027</dd></div></dl><span class="ind">Mesure : questionnaire en Savoie et Haute-Savoie, retombées dans la presse de Savoie.</span></div><div class="goal"><span class="gn">5</span><b>Être servi en Savoie</b><p>Entrer sur les cartes des bars et restaurants savoyards, là où le vermouth progresse : le service au verre, un cocktail de l'espace sabaudo, quelques mots de savoyard sur la carte.</p><dl class="smart"><div><dt>Par</dt><dd>une offre pour les bars et restaurants ; un cocktail signature ; les stations</dd></div><div><dt>Départ</dt><dd>5 % des ventes</dd></div><div><dt>Cible</dt><dd>[__] établissements</dd></div><div><dt>Échéance</dt><dd>Fin 2027</dd></div></dl><span class="ind">Mesure : établissements qui servent Dolin ; part des bars et restaurants dans les ventes.</span></div><div class="goal gw"><span class="gn">6</span><b>Lancer un premier projet qui agrandit le gâteau</b><p>Choisir un projet concret qui fait grandir le marché savoyard du vermouth, et le lancer. Les projets qui dépassent Dolin passent par l'Universitât Sabauda.</p><dl class="smart"><div><dt>Par</dt><dd>un bar à vermouth à Annecy ; un lieu de dégustation à Chambéry ; Comoz vendu en Savoie</dd></div><div><dt>Départ</dt><dd>Des pistes</dd></div><div><dt>Cible</dt><dd>1 projet lancé</dd></div><div><dt>Échéance</dt><dd>Mai 2027</dd></div></dl><span class="ind">Mesure : un projet décidé, avec un calendrier et des partenaires.</span></div></div>
+      <div class="goals"><div class="goal"><span class="gn">4</span><b>Être connu en Savoie</b><p>Que les Savoyards sachent que Dolin est une maison de Chambéry, et Chambéry une ville du vermouth. On mesure d'abord, par un questionnaire court, puis on chiffre la cible.</p><dl class="smart"><div><dt>Par</dt><dd>la presse de Savoie ; le tourisme et les élus ; les événements du territoire ; le récit de Chambéry, depuis 1821</dd></div><div><dt>Départ</dt><dd>À mesurer</dd></div><div><dt>Cible</dt><dd>[__] points de notoriété</dd></div><div><dt>Échéance</dt><dd>Printemps 2027</dd></div></dl><span class="ind">Mesure : questionnaire en Savoie et Haute-Savoie, retombées dans la presse de Savoie.</span></div><div class="goal"><span class="gn">5</span><b>Être servi en Savoie</b><p>Entrer sur les cartes des bars et restaurants savoyards, là où le vermouth progresse : le service au verre, un cocktail de l'espace sabaudo, quelques mots de savoyard sur la carte.</p><dl class="smart"><div><dt>Par</dt><dd>une offre pour les bars et restaurants ; un cocktail signature ; les stations</dd></div><div><dt>Départ</dt><dd>5 % des ventes</dd></div><div><dt>Cible</dt><dd>[__] établissements</dd></div><div><dt>Échéance</dt><dd>Fin 2027</dd></div></dl><span class="ind">Mesure : établissements qui servent Dolin ; part des bars et restaurants dans les ventes.</span></div><div class="goal gw"><span class="gn">6</span><b>Lancer un premier projet qui fait grandir le marché</b><p>Choisir un projet concret qui fait grandir le marché savoyard du vermouth, et le lancer. Les projets qui dépassent Dolin passent par l'Universitât Sabauda.</p><dl class="smart"><div><dt>Par</dt><dd>un bar à vermouth à Annecy ; un lieu de dégustation à Chambéry ; Comoz vendu en Savoie</dd></div><div><dt>Départ</dt><dd>Des pistes</dd></div><div><dt>Cible</dt><dd>1 projet lancé</dd></div><div><dt>Échéance</dt><dd>Mai 2027</dd></div></dl><span class="ind">Mesure : un projet décidé, avec un calendrier et des partenaires.</span></div></div>
       <div class="sec"><h2>En bonus · Le Suédois</h2></div>
       <div class="goals"><div class="goal gw"><span class="gn">+</span><b>Faire connaître le Suédois, l'amer de Dolin</b><p>Dolin fait un amer, le Suédois (30 % vol. ; gentiane, rhubarbe, myrrhe). Il sert les deux axes : l'amaro fait partie des habitudes italiennes, et il a sa place à la fin des repas en Savoie.</p><dl class="smart"><div><dt>Par</dt><dd>le digestif dans les restaurants de Savoie ; les cocktails des bars de Turin ; le Salone</dd></div><div><dt>Départ</dt><dd>Peu mis en avant</dd></div><div><dt>Cible</dt><dd>[__] établissements</dd></div><div><dt>Échéance</dt><dd>Fin 2027</dd></div></dl><span class="ind">Mesure : ventes du Suédois, établissements qui le servent.</span></div></div>
       </div></details>
@@ -1824,7 +1828,7 @@ button.idea{font:inherit;color:inherit;text-align:left;cursor:pointer}button.ide
         <div class="hgap"></div>
         <div class="hrow hob"><span class="hl">Les objectifs</span>
           <button type="button" data-view="objectifs"><em>Axe 1 · fin 2027</em><b>Renouer avec l'espace sabaudo du vermouth</b><ol start="1"><li>Entrer dans la famille du vermouth de Turin</li><li>Nouer des partenariats avec d'autres maisons</li><li>Mettre Chambéry sur la Route des vermouths</li></ol></button>
-          <button type="button" data-view="objectifs"><em>Axe 2 · fin 2027</em><b>Travailler le marché savoyard</b><ol start="4"><li>Être connu en Savoie</li><li>Être servi en Savoie</li><li>Lancer un premier projet qui agrandit le gâteau</li></ol></button>
+          <button type="button" data-view="objectifs"><em>Axe 2 · fin 2027</em><b>Travailler le marché savoyard</b><ol start="4"><li>Être connu en Savoie</li><li>Être servi en Savoie</li><li>Lancer un premier projet qui fait grandir le marché</li></ol></button>
         </div>
         <div class="hrow hbn"><span class="hl">En bonus</span>
           <button type="button" data-view="objectifs"><b>Le Suédois, l'amer de Dolin</b><span>Sur les deux axes : l'amaro dans les bars de Turin, le digestif dans les restaurants de Savoie</span></button>
@@ -1838,7 +1842,7 @@ button.idea{font:inherit;color:inherit;text-align:left;cursor:pointer}button.ide
         <div class="hrow hmo"><span class="hl">Les moyens</span>
           <button type="button" data-view="marketing"><em>Faire vivre</em><b>Marketing</b><span>Concevoir les expériences : le stand, les bars, un lieu à Chambéry</span></button><i class="harr" aria-hidden="true">→</i>
           <button type="button" data-view="communication"><em>Faire savoir</em><b>Communication</b><span>Faire connaître la maison, en français et en italien</span></button><i class="harr" aria-hidden="true">→</i>
-          <button type="button" data-view="projets"><em>Faire grandir</em><b>Projets</b><span>Agrandir le gâteau, avec d'autres maisons et des bars</span></button>
+          <button type="button" data-view="projets"><em>Faire grandir</em><b>Projets</b><span>Faire grandir le marché, avec d'autres maisons et des bars</span></button>
         </div>
         <div class="hpill">↑ servis par</div>
         <div class="hrow hto"><span class="hl">Les outils</span>
@@ -1853,7 +1857,7 @@ button.idea{font:inherit;color:inherit;text-align:left;cursor:pointer}button.ide
         <div class="why3">
           <div><b>Une histoire commune, d'abord</b><span>Dolin ne se présente pas comme un vermouth français à Turin, mais comme une maison de la même histoire que les maisons turinoises.</span></div>
           <div><b>Deux axes, une seule histoire</b><span>Ce qui se gagne à Turin et en Europe se raconte en Savoie ; ce qui se construit en Savoie donne du poids à Turin.</span></div>
-          <div><b>Faire grandir le gâteau, pas seulement sa part</b><span>Un marché savoyard du vermouth n'existe qu'à plusieurs : aider des bars, un lieu et de nouveaux vermouths à naître fait partie du plan.</span></div>
+          <div><b>Développer le marché, pas seulement sa part</b><span>Un marché savoyard du vermouth n'existe qu'à plusieurs : aider des bars, un lieu et de nouveaux vermouths à naître fait partie du plan.</span></div>
         </div>
       </div>
       <details class="card acc"><summary><span class="ach"><h2>À qui on s'adresse</h2><span class="meta">Les publics des deux axes</span></span></summary><div class="accb">
@@ -1863,13 +1867,13 @@ button.idea{font:inherit;color:inherit;text-align:left;cursor:pointer}button.ide
           <div class="pp"><i style="--pc:var(--hi)">1</i><div><b>Les réseaux européens du vermouth</b><small>Iter Vitis, la FFVA, les producteurs de France, d'Italie et d'Espagne</small></div></div>
           <div class="pp"><i style="--pc:var(--accent)">2</i><div><b>Les bars, restaurants et cavistes de Savoie</b><small>Là où le vermouth se sert et se conseille</small></div></div>
           <div class="pp"><i style="--pc:var(--accent)">2</i><div><b>Chambéry et la Savoie</b><small>Élus, office de tourisme, habitants : la fierté d'une histoire locale</small></div></div>
-          <div class="pp"><i style="--pc:var(--accent)">2</i><div><b>Les porteurs de projets</b><small>Bars à vermouth, nouveaux producteurs : ceux qui font grandir le gâteau</small></div></div>
+          <div class="pp"><i style="--pc:var(--accent)">2</i><div><b>Les porteurs de projets</b><small>Bars à vermouth, nouveaux producteurs : ceux qui font grandir le marché</small></div></div>
         </div>
         <p class="note" style="margin-top:8px">1 : axe 1, l'espace sabaudo · 2 : axe 2, le marché savoyard</p>
       </div></details>
       <details class="card acc"><summary><span class="ach"><h2>De la stratégie à l'action</h2><span class="meta">Ce que recouvre chaque étape du plan</span></span></summary><div class="accb">
         <div class="scroll"><table class="s3x"><thead><tr><th>Étape</th><th>La question</th><th>Dans ce plan, par exemple</th></tr></thead><tbody>
-          <tr class="us"><td>Stratégie</td><td>Quel chemin, quels choix ?</td><td>Le vermouth sabaudo ; deux axes, une seule histoire ; faire grandir le gâteau en Savoie</td></tr>
+          <tr class="us"><td>Stratégie</td><td>Quel chemin, quels choix ?</td><td>Le vermouth sabaudo ; deux axes, une seule histoire ; développer le marché savoyard</td></tr>
           <tr><td>Tactiques</td><td>Par quels chemins ?</td><td>Chantier 1 : l'espace sabaudo (le Salone, la route européenne). Chantier 2 : le marché savoyard (bars et restaurants, cavistes, projets)</td></tr>
           <tr><td>Actions</td><td>Qui fait quoi, et quand ?</td><td>Signer le formulaire du Salone en décembre ; envoyer les contenus pour la route européenne ; préparer la table ronde en janvier</td></tr>
           <tr><td>Budget</td><td>Avec quel temps, quel argent ?</td><td>Deux demi-journées d'accompagnement par mois ; la formule du Salone</td></tr>
@@ -1880,11 +1884,11 @@ button.idea{font:inherit;color:inherit;text-align:left;cursor:pointer}button.ide
 
     <!-- OUTILS -->
     <section class="view" id="v-moyens" data-title="Les moyens" hidden>
-      <header class="vh"><div><p class="ey">Stratégie · Les moyens</p><h1>Marketing, communication, <em>projets</em></h1><p class="lead">Trois moyens pour mener les deux chantiers : le marketing fait vivre, la communication fait savoir, les projets font grandir le gâteau. Ils s'appuient sur trois outils (place-based marketing, marketing local, cycle de vie client), sur l'identité de marque et sur deux labels.</p></div></header>
+      <header class="vh"><div><p class="ey">Stratégie · Les moyens</p><h1>Marketing, communication, <em>projets</em></h1><p class="lead">Trois moyens pour mener les deux chantiers : le marketing fait vivre, la communication fait savoir, les projets font grandir le marché. Ils s'appuient sur trois outils (place-based marketing, marketing local, cycle de vie client), sur l'identité de marque et sur deux labels.</p></div></header>
       <div class="stair">
         <button type="button" class="st5" data-view="marketing"><em>1</em><b>Marketing</b><span>Faire vivre : les expériences, le stand, les bars, un lieu à Chambéry.</span></button>
         <button type="button" class="st5" data-view="communication"><em>2</em><b>Communication</b><span>Faire savoir : les messages, les publics, les canaux, en français et en italien.</span></button>
-        <button type="button" class="st5" data-view="projets"><em>3</em><b>Projets</b><span>Faire grandir : agrandir le gâteau, avec d'autres maisons, des bars, des producteurs.</span></button>
+        <button type="button" class="st5" data-view="projets"><em>3</em><b>Projets</b><span>Faire grandir : développer le marché, avec d'autres maisons, des bars, des producteurs.</span></button>
       </div>
       <div class="sec"><h2>Les outils</h2><span class="note">Au service des trois moyens</span></div>
       <div class="ideas">
@@ -1978,7 +1982,7 @@ button.idea{font:inherit;color:inherit;text-align:left;cursor:pointer}button.ide
 
     <!-- PROJETS -->
     <section class="view" id="v-projets" data-title="Projets" hidden>
-      <header class="vh"><div><p class="ey">Les moyens · 3 · Projets</p><h1>La renaissance <em>des vermouths savoyards</em></h1><p class="lead">Faire grandir le gâteau du vermouth en Savoie : que d'autres fassent vivre le vermouth, avec Dolin pour maison de référence et une plus belle part à la clé. On choisit un ou deux projets à la fois.</p></div></header>
+      <header class="vh"><div><p class="ey">Les moyens · 3 · Projets</p><h1>La renaissance <em>des vermouths savoyards</em></h1><p class="lead">Développer le marché savoyard du vermouth : plus de lieux, plus de vermouths, plus de clients, avec Dolin pour leader. On choisit un ou deux projets à la fois.</p></div></header>
       <div class="thread"><span class="tl">Le porteur</span><b>L'Universitât Sabauda, pour les projets qui dépassent Dolin</b><span>Une structure neutre peut réunir d'autres maisons, des bars, des producteurs et des collectivités, et répondre aux appels à projets comme Interreg ALCOTRA. Dolin y est moteur, pas propriétaire ; les projets propres à Dolin restent chez Dolin. Chaque projet est chiffré à part.</span></div>
       <div class="sec"><h2>Pour le marché savoyard</h2><span class="note">Axe 2</span></div>
       <div class="proj">
@@ -2003,7 +2007,7 @@ button.idea{font:inherit;color:inherit;text-align:left;cursor:pointer}button.ide
         <div class="pj"><div class="pjh"><b>Rimini : Beer&amp;Food Attraction</b><span class="tag pis">Piste</span></div><p>Laura Carello a évoqué un village du vermouth dans une foire de Rimini. La plus probable : Beer&amp;Food Attraction et son espace Mixology, ouvert aux producteurs étrangers ; Carpano en était le sponsor en 2026.</p><small>21-23 février 2027 · à confirmer avec Laura Carello</small></div>
         <div class="pj"><div class="pjh"><b>Les 270 ans de Cinzano</b><span class="tag pis">Veille</span></div><p>Un grand événement prévu à Turin en 2027, peut-être une exposition.</p><small>Une occasion de raconter l'histoire commune</small></div>
       </div>
-      <div class="luc"><b>Le critère de choix</b><span>Un projet entre dans le plan s'il fait grandir le gâteau : plus de lieux, plus de vermouths, plus de gens qui en parlent en Savoie et à Turin. Sinon, il attend.</span></div>
+      <div class="luc"><b>Le critère de choix</b><span>Un projet entre dans le plan s'il fait grandir le marché : plus de lieux, plus de vermouths, plus de gens qui en parlent en Savoie et à Turin. Sinon, il attend.</span></div>
     </section>
 
     <!-- IDENTITÉ DE MARQUE -->
@@ -2554,6 +2558,9 @@ button.idea{font:inherit;color:inherit;text-align:left;cursor:pointer}button.ide
   }
 })();
 </script>
+
+
+
 
 
 

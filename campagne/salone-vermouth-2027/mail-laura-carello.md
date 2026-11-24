@@ -35,7 +35,7 @@ Lo stiamo già facendo nel calcio in Savoia con il GFA (Grand Football Albanais)
 
 Il piemontese è già dentro la storia del vermouth di Torino: il caso più famoso è **Punt e Mes**, un nome in piemontese («un punto e mezzo») diventato un marchio conosciuto in tutto il mondo. Anche il linguaggio del Fuorisalone (le *piole*, i caffè storici) è già piemontese.
 
-E per il nostro progetto c'è un argomento in più: il vermouth è una storia **sabauda**, tra Torino e Chambéry, e non una storia di frontiera. Chazalettes è una casa torinese di origine savoiarda; Dolin (1821) e Comoz (1856) sono nati a Chambéry quando la Savoia e il Piemonte erano ancora lo stesso Stato. Il piemontese e il savoiardo raccontano proprio questo spazio comune.
+E per il nostro progetto c'è un argomento in più: il vermouth è una storia **sabauda**, tra Torino e Chambéry: quella dello spazio sabaudo, tra Savoia e Piemonte. Chazalettes è una casa torinese di origine savoiarda; Dolin (1821) e Comoz (1856) sono nati a Chambéry quando la Savoia e il Piemonte erano ancora lo stesso Stato. Il piemontese e il savoiardo raccontano proprio questo spazio comune.
 
 Il Salone ha un vantaggio: è un evento giovane che si sta costruendo un'identità forte e internazionale. Qualche parola in piemontese gli darebbe una firma che nessun altro salone può copiare, e un racconto in più per la stampa e per i visitatori stranieri.
 

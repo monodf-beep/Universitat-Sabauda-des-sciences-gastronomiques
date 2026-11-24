@@ -1307,6 +1307,7 @@ button.st5:hover{border-color:var(--hi)}
 .urg .uph img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:8px;box-shadow:0 0 0 1px color-mix(in srgb,var(--on-terra) 40%,transparent)}
 .urg .uph figcaption{margin-top:6px;font-size:11.5px;color:var(--on-terra);opacity:.85}
 @media (max-width:900px){.urg.uimg{grid-template-columns:minmax(0,1fr)}}
+.det4.d2{grid-template-columns:repeat(2,minmax(0,1fr))}@media (max-width:700px){.det4.d2{grid-template-columns:minmax(0,1fr)}}
 </style>
 <div class="app">
   <aside class="side">
@@ -1319,7 +1320,6 @@ button.st5:hover{border-color:var(--hi)}
         <button type="button" data-view="diagnostic"><svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="2"/><path d="M12 3.5v17M3.5 12h17"/></svg>Le diagnostic</button>
         <button type="button" data-view="constat" class="sub">Le constat</button>
         <button type="button" data-view="terrain" class="sub">Le terrain à Turin</button>
-        <button type="button" data-view="ailleurs" class="sub">Ce qui a marché ailleurs</button>
       </div>
       <div class="ng ngr2">
         <p class="ngrp" title="Où veut-on aller ?">2 · Vision et objectifs</p>
@@ -1403,7 +1403,7 @@ button.st5:hover{border-color:var(--hi)}
 
     <!-- DIAGNOSTIC -->
     <section class="view" id="v-diagnostic" data-title="Le diagnostic" hidden>
-      <header class="vh"><div><p class="ey">Situation · Le diagnostic</p><h1>Forces, faiblesses, <em>opportunités, menaces</em></h1><p class="lead">Le diagnostic en une page, selon la grille <abbr title="Forces, faiblesses, opportunités, menaces (en anglais : strengths, weaknesses, opportunities, threats)">SWOT</abbr>, puis le détail en trois volets : Dolin et son histoire, le terrain à Turin, ce qui a marché ailleurs.</p></div></header>
+      <header class="vh"><div><p class="ey">Situation · Le diagnostic</p><h1>Forces, faiblesses, <em>opportunités, menaces</em></h1><p class="lead">Le diagnostic en une page, selon la grille <abbr title="Forces, faiblesses, opportunités, menaces (en anglais : strengths, weaknesses, opportunities, threats)">SWOT</abbr>, puis le détail en deux volets : le constat du marché et le terrain à Turin.</p></div></header>
       <div class="swot">
         <div class="sw f"><h3>Forces</h3><ul>
           <li>Une maison fondée en 1821 à Chambéry, toujours en activité</li>
@@ -1436,11 +1436,10 @@ button.st5:hover{border-color:var(--hi)}
           <li>Se disperser sur trop de projets à la fois</li>
           <li>Une langue utilisée de façon folklorique ou inexacte</li></ul></div>
       </div>
-      <div class="sec"><h2>Trois analyses nourrissent ce diagnostic</h2><span class="note">Chaque case ouvre le détail.</span></div>
-      <div class="det4" style="grid-template-columns:repeat(3,minmax(0,1fr))">
+      <div class="sec"><h2>Deux analyses nourrissent ce diagnostic</h2><span class="note">Chaque case ouvre le détail.</span></div>
+      <div class="det4 d2">
         <button type="button" data-view="constat"><em>Le marché</em><b>Le constat</b><span>Le monde, la France, Turin, la Savoie, chiffres à l'appui</span></button>
         <button type="button" data-view="terrain"><em>Turin</em><b>Le terrain à Turin</b><span>Le Salone, les acteurs, le calendrier</span></button>
-        <button type="button" data-view="ailleurs"><em>Ailleurs</em><b>Ce qui a marché ailleurs</b><span>Des marques qui ont fait de leur lieu un atout</span></button>
       </div>
       <div class="luc"><b>Ce qu'on en tire</b><span>S'appuyer sur ce que personne d'autre n'a, l'histoire commune de Chambéry et Turin ; se servir du Salone et de la route européenne pour renouer avec l'espace sabaudo du vermouth ; et faire grandir le marché savoyard plutôt que d'y rester seul : être servi dans les bars et restaurants, et aider d'autres projets à naître. <button type="button" class="link" data-view="vision">La vision →</button></span></div>
     </section>
@@ -1540,22 +1539,6 @@ button.st5:hover{border-color:var(--hi)}
         </div>
       </div>
       <div class="luc"><b>Ce qu'il faut retenir</b><span>Le Salone veut s'ouvrir aux vermouths d'ailleurs (France, Espagne) et ne pas s'arrêter au consortium turinois. C'est la place que Dolin peut prendre, à condition d'arriver avec un récit. Le Salone est un outil pour renouer avec l'espace sabaudo, pas une fin. <button type="button" class="link" data-view="turin">Chantier 1 →</button></span></div>
-    </section>
-
-    <!-- AILLEURS -->
-    <section class="view" id="v-ailleurs" data-title="Ce qui a marché ailleurs" hidden>
-      <header class="vh"><div><p class="ey">Situation · Ce qui a marché ailleurs</p><h1>Le lieu, <em>un atout de marque</em></h1><p class="lead">Des marques et des clubs qui ont fait de leur territoire, de son histoire et de sa langue une matière première, souvent avec très peu de mots.</p></div></header>
-      <div class="mat4">
-        <div class="mt"><div class="mtv word"><span>Punt e Mes</span></div><div class="mtb"><em>Turin</em><b>Un nom en piémontais</b><p>« Un point et demi » en piémontais : un nom local devenu une marque connue dans le monde entier.</p><small>Le vermouth le fait déjà</small></div></div>
-        <div class="mt"><div class="mtv word"><span>Victouèra</span></div><div class="mtb"><em>GFA Rumilly-Vallières</em><b>Un mot sur un visuel</b><p>Quelques mots en savoyard sur les visuels de match (« Jorn de Partia », « Victouèra ») : le club a fait parler de lui.</p><small>Mené par Franck Monod en 2026</small></div></div>
-        <div class="mt"><div class="mtv word"><span>Wed'ze</span></div><div class="mtb"><em>Decathlon</em><b>Un nom savoyard</b><p>Une marque de sports de glisse au nom tiré d'une expression savoyarde.</p><small>La culture n'empêche pas d'être moderne</small></div></div>
-        <div class="mt"><div class="mtv word"><span>Chazalettes</span></div><div class="mtb"><em>Turin</em><b>Une maison relancée</b><p>La famille Bava relance une maison turinoise historique à partir de ses recettes d'origine.</p><small>L'histoire comme argument</small></div></div>
-      </div>
-      <div class="why3">
-        <div><b>Peu de mots suffisent</b><span>Un nom, une signature, un mot sur un visuel : l'effet vient du dosage, pas de la traduction.</span></div>
-        <div><b>La reconnaissance avant la compréhension</b><span>Ceux qui comprennent y voient une complicité, les autres une authenticité.</span></div>
-        <div><b>L'histoire se prouve</b><span>Un récit sourcé tient face à la presse ; un récit approximatif se retourne contre la marque.</span></div>
-      </div>
     </section>
 
     <!-- VISION -->
@@ -1806,6 +1789,13 @@ button.st5:hover{border-color:var(--hi)}
         <div class="rule" style="--rc:var(--warn)"><b>Toujours la langue commune à côté</b><span>Le français ou l'italien reste présent ; les mots en savoyard ou en piémontais s'ajoutent, ils ne remplacent rien.</span></div>
         <div class="rule" style="--rc:var(--warn)"><b>Les bons mots pour les langues</b><span>On nomme toujours la langue : le savoyard, le piémontais. On parle d'identité, pas d'« identitaire ».</span></div>
         <div class="rule" style="--rc:var(--warn)"><b>Rien sans vérification</b><span>Chaque mot est validé par un locuteur (le label de l'Institut de la Langue Savoyarde pour le savoyard), chaque date par une source.</span></div>
+      </div>
+      <div class="sec"><h2>La méthode a déjà marché</h2><span class="note">Un nom, quelques mots : le lieu devient un atout</span></div>
+      <div class="mat4">
+        <div class="mt"><div class="mtv word"><span>Punt e Mes</span></div><div class="mtb"><em>Turin</em><b>Un nom en piémontais</b><p>« Un point et demi » en piémontais : un nom local devenu une marque connue dans le monde entier.</p><small>Le vermouth le fait déjà</small></div></div>
+        <div class="mt"><div class="mtv word"><span>Victouèra</span></div><div class="mtb"><em>GFA Rumilly-Vallières</em><b>Un mot sur un visuel</b><p>Quelques mots en savoyard sur les visuels de match (« Jorn de Partia », « Victouèra ») : le club a fait parler de lui.</p><small>Mené par Franck Monod en 2026</small></div></div>
+        <div class="mt"><div class="mtv word"><span>Wed'ze</span></div><div class="mtb"><em>Decathlon</em><b>Un nom savoyard</b><p>Une marque de sports de glisse au nom tiré d'une expression savoyarde.</p><small>La culture n'empêche pas d'être moderne</small></div></div>
+        <div class="mt"><div class="mtv word"><span>Chazalettes</span></div><div class="mtb"><em>Turin</em><b>Une maison relancée</b><p>La famille Bava relance une maison turinoise historique à partir de ses recettes d'origine.</p><small>L'histoire comme argument</small></div></div>
       </div>
       <div class="sec"><h2>Pour Dolin, des pistes</h2><span class="note">À choisir ensemble ; le Salone est d'accord pour en discuter.</span></div>
       <div class="ideas">
@@ -2365,6 +2355,7 @@ button.st5:hover{border-color:var(--hi)}
   }
 })();
 </script>
+
 
 
 
